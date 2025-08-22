@@ -1,9 +1,9 @@
 {
-    "path" : "~/Projects/omt-canine-periodontitis",
-    "sortOrder" : [
+    "path": "~/Projects/omt-canine-periodontitis",
+    "sortOrder": [
         {
-            "ascending" : true,
-            "columnIndex" : 2
+            "ascending": true,
+            "columnIndex": 2
         }
     ]
 }

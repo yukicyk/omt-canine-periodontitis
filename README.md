@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Oral Microbiota Transplant in Dogs with Naturally Occurring Periodontitis
 
 This repository contains the complete analysis workflow for the study "Oral Microbiota Transplant in Dogs with Naturally Occurring Periodontitis," published in the *Journal of Dental Research*.
@@ -156,3 +157,26 @@ find . -name "*_2.fq.gz" -exec cutadapt -g GGACTACHVGGGTWTCTAAT -o {}.out {} \;
 *   **Description:** This script details the workflow for predicting the functional potential of the microbial communities. It first prepares the DADA2 output for use with PICRUSt (Phylogenetic Investigation of Communities by Reconstruction of Unobserved States). It then analyzes the resulting KEGG Orthology (KO) abundance tables to find functional pathways that differ between groups and timepoints.
 *   **Inputs:** `seqtab_final.rds`, Greengenes reference database.
 *   **Outputs:** Predicted KEGG pathway abundance tables and plots comparing functional profiles.
+
+---
+
+### Data Availability and Use of Synthetic Data for Reproducibility
+
+**Primary Data:** The raw 16S rRNA gene sequencing data is publicly available from the NCBI Sequence Read Archive (SRA) under accession number **PRJNA598540**.
+
+**Metadata and Clinical Data:** In accordance with institutional data management policies and the approved animal research ethics protocol (**Landesamt für Natur und Verbraucherschutz, #84-02.04.2014.A449**), the primary metadata and detailed clinical data (PPD, BOP, Plaque Index) are archived at the research institution and are not publicly distributed in this repository. This practice ensures the long-term integrity and controlled access to the original study data.
+
+To create a fully functional and self-contained repository that allows for the independent verification of the *analytical methodology*, this repository uses reconstructed and synthetic data:
+
+1.  **Reconstructed Metadata (`data/metadata.txt`):** The sample mapping file, which links sample IDs to their respective groups and timepoints, has been reconstructed based on information from the data processing logs and the published study design. This allows the analysis scripts to correctly assign samples to their experimental groups.
+
+2.  **Synthetic Clinical Data (`data/synthetic_clinical_data.csv`):** The detailed, per-subject clinical data is not included. Instead, a synthetic dataset has been generated based on the summary statistics (mean and standard deviation) published in **Table 1** of the manuscript.
+    *   The script `R/generate_synthetic_clinical_data.R` creates this dataset.
+    *   **Important:** The purpose of this synthetic data is to allow the correlation and machine learning scripts (`04_statistical_and_clinical_analysis.R`) to execute without error. The specific numerical results from these scripts (e.g., exact correlation coefficients, variable importance scores) will naturally differ from the original publication. The goal is to validate the *process*, not the original findings.
+
+This approach respects the data governance policies of the original research while upholding the principles of open and reproducible science (e.g., FAIR, ALCOA+), ensuring the computational methods are transparent and executable.
+
+=======
+# omt-canine-periodontitis
+This repository contains the complete analysis workflow for the study "Oral Microbiota Transplant in Dogs with Naturally Occurring Periodontitis," published in the Journal of Dental Research
+>>>>>>> 03eca4f2d7b60ef06118e4dfb9f32b3ae3f5a7d1
