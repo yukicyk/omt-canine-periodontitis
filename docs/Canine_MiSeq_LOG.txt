@@ -1,0 +1,117 @@
+20180404 Data log for Canine dental plaque transplant 16S MiSeq analysis
+
+cd /Users/ODPC/Desktop/Canine_transplant_MiSeq/Clean_Data
+
+find . -mindepth 2 -type f -print -exec mv {} . \;
+
+cutadapt -a ACTCCTACGGGAGGCAGCAG -o MT-A-1_1.out MT-A-1_1.fq.gz
+
+find . -name "*_1.fq.gz" -exec cutadapt -g ACTCCTACGGGAGGCAGCAG -o {}.out {} \;
+find . -name "*_2.fq.gz" -exec cutadapt -g GGACTACHVGGGTWTCTAAT -o {}.out {} \;
+
+MacQIIME ODPCiMac:Clean_Data $ mv *.out ./cut_adapt
+
+Dada2 in RStudio using Canine_transplant_MiSeq.R
+
+> track
+                         input filtered denoised merged tabled nonchim
+MT-A-1_1.fq.gz.out       35144    34247    34247  24877  24877   20685
+MT-A-2_1.fq.gz.out       35500    34708    34708  25757  25757   20851
+MT-A-3_1.fq.gz.out       35000    34061    34061  27890  27890   24538
+MT-A-4_1.fq.gz.out       34805    33956    33956  25122  25122   20178
+MT-B-1_1.fq.gz.out       34992    34160    34160  25570  25570   21456
+MT-B-2_1.fq.gz.out       35478    34450    34450  28033  28033   24079
+MT-B-3_1.fq.gz.out       35060    34231    34231  27703  27703   23592
+MT-B-4_1.fq.gz.out       34646    33925    33925  27474  27474   23103
+MT-C-1_1.fq.gz.out       34817    34269    34269  26331  26331   20717
+MT-C-2_1.fq.gz.out       34883    34239    34239  29144  29144   25740
+MT-C-3_1.fq.gz.out       34992    34470    34470  28566  28566   23427
+MT-C-4_1.fq.gz.out       34849    34314    34314  26374  26374   21686
+MT-D-1_1.fq.gz.out       35000    34393    34393  26761  26761   21670
+MT-D-2_1.fq.gz.out       35009    34387    34387  26129  26129   20253
+MT-D-3_1.fq.gz.out       34617    33961    33961  26869  26869   20929
+MT-D-4_1.fq.gz.out       34408    33849    33849  25489  25489   20566
+MT-E-I-1_1.fq.gz.out     34772    33987    33987  25426  25426   20800
+MT-E-II-1_1.fq.gz.out    34848    34011    34011  27058  27058   19876
+MT-E-III-1_1.fq.gz.out   34949    34087    34087  26424  26424   19000
+MT-E-IV-1_1.fq.gz.out    34941    33998    33998  25444  25444   19443
+MT-E-V-1_1.fq.gz.out     35034    34177    34177  27120  27120   19545
+MT-E-V-2_1.fq.gz.out     34975    34252    34252  29908  29908   22116
+MT-F-1_1.fq.gz.out       34633    34083    34083  27705  27705   23819
+MT-F-2_1.fq.gz.out       34933    34305    34305  26367  26367   19841
+MT-F-3_1.fq.gz.out       35009    34373    34373  26276  26276   20763
+MT-F-4_1.fq.gz.out       35169    34549    34549  26088  26088   20615
+MT-G-1_1.fq.gz.out       35246    34628    34628  26390  26390   21473
+MT-G-2_1.fq.gz.out       34549    33977    33977  25882  25882   19090
+MT-G-3_1.fq.gz.out       34389    33817    33817  25868  25868   19570
+MT-G-4_1.fq.gz.out       34808    34175    34175  27205  27205   22848
+MT-H-1_1.fq.gz.out       35244    34612    34612  26429  26429   21923
+MT-H-2_1.fq.gz.out       35304    34571    34571  26487  26487   21527
+MT-H-3_1.fq.gz.out       34638    34047    34047  26388  26388   20480
+MT-H-4_1.fq.gz.out       35280    34631    34631  25986  25986   22714
+MT-I-1_1.fq.gz.out       35289    34608    34608  26597  26597   21711
+MT-I-2_1.fq.gz.out       34808    34115    34115  26696  26696   20330
+MT-I-3_1.fq.gz.out       34732    34293    34293  26238  26238   21201
+MT-I-4_1.fq.gz.out       35017    34359    34359  26118  26118   22772
+MT-J-1_1.fq.gz.out       35135    34479    34479  27661  27661   22780
+MT-J-2_1.fq.gz.out       35060    34351    34351  27544  27544   21665
+MT-J-3_1.fq.gz.out       34899    34138    34138  29498  29498   25406
+MT-J-4_1.fq.gz.out       35560    34805    34805  28791  28791   24203
+MT-K-1_1.fq.gz.out       35518    34645    34645  27321  27321   23256
+MT-K-2_1.fq.gz.out       35051    34362    34362  26543  26543   22164
+MT-K-3_1.fq.gz.out       34807    34169    34169  27723  27723   23614
+MT-K-4_1.fq.gz.out       35026    34277    34277  26154  26154   21370
+MT-L-1_1.fq.gz.out       34672    33911    33911  25401  25401   19924
+MT-L-2_1.fq.gz.out       35102    34263    34263  26928  26928   21030
+MT-L-3_1.fq.gz.out       35043    34052    34052  29715  29715   27059
+MT-L-4_1.fq.gz.out       35552    34848    34848  27182  27182   21792
+MT-M-1_1.fq.gz.out       35035    34049    34049  25566  25566   20515
+MT-M-2_1.fq.gz.out       34589    33788    33788  26763  26763   20618
+MT-M-3_1.fq.gz.out       34984    34350    34350  27257  27257   21687
+MT-M-4_1.fq.gz.out       34580    33777    33777  25292  25292   19853
+MT-N-1_1.fq.gz.out       35457    34721    34721  25555  25555   20643
+MT-N-2_1.fq.gz.out       35432    34608    34608  27423  27423   19635
+MT-N-3_1.fq.gz.out       34831    33986    33986  26424  26424   19408
+MT-N-4_1.fq.gz.out       35630    34656    34656  28763  28763   24902
+MT-O-1_1.fq.gz.out       35605    34687    34687  26806  26806   22185
+MT-O-2_1.fq.gz.out       35085    34204    34204  26594  26594   19698
+MT-O-3_1.fq.gz.out       34705    34086    34086  26953  26953   20183
+MT-O-4_1.fq.gz.out       30635    29707    29707  29442  29442   29353
+MT-P-1_1.fq.gz.out       34687    33925    33925  24797  24795   21097
+MT-P-2_1.fq.gz.out       35255    34454    34454  27137  27137   20575
+MT-P-3_1.fq.gz.out       35196    34306    34306  26042  26042   19996
+MT-P-4_1.fq.gz.out       35690    34867    34867  26050  26050   20257
+MT-Q-1_1.fq.gz.out       35359    34365    34365  25526  25526   21759
+MT-Q-2_1.fq.gz.out       35296    34422    34422  27882  27882   24249
+MT-Q-3_1.fq.gz.out       34747    34019    34019  27181  27181   20859
+MT-Q-4_1.fq.gz.out       34400    33805    33805  24521  24521   19718
+MT-R-1_1.fq.gz.out       34750    34182    34182  24948  24948   19961
+MT-R-2_1.fq.gz.out       34825    34290    34290  26408  26408   20666
+MT-R-3_1.fq.gz.out       35202    34644    34644  26760  26760   20644
+MT-R-4_1.fq.gz.out       35236    34708    34708  26132  26132   20203
+MT-S-1_1.fq.gz.out       34874    34275    34275  27725  27725   25310
+MT-S-2_1.fq.gz.out       34300    33739    33739  26851  26851   20475
+MT-S-3_1.fq.gz.out       34909    34372    34372  25541  25541   20172
+MT-S-4_1.fq.gz.out       34430    33799    33799  24804  24804   19641
+Transplant-A_1.fq.gz.out 34958    34077    34077  26218  26218   19070
+Transplant-C_1.fq.gz.out 34958    34087    34087  26529  26529   19030
+Transplant-F_1.fq.gz.out 34815    33942    33942  30944  30944   29165
+Transplant-H_1.fq.gz.out 34755    33992    33992  27057  27057   18614
+Transplant-J_1.fq.gz.out 34907    34068    34068  28091  28091   21314
+Transplant-L_1.fq.gz.out 35545    34629    34629  27779  27779   21479
+Transplant-N_1.fq.gz.out 35093    34325    34325  27844  27844   20902
+Transplant-P_1.fq.gz.out 34916    33943    33943  28430  28430   20442
+Transplant-Q_1.fq.gz.out 35457    34637    34637  28008  28008   19784
+
+
+dim(seqtab)
+87	1759
+# There are 1759 ASVs for 87 samples
+output files:
+amplicon sequence variant (ASV) table as seqtab_final.csv and seqtab_final.rds
+taxonomy data as species.rds and taxa.rds
+# format the ASV table and sequences
+# rename the ASV from ASV1 to ASV1759
+# multiple sequence alignment using mafft
+# there are a few sequences still with the primers (check ASV_seq.mafft.fasta)
+# trim the primer region and using MEGA7 for quick ML tree

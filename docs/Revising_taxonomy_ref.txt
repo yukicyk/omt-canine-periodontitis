@@ -1,0 +1,13 @@
+Revising the in-house curated taxonomy files
+silva version ?
+eHOMD version ?
+COT
+Using RDP instead of silva trainset.... The use of superphylum patescibacteria in silva database is incompatible with the NCBI and HOMD databases; and it collated all the candidate phyla data together.
+
+
+There are duplicated taxa starting at phylum levels or mixture of different taxonomy becoz the different database use different name (e.g "Absconditabacteria (SR1)" and "SR1" at the phylum rank; and "Absconditabacteria (SR1)" at order rank under "Patescibacteria" > "Gracilibacteria"
+
+Patescibacteria (source wikipedia)
+The proposed superphylum, Patescibacteria, includes candidate phyla Gracilibacteria, Microgenomates, Parcubacteria, and Saccharibacteria[44][46] and possibly Dependentiae.[48] These same candidate phyla, along with candidate phyla Berkelbacteria, CPR2, CPR3, Kazan, Perigrinibacteria, SM2F11, WS6, and WWE3 were more recently proposed to belong to the larger CPR Group.[47] To complicate matters, it has been suggested that several of these phyla are themselves actually superphyla (see the section on cryptic superphyla below).
+
+

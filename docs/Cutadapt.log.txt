@@ -1,0 +1,5955 @@
+MacQIIME ODPCiMac:Clean_Data $ find . -name "*_1.fq.gz" -exec cutadapt -g ACTCCTACGGGAGGCAGCAG -o {}.out {} \;
+This is cutadapt 1.14 with Python 3.6.2rc1
+Command line parameters: -g ACTCCTACGGGAGGCAGCAG -o ./MT-A-1_1.fq.gz.out ./MT-A-1_1.fq.gz
+Trimming 1 adapter with at most 10.0% errors in single-end mode ...
+Finished in 0.79 s (22 us/read; 2.68 M reads/minute).
+
+=== Summary ===
+
+Total reads processed:                  35,144
+Reads with adapters:                    35,109 (99.9%)
+Reads written (passing filters):        35,144 (100.0%)
+
+Total basepairs processed:    10,543,200 bp
+Total written (filtered):      9,841,680 bp (93.3%)
+
+=== Adapter 1 ===
+
+Sequence: ACTCCTACGGGAGGCAGCAG; Type: regular 5'; Length: 20; Trimmed: 35109 times.
+
+No. of allowed errors:
+0-9 bp: 0; 10-19 bp: 1; 20 bp: 2
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+13	1	0.0	1	0 1
+14	2	0.0	1	2
+15	1	0.0	1	0 1
+16	1	0.0	1	0 1
+17	14	0.0	1	11 3
+18	18	0.0	1	5 3 10
+19	597	0.0	1	54 523 20
+20	34437	0.0	2	33594 835 8
+21	33	0.0	2	6 23 4
+22	5	0.0	2	0 0 5
+
+This is cutadapt 1.14 with Python 3.6.2rc1
+Command line parameters: -g ACTCCTACGGGAGGCAGCAG -o ./MT-A-2_1.fq.gz.out ./MT-A-2_1.fq.gz
+Trimming 1 adapter with at most 10.0% errors in single-end mode ...
+Finished in 0.78 s (22 us/read; 2.74 M reads/minute).
+
+=== Summary ===
+
+Total reads processed:                  35,500
+Reads with adapters:                    35,472 (99.9%)
+Reads written (passing filters):        35,500 (100.0%)
+
+Total basepairs processed:    10,579,000 bp
+Total written (filtered):      9,870,003 bp (93.3%)
+
+=== Adapter 1 ===
+
+Sequence: ACTCCTACGGGAGGCAGCAG; Type: regular 5'; Length: 20; Trimmed: 35472 times.
+
+No. of allowed errors:
+0-9 bp: 0; 10-19 bp: 1; 20 bp: 2
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+11	1	0.0	1	1
+15	2	0.0	1	2
+16	1	0.0	1	1
+17	6	0.0	1	2 4
+18	30	0.0	1	7 6 17
+19	402	0.0	1	93 291 18
+20	34984	0.0	2	34334 648 2
+21	35	0.0	2	14 21
+22	10	0.0	2	0 0 10
+25	1	0.0	2	1
+
+This is cutadapt 1.14 with Python 3.6.2rc1
+Command line parameters: -g ACTCCTACGGGAGGCAGCAG -o ./MT-A-3_1.fq.gz.out ./MT-A-3_1.fq.gz
+Trimming 1 adapter with at most 10.0% errors in single-end mode ...
+Finished in 0.77 s (22 us/read; 2.73 M reads/minute).
+
+=== Summary ===
+
+Total reads processed:                  35,000
+Reads with adapters:                    34,970 (99.9%)
+Reads written (passing filters):        35,000 (100.0%)
+
+Total basepairs processed:    10,395,000 bp
+Total written (filtered):      9,696,221 bp (93.3%)
+
+=== Adapter 1 ===
+
+Sequence: ACTCCTACGGGAGGCAGCAG; Type: regular 5'; Length: 20; Trimmed: 34970 times.
+
+No. of allowed errors:
+0-9 bp: 0; 10-19 bp: 1; 20 bp: 2
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+11	1	0.0	1	1
+12	1	0.0	1	1
+13	1	0.0	1	0 1
+14	2	0.0	1	2
+15	1	0.0	1	1
+16	6	0.0	1	4 2
+17	4	0.0	1	4
+18	29	0.0	1	14 5 10
+19	535	0.0	1	157 372 6
+20	34347	0.0	2	33586 754 7
+21	37	0.0	2	9 28
+22	6	0.0	2	0 0 6
+
+This is cutadapt 1.14 with Python 3.6.2rc1
+Command line parameters: -g ACTCCTACGGGAGGCAGCAG -o ./MT-A-4_1.fq.gz.out ./MT-A-4_1.fq.gz
+Trimming 1 adapter with at most 10.0% errors in single-end mode ...
+Finished in 0.79 s (23 us/read; 2.63 M reads/minute).
+
+=== Summary ===
+
+Total reads processed:                  34,805
+Reads with adapters:                    34,774 (99.9%)
+Reads written (passing filters):        34,805 (100.0%)
+
+Total basepairs processed:    10,302,280 bp
+Total written (filtered):      9,607,498 bp (93.3%)
+
+=== Adapter 1 ===
+
+Sequence: ACTCCTACGGGAGGCAGCAG; Type: regular 5'; Length: 20; Trimmed: 34774 times.
+
+No. of allowed errors:
+0-9 bp: 0; 10-19 bp: 1; 20 bp: 2
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+9	1	0.1	0	1
+11	1	0.0	1	1
+13	1	0.0	1	1
+14	1	0.0	1	0 1
+15	1	0.0	1	1
+16	1	0.0	1	1
+17	6	0.0	1	4 2
+18	32	0.0	1	7 5 20
+19	625	0.0	1	166 448 11
+20	34065	0.0	2	33325 733 7
+21	29	0.0	2	6 22 1
+22	11	0.0	2	0 0 11
+
+This is cutadapt 1.14 with Python 3.6.2rc1
+Command line parameters: -g ACTCCTACGGGAGGCAGCAG -o ./MT-B-1_1.fq.gz.out ./MT-B-1_1.fq.gz
+Trimming 1 adapter with at most 10.0% errors in single-end mode ...
+Finished in 0.78 s (22 us/read; 2.69 M reads/minute).
+
+=== Summary ===
+
+Total reads processed:                  34,992
+Reads with adapters:                    34,963 (99.9%)
+Reads written (passing filters):        34,992 (100.0%)
+
+Total basepairs processed:    10,287,648 bp
+Total written (filtered):      9,589,029 bp (93.2%)
+
+=== Adapter 1 ===
+
+Sequence: ACTCCTACGGGAGGCAGCAG; Type: regular 5'; Length: 20; Trimmed: 34963 times.
+
+No. of allowed errors:
+0-9 bp: 0; 10-19 bp: 1; 20 bp: 2
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+8	1	0.5	0	1
+13	3	0.0	1	1 2
+15	4	0.0	1	4
+16	2	0.0	1	2
+17	14	0.0	1	11 3
+18	34	0.0	1	9 10 15
+19	620	0.0	1	212 389 19
+20	34144	0.0	2	33562 577 5
+21	132	0.0	2	89 43
+22	9	0.0	2	0 0 9
+
+This is cutadapt 1.14 with Python 3.6.2rc1
+Command line parameters: -g ACTCCTACGGGAGGCAGCAG -o ./MT-B-2_1.fq.gz.out ./MT-B-2_1.fq.gz
+Trimming 1 adapter with at most 10.0% errors in single-end mode ...
+Finished in 0.80 s (23 us/read; 2.66 M reads/minute).
+
+=== Summary ===
+
+Total reads processed:                  35,478
+Reads with adapters:                    35,448 (99.9%)
+Reads written (passing filters):        35,478 (100.0%)
+
+Total basepairs processed:    10,395,054 bp
+Total written (filtered):      9,686,769 bp (93.2%)
+
+=== Adapter 1 ===
+
+Sequence: ACTCCTACGGGAGGCAGCAG; Type: regular 5'; Length: 20; Trimmed: 35448 times.
+
+No. of allowed errors:
+0-9 bp: 0; 10-19 bp: 1; 20 bp: 2
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+12	1	0.0	1	1
+13	13	0.0	1	13
+14	5	0.0	1	3 2
+15	2	0.0	1	0 2
+16	3	0.0	1	2 1
+17	17	0.0	1	15 2
+18	33	0.0	1	20 6 7
+19	480	0.0	1	216 254 10
+20	34828	0.0	2	33890 928 10
+21	59	0.0	2	34 23 2
+22	7	0.0	2	0 0 7
+
+This is cutadapt 1.14 with Python 3.6.2rc1
+Command line parameters: -g ACTCCTACGGGAGGCAGCAG -o ./MT-B-3_1.fq.gz.out ./MT-B-3_1.fq.gz
+Trimming 1 adapter with at most 10.0% errors in single-end mode ...
+Finished in 0.80 s (23 us/read; 2.63 M reads/minute).
+
+=== Summary ===
+
+Total reads processed:                  35,060
+Reads with adapters:                    35,023 (99.9%)
+Reads written (passing filters):        35,060 (100.0%)
+
+Total basepairs processed:    10,518,000 bp
+Total written (filtered):      9,817,977 bp (93.3%)
+
+=== Adapter 1 ===
+
+Sequence: ACTCCTACGGGAGGCAGCAG; Type: regular 5'; Length: 20; Trimmed: 35023 times.
+
+No. of allowed errors:
+0-9 bp: 0; 10-19 bp: 1; 20 bp: 2
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+14	3	0.0	1	1 2
+16	1	0.0	1	1
+17	6	0.0	1	3 3
+18	12	0.0	1	2 4 6
+19	416	0.0	1	45 354 17
+20	34551	0.0	2	33703 836 12
+21	27	0.0	2	8 18 1
+22	6	0.0	2	0 0 6
+24	1	0.0	2	1
+
+This is cutadapt 1.14 with Python 3.6.2rc1
+Command line parameters: -g ACTCCTACGGGAGGCAGCAG -o ./MT-B-4_1.fq.gz.out ./MT-B-4_1.fq.gz
+Trimming 1 adapter with at most 10.0% errors in single-end mode ...
+Finished in 0.78 s (22 us/read; 2.67 M reads/minute).
+
+=== Summary ===
+
+Total reads processed:                  34,646
+Reads with adapters:                    34,632 (100.0%)
+Reads written (passing filters):        34,646 (100.0%)
+
+Total basepairs processed:    10,359,154 bp
+Total written (filtered):      9,667,171 bp (93.3%)
+
+=== Adapter 1 ===
+
+Sequence: ACTCCTACGGGAGGCAGCAG; Type: regular 5'; Length: 20; Trimmed: 34632 times.
+
+No. of allowed errors:
+0-9 bp: 0; 10-19 bp: 1; 20 bp: 2
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+10	1	0.0	1	1
+11	1	0.0	1	1
+14	1	0.0	1	1
+15	3	0.0	1	3
+16	4	0.0	1	3 1
+17	3	0.0	1	1 2
+18	30	0.0	1	13 6 11
+19	582	0.0	1	73 500 9
+20	33964	0.0	2	33287 676 1
+21	36	0.0	2	7 28 1
+22	7	0.0	2	0 0 7
+
+This is cutadapt 1.14 with Python 3.6.2rc1
+Command line parameters: -g ACTCCTACGGGAGGCAGCAG -o ./MT-C-1_1.fq.gz.out ./MT-C-1_1.fq.gz
+Trimming 1 adapter with at most 10.0% errors in single-end mode ...
+Finished in 0.79 s (23 us/read; 2.64 M reads/minute).
+
+=== Summary ===
+
+Total reads processed:                  34,817
+Reads with adapters:                    34,788 (99.9%)
+Reads written (passing filters):        34,817 (100.0%)
+
+Total basepairs processed:    10,445,100 bp
+Total written (filtered):      9,750,172 bp (93.3%)
+
+=== Adapter 1 ===
+
+Sequence: ACTCCTACGGGAGGCAGCAG; Type: regular 5'; Length: 20; Trimmed: 34788 times.
+
+No. of allowed errors:
+0-9 bp: 0; 10-19 bp: 1; 20 bp: 2
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+13	1	0.0	1	1
+14	2	0.0	1	2
+15	3	0.0	1	3
+16	1	0.0	1	1
+17	10	0.0	1	10
+18	29	0.0	1	3 10 16
+19	751	0.0	1	47 674 30
+20	33952	0.0	2	32943 995 14
+21	33	0.0	2	4 28 1
+22	6	0.0	2	0 0 6
+
+This is cutadapt 1.14 with Python 3.6.2rc1
+Command line parameters: -g ACTCCTACGGGAGGCAGCAG -o ./MT-C-2_1.fq.gz.out ./MT-C-2_1.fq.gz
+Trimming 1 adapter with at most 10.0% errors in single-end mode ...
+Finished in 0.78 s (22 us/read; 2.68 M reads/minute).
+
+=== Summary ===
+
+Total reads processed:                  34,883
+Reads with adapters:                    34,850 (99.9%)
+Reads written (passing filters):        34,883 (100.0%)
+
+Total basepairs processed:    10,395,134 bp
+Total written (filtered):      9,698,548 bp (93.3%)
+
+=== Adapter 1 ===
+
+Sequence: ACTCCTACGGGAGGCAGCAG; Type: regular 5'; Length: 20; Trimmed: 34850 times.
+
+No. of allowed errors:
+0-9 bp: 0; 10-19 bp: 1; 20 bp: 2
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+13	1	0.0	1	0 1
+15	6	0.0	1	3 3
+17	1	0.0	1	0 1
+18	32	0.0	1	11 7 14
+19	388	0.0	1	107 253 28
+20	34360	0.0	2	33553 796 11
+21	50	0.0	2	20 30
+22	10	0.0	2	1 0 9
+24	2	0.0	2	2
+
+This is cutadapt 1.14 with Python 3.6.2rc1
+Command line parameters: -g ACTCCTACGGGAGGCAGCAG -o ./MT-C-3_1.fq.gz.out ./MT-C-3_1.fq.gz
+Trimming 1 adapter with at most 10.0% errors in single-end mode ...
+Finished in 0.80 s (23 us/read; 2.63 M reads/minute).
+
+=== Summary ===
+
+Total reads processed:                  34,992
+Reads with adapters:                    34,960 (99.9%)
+Reads written (passing filters):        34,992 (100.0%)
+
+Total basepairs processed:    10,392,624 bp
+Total written (filtered):      9,694,027 bp (93.3%)
+
+=== Adapter 1 ===
+
+Sequence: ACTCCTACGGGAGGCAGCAG; Type: regular 5'; Length: 20; Trimmed: 34960 times.
+
+No. of allowed errors:
+0-9 bp: 0; 10-19 bp: 1; 20 bp: 2
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+11	1	0.0	1	1
+13	2	0.0	1	0 2
+14	4	0.0	1	3 1
+15	1	0.0	1	0 1
+16	1	0.0	1	1
+17	4	0.0	1	2 2
+18	39	0.0	1	18 6 15
+19	505	0.0	1	167 330 8
+20	34359	0.0	2	33505 843 11
+21	40	0.0	2	12 27 1
+22	4	0.0	2	0 0 4
+
+This is cutadapt 1.14 with Python 3.6.2rc1
+Command line parameters: -g ACTCCTACGGGAGGCAGCAG -o ./MT-C-4_1.fq.gz.out ./MT-C-4_1.fq.gz
+Trimming 1 adapter with at most 10.0% errors in single-end mode ...
+Finished in 0.78 s (22 us/read; 2.67 M reads/minute).
+
+=== Summary ===
+
+Total reads processed:                  34,849
+Reads with adapters:                    34,827 (99.9%)
+Reads written (passing filters):        34,849 (100.0%)
+
+Total basepairs processed:    10,315,304 bp
+Total written (filtered):      9,619,481 bp (93.3%)
+
+=== Adapter 1 ===
+
+Sequence: ACTCCTACGGGAGGCAGCAG; Type: regular 5'; Length: 20; Trimmed: 34827 times.
+
+No. of allowed errors:
+0-9 bp: 0; 10-19 bp: 1; 20 bp: 2
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+12	1	0.0	1	1
+14	1	0.0	1	1
+15	1	0.0	1	1
+16	2	0.0	1	2
+17	10	0.0	1	8 2
+18	59	0.0	1	24 10 25
+19	588	0.0	1	150 430 8
+20	34129	0.0	2	33283 839 7
+21	26	0.0	2	6 16 4
+22	10	0.0	2	0 0 10
+
+This is cutadapt 1.14 with Python 3.6.2rc1
+Command line parameters: -g ACTCCTACGGGAGGCAGCAG -o ./MT-D-1_1.fq.gz.out ./MT-D-1_1.fq.gz
+Trimming 1 adapter with at most 10.0% errors in single-end mode ...
+Finished in 0.79 s (22 us/read; 2.67 M reads/minute).
+
+=== Summary ===
+
+Total reads processed:                  35,000
+Reads with adapters:                    34,977 (99.9%)
+Reads written (passing filters):        35,000 (100.0%)
+
+Total basepairs processed:    10,290,000 bp
+Total written (filtered):      9,591,267 bp (93.2%)
+
+=== Adapter 1 ===
+
+Sequence: ACTCCTACGGGAGGCAGCAG; Type: regular 5'; Length: 20; Trimmed: 34977 times.
+
+No. of allowed errors:
+0-9 bp: 0; 10-19 bp: 1; 20 bp: 2
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+10	1	0.0	1	1
+11	3	0.0	1	3
+12	1	0.0	1	1
+13	1	0.0	1	1
+15	2	0.0	1	2
+16	1	0.0	1	1
+17	8	0.0	1	7 1
+18	37	0.0	1	12 8 17
+19	804	0.0	1	193 577 34
+20	33971	0.0	2	33317 652 2
+21	135	0.0	2	89 46
+22	13	0.0	2	0 0 13
+
+This is cutadapt 1.14 with Python 3.6.2rc1
+Command line parameters: -g ACTCCTACGGGAGGCAGCAG -o ./MT-D-2_1.fq.gz.out ./MT-D-2_1.fq.gz
+Trimming 1 adapter with at most 10.0% errors in single-end mode ...
+Finished in 0.78 s (22 us/read; 2.68 M reads/minute).
+
+=== Summary ===
+
+Total reads processed:                  35,009
+Reads with adapters:                    34,979 (99.9%)
+Reads written (passing filters):        35,009 (100.0%)
+
+Total basepairs processed:    10,257,637 bp
+Total written (filtered):      9,558,728 bp (93.2%)
+
+=== Adapter 1 ===
+
+Sequence: ACTCCTACGGGAGGCAGCAG; Type: regular 5'; Length: 20; Trimmed: 34979 times.
+
+No. of allowed errors:
+0-9 bp: 0; 10-19 bp: 1; 20 bp: 2
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+8	1	0.5	0	1
+12	4	0.0	1	4
+13	6	0.0	1	6
+14	5	0.0	1	5
+15	2	0.0	1	1 1
+16	5	0.0	1	5
+17	9	0.0	1	9
+18	41	0.0	1	19 10 12
+19	503	0.0	1	227 271 5
+20	34327	0.0	2	33295 1020 12
+21	65	0.0	2	37 28
+22	11	0.0	2	1 0 10
+
+This is cutadapt 1.14 with Python 3.6.2rc1
+Command line parameters: -g ACTCCTACGGGAGGCAGCAG -o ./MT-D-3_1.fq.gz.out ./MT-D-3_1.fq.gz
+Trimming 1 adapter with at most 10.0% errors in single-end mode ...
+Finished in 0.80 s (23 us/read; 2.60 M reads/minute).
+
+=== Summary ===
+
+Total reads processed:                  34,617
+Reads with adapters:                    34,579 (99.9%)
+Reads written (passing filters):        34,617 (100.0%)
+
+Total basepairs processed:    10,385,100 bp
+Total written (filtered):      9,694,030 bp (93.3%)
+
+=== Adapter 1 ===
+
+Sequence: ACTCCTACGGGAGGCAGCAG; Type: regular 5'; Length: 20; Trimmed: 34579 times.
+
+No. of allowed errors:
+0-9 bp: 0; 10-19 bp: 1; 20 bp: 2
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+11	1	0.0	1	1
+13	1	0.0	1	1
+14	2	0.0	1	2
+15	3	0.0	1	3
+16	2	0.0	1	1 1
+17	15	0.0	1	12 3
+18	34	0.0	1	8 5 21
+19	412	0.0	1	60 339 13
+20	34053	0.0	2	33169 870 14
+21	47	0.0	2	7 36 4
+22	8	0.0	2	0 0 8
+23	1	0.0	2	1
+
+This is cutadapt 1.14 with Python 3.6.2rc1
+Command line parameters: -g ACTCCTACGGGAGGCAGCAG -o ./MT-D-4_1.fq.gz.out ./MT-D-4_1.fq.gz
+Trimming 1 adapter with at most 10.0% errors in single-end mode ...
+Finished in 0.77 s (22 us/read; 2.67 M reads/minute).
+
+=== Summary ===
+
+Total reads processed:                  34,408
+Reads with adapters:                    34,394 (100.0%)
+Reads written (passing filters):        34,408 (100.0%)
+
+Total basepairs processed:    10,287,992 bp
+Total written (filtered):      9,600,784 bp (93.3%)
+
+=== Adapter 1 ===
+
+Sequence: ACTCCTACGGGAGGCAGCAG; Type: regular 5'; Length: 20; Trimmed: 34394 times.
+
+No. of allowed errors:
+0-9 bp: 0; 10-19 bp: 1; 20 bp: 2
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+13	1	0.0	1	0 1
+16	4	0.0	1	3 1
+17	6	0.0	1	1 5
+18	32	0.0	1	8 9 15
+19	596	0.0	1	76 513 7
+20	33729	0.0	2	33063 655 11
+21	23	0.0	2	6 17
+22	3	0.0	2	0 0 3
+
+This is cutadapt 1.14 with Python 3.6.2rc1
+Command line parameters: -g ACTCCTACGGGAGGCAGCAG -o ./MT-E-I-1_1.fq.gz.out ./MT-E-I-1_1.fq.gz
+Trimming 1 adapter with at most 10.0% errors in single-end mode ...
+Finished in 0.79 s (23 us/read; 2.65 M reads/minute).
+
+=== Summary ===
+
+Total reads processed:                  34,772
+Reads with adapters:                    34,750 (99.9%)
+Reads written (passing filters):        34,772 (100.0%)
+
+Total basepairs processed:    10,327,284 bp
+Total written (filtered):      9,632,917 bp (93.3%)
+
+=== Adapter 1 ===
+
+Sequence: ACTCCTACGGGAGGCAGCAG; Type: regular 5'; Length: 20; Trimmed: 34750 times.
+
+No. of allowed errors:
+0-9 bp: 0; 10-19 bp: 1; 20 bp: 2
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+11	2	0.0	1	2
+14	1	0.0	1	1
+15	2	0.0	1	1 1
+16	3	0.0	1	2 1
+17	4	0.0	1	3 1
+18	40	0.0	1	23 9 8
+19	544	0.0	1	141 399 4
+20	34114	0.0	2	33363 739 12
+21	31	0.0	2	6 25
+22	9	0.0	2	0 0 9
+
+This is cutadapt 1.14 with Python 3.6.2rc1
+Command line parameters: -g ACTCCTACGGGAGGCAGCAG -o ./MT-E-II-1_1.fq.gz.out ./MT-E-II-1_1.fq.gz
+Trimming 1 adapter with at most 10.0% errors in single-end mode ...
+Finished in 0.78 s (23 us/read; 2.66 M reads/minute).
+
+=== Summary ===
+
+Total reads processed:                  34,848
+Reads with adapters:                    34,816 (99.9%)
+Reads written (passing filters):        34,848 (100.0%)
+
+Total basepairs processed:    10,315,008 bp
+Total written (filtered):      9,619,266 bp (93.3%)
+
+=== Adapter 1 ===
+
+Sequence: ACTCCTACGGGAGGCAGCAG; Type: regular 5'; Length: 20; Trimmed: 34816 times.
+
+No. of allowed errors:
+0-9 bp: 0; 10-19 bp: 1; 20 bp: 2
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+13	3	0.0	1	3
+14	3	0.0	1	2 1
+15	3	0.0	1	3
+16	2	0.0	1	2
+17	9	0.0	1	5 4
+18	49	0.0	1	24 9 16
+19	488	0.0	1	165 320 3
+20	34205	0.0	2	33389 808 8
+21	38	0.0	2	8 27 3
+22	15	0.0	2	3 0 12
+49	1	0.0	2	1
+
+This is cutadapt 1.14 with Python 3.6.2rc1
+Command line parameters: -g ACTCCTACGGGAGGCAGCAG -o ./MT-E-III-1_1.fq.gz.out ./MT-E-III-1_1.fq.gz
+Trimming 1 adapter with at most 10.0% errors in single-end mode ...
+Finished in 0.78 s (22 us/read; 2.68 M reads/minute).
+
+=== Summary ===
+
+Total reads processed:                  34,949
+Reads with adapters:                    34,921 (99.9%)
+Reads written (passing filters):        34,949 (100.0%)
+
+Total basepairs processed:    10,275,006 bp
+Total written (filtered):      9,577,132 bp (93.2%)
+
+=== Adapter 1 ===
+
+Sequence: ACTCCTACGGGAGGCAGCAG; Type: regular 5'; Length: 20; Trimmed: 34921 times.
+
+No. of allowed errors:
+0-9 bp: 0; 10-19 bp: 1; 20 bp: 2
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+8	1	0.5	0	1
+11	1	0.0	1	1
+12	1	0.0	1	1
+14	2	0.0	1	2
+15	3	0.0	1	1 2
+16	6	0.0	1	5 1
+17	11	0.0	1	8 3
+18	38	0.0	1	17 8 13
+19	514	0.0	1	189 293 32
+20	34203	0.0	2	33492 703 8
+21	125	0.0	2	101 24
+22	16	0.0	2	1 1 14
+
+This is cutadapt 1.14 with Python 3.6.2rc1
+Command line parameters: -g ACTCCTACGGGAGGCAGCAG -o ./MT-E-IV-1_1.fq.gz.out ./MT-E-IV-1_1.fq.gz
+Trimming 1 adapter with at most 10.0% errors in single-end mode ...
+Finished in 0.78 s (22 us/read; 2.70 M reads/minute).
+
+=== Summary ===
+
+Total reads processed:                  34,941
+Reads with adapters:                    34,916 (99.9%)
+Reads written (passing filters):        34,941 (100.0%)
+
+Total basepairs processed:    10,237,713 bp
+Total written (filtered):      9,540,101 bp (93.2%)
+
+=== Adapter 1 ===
+
+Sequence: ACTCCTACGGGAGGCAGCAG; Type: regular 5'; Length: 20; Trimmed: 34916 times.
+
+No. of allowed errors:
+0-9 bp: 0; 10-19 bp: 1; 20 bp: 2
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+11	1	0.0	1	1
+12	1	0.0	1	1
+13	11	0.0	1	11
+14	1	0.0	1	1
+15	3	0.0	1	3
+16	7	0.0	1	7
+17	18	0.0	1	17 1
+18	49	0.0	1	27 9 13
+19	496	0.0	1	232 260 4
+20	34256	0.0	2	33299 948 9
+21	63	0.0	2	37 26
+22	10	0.0	2	0 0 10
+
+This is cutadapt 1.14 with Python 3.6.2rc1
+Command line parameters: -g ACTCCTACGGGAGGCAGCAG -o ./MT-E-V-1_1.fq.gz.out ./MT-E-V-1_1.fq.gz
+Trimming 1 adapter with at most 10.0% errors in single-end mode ...
+Finished in 0.80 s (23 us/read; 2.64 M reads/minute).
+
+=== Summary ===
+
+Total reads processed:                  35,034
+Reads with adapters:                    34,995 (99.9%)
+Reads written (passing filters):        35,034 (100.0%)
+
+Total basepairs processed:    10,510,200 bp
+Total written (filtered):      9,810,823 bp (93.3%)
+
+=== Adapter 1 ===
+
+Sequence: ACTCCTACGGGAGGCAGCAG; Type: regular 5'; Length: 20; Trimmed: 34995 times.
+
+No. of allowed errors:
+0-9 bp: 0; 10-19 bp: 1; 20 bp: 2
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+14	5	0.0	1	4 1
+15	2	0.0	1	2
+17	16	0.0	1	10 6
+18	28	0.0	1	6 1 21
+19	434	0.0	1	51 365 18
+20	34461	0.0	2	33530 920 11
+21	43	0.0	2	10 26 7
+22	6	0.0	2	0 0 6
+
+This is cutadapt 1.14 with Python 3.6.2rc1
+Command line parameters: -g ACTCCTACGGGAGGCAGCAG -o ./MT-E-V-2_1.fq.gz.out ./MT-E-V-2_1.fq.gz
+Trimming 1 adapter with at most 10.0% errors in single-end mode ...
+Finished in 0.76 s (22 us/read; 2.75 M reads/minute).
+
+=== Summary ===
+
+Total reads processed:                  34,975
+Reads with adapters:                    34,949 (99.9%)
+Reads written (passing filters):        34,975 (100.0%)
+
+Total basepairs processed:    10,457,525 bp
+Total written (filtered):      9,759,050 bp (93.3%)
+
+=== Adapter 1 ===
+
+Sequence: ACTCCTACGGGAGGCAGCAG; Type: regular 5'; Length: 20; Trimmed: 34949 times.
+
+No. of allowed errors:
+0-9 bp: 0; 10-19 bp: 1; 20 bp: 2
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+13	1	0.0	1	0 1
+16	2	0.0	1	1 1
+17	3	0.0	1	0 3
+18	41	0.0	1	15 11 15
+19	442	0.0	1	85 355 2
+20	34422	0.0	2	33522 893 7
+21	33	0.0	2	11 21 1
+22	5	0.0	2	0 0 5
+
+This is cutadapt 1.14 with Python 3.6.2rc1
+Command line parameters: -g ACTCCTACGGGAGGCAGCAG -o ./MT-F-1_1.fq.gz.out ./MT-F-1_1.fq.gz
+Trimming 1 adapter with at most 10.0% errors in single-end mode ...
+Finished in 0.78 s (23 us/read; 2.66 M reads/minute).
+
+=== Summary ===
+
+Total reads processed:                  34,633
+Reads with adapters:                    34,602 (99.9%)
+Reads written (passing filters):        34,633 (100.0%)
+
+Total basepairs processed:    10,389,900 bp
+Total written (filtered):      9,698,451 bp (93.3%)
+
+=== Adapter 1 ===
+
+Sequence: ACTCCTACGGGAGGCAGCAG; Type: regular 5'; Length: 20; Trimmed: 34602 times.
+
+No. of allowed errors:
+0-9 bp: 0; 10-19 bp: 1; 20 bp: 2
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+14	4	0.0	1	2 2
+15	3	0.0	1	3
+17	15	0.0	1	9 6
+18	25	0.0	1	4 6 15
+19	499	0.0	1	60 422 17
+20	34019	0.0	2	33154 852 13
+21	32	0.0	2	6 25 1
+22	5	0.0	2	0 0 5
+
+This is cutadapt 1.14 with Python 3.6.2rc1
+Command line parameters: -g ACTCCTACGGGAGGCAGCAG -o ./MT-F-2_1.fq.gz.out ./MT-F-2_1.fq.gz
+Trimming 1 adapter with at most 10.0% errors in single-end mode ...
+Finished in 0.78 s (22 us/read; 2.68 M reads/minute).
+
+=== Summary ===
+
+Total reads processed:                  34,933
+Reads with adapters:                    34,894 (99.9%)
+Reads written (passing filters):        34,933 (100.0%)
+
+Total basepairs processed:    10,410,034 bp
+Total written (filtered):      9,712,601 bp (93.3%)
+
+=== Adapter 1 ===
+
+Sequence: ACTCCTACGGGAGGCAGCAG; Type: regular 5'; Length: 20; Trimmed: 34894 times.
+
+No. of allowed errors:
+0-9 bp: 0; 10-19 bp: 1; 20 bp: 2
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+15	8	0.0	1	6 2
+16	1	0.0	1	1
+17	6	0.0	1	6
+18	29	0.0	1	12 8 9
+19	392	0.0	1	98 274 20
+20	34403	0.0	2	33693 707 3
+21	47	0.0	2	11 35 1
+22	7	0.0	2	0 0 7
+24	1	0.0	2	1
+
+This is cutadapt 1.14 with Python 3.6.2rc1
+Command line parameters: -g ACTCCTACGGGAGGCAGCAG -o ./MT-F-3_1.fq.gz.out ./MT-F-3_1.fq.gz
+Trimming 1 adapter with at most 10.0% errors in single-end mode ...
+Finished in 0.80 s (23 us/read; 2.63 M reads/minute).
+
+=== Summary ===
+
+Total reads processed:                  35,009
+Reads with adapters:                    34,974 (99.9%)
+Reads written (passing filters):        35,009 (100.0%)
+
+Total basepairs processed:    10,397,673 bp
+Total written (filtered):      9,698,771 bp (93.3%)
+
+=== Adapter 1 ===
+
+Sequence: ACTCCTACGGGAGGCAGCAG; Type: regular 5'; Length: 20; Trimmed: 34974 times.
+
+No. of allowed errors:
+0-9 bp: 0; 10-19 bp: 1; 20 bp: 2
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+11	1	0.0	1	1
+12	1	0.0	1	1
+14	1	0.0	1	1
+15	2	0.0	1	1 1
+16	3	0.0	1	3
+17	9	0.0	1	4 5
+18	29	0.0	1	11 3 15
+19	495	0.0	1	155 333 7
+20	34395	0.0	2	33620 769 6
+21	30	0.0	2	4 26
+22	7	0.0	2	0 0 7
+23	1	0.0	2	1
+
+This is cutadapt 1.14 with Python 3.6.2rc1
+Command line parameters: -g ACTCCTACGGGAGGCAGCAG -o ./MT-F-4_1.fq.gz.out ./MT-F-4_1.fq.gz
+Trimming 1 adapter with at most 10.0% errors in single-end mode ...
+Finished in 0.79 s (22 us/read; 2.68 M reads/minute).
+
+=== Summary ===
+
+Total reads processed:                  35,169
+Reads with adapters:                    35,138 (99.9%)
+Reads written (passing filters):        35,169 (100.0%)
+
+Total basepairs processed:    10,339,686 bp
+Total written (filtered):      9,637,577 bp (93.2%)
+
+=== Adapter 1 ===
+
+Sequence: ACTCCTACGGGAGGCAGCAG; Type: regular 5'; Length: 20; Trimmed: 35138 times.
+
+No. of allowed errors:
+0-9 bp: 0; 10-19 bp: 1; 20 bp: 2
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+8	1	0.5	0	1
+10	1	0.0	1	1
+11	2	0.0	1	2
+14	4	0.0	1	1 3
+15	3	0.0	1	1 2
+16	6	0.0	1	6
+17	8	0.0	1	6 2
+18	46	0.0	1	22 12 12
+19	568	0.0	1	228 318 22
+20	34371	0.0	2	33694 667 10
+21	120	0.0	2	78 41 1
+22	8	0.0	2	1 0 7
+
+This is cutadapt 1.14 with Python 3.6.2rc1
+Command line parameters: -g ACTCCTACGGGAGGCAGCAG -o ./MT-G-1_1.fq.gz.out ./MT-G-1_1.fq.gz
+Trimming 1 adapter with at most 10.0% errors in single-end mode ...
+Finished in 0.80 s (23 us/read; 2.63 M reads/minute).
+
+=== Summary ===
+
+Total reads processed:                  35,246
+Reads with adapters:                    35,214 (99.9%)
+Reads written (passing filters):        35,246 (100.0%)
+
+Total basepairs processed:    10,327,078 bp
+Total written (filtered):      9,623,605 bp (93.2%)
+
+=== Adapter 1 ===
+
+Sequence: ACTCCTACGGGAGGCAGCAG; Type: regular 5'; Length: 20; Trimmed: 35214 times.
+
+No. of allowed errors:
+0-9 bp: 0; 10-19 bp: 1; 20 bp: 2
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+10	1	0.0	1	1
+11	1	0.0	1	1
+13	8	0.0	1	8
+14	1	0.0	1	1
+15	4	0.0	1	3 1
+16	7	0.0	1	5 2
+17	16	0.0	1	13 3
+18	44	0.0	1	26 9 9
+19	613	0.0	1	235 372 6
+20	34455	0.0	2	33548 898 9
+21	57	0.0	2	31 26
+22	7	0.0	2	0 0 7
+
+This is cutadapt 1.14 with Python 3.6.2rc1
+Command line parameters: -g ACTCCTACGGGAGGCAGCAG -o ./MT-G-2_1.fq.gz.out ./MT-G-2_1.fq.gz
+Trimming 1 adapter with at most 10.0% errors in single-end mode ...
+Finished in 0.77 s (22 us/read; 2.69 M reads/minute).
+
+=== Summary ===
+
+Total reads processed:                  34,549
+Reads with adapters:                    34,511 (99.9%)
+Reads written (passing filters):        34,549 (100.0%)
+
+Total basepairs processed:    10,364,700 bp
+Total written (filtered):      9,674,966 bp (93.3%)
+
+=== Adapter 1 ===
+
+Sequence: ACTCCTACGGGAGGCAGCAG; Type: regular 5'; Length: 20; Trimmed: 34511 times.
+
+No. of allowed errors:
+0-9 bp: 0; 10-19 bp: 1; 20 bp: 2
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+15	2	0.0	1	2
+16	1	0.0	1	0 1
+17	11	0.0	1	7 4
+18	16	0.0	1	3 3 10
+19	446	0.0	1	40 384 22
+20	34000	0.0	2	33100 894 6
+21	31	0.0	2	6 24 1
+22	4	0.0	2	0 0 4
+
+This is cutadapt 1.14 with Python 3.6.2rc1
+Command line parameters: -g ACTCCTACGGGAGGCAGCAG -o ./MT-G-3_1.fq.gz.out ./MT-G-3_1.fq.gz
+Trimming 1 adapter with at most 10.0% errors in single-end mode ...
+Finished in 0.79 s (23 us/read; 2.61 M reads/minute).
+
+=== Summary ===
+
+Total reads processed:                  34,389
+Reads with adapters:                    34,364 (99.9%)
+Reads written (passing filters):        34,389 (100.0%)
+
+Total basepairs processed:    10,282,311 bp
+Total written (filtered):      9,595,474 bp (93.3%)
+
+=== Adapter 1 ===
+
+Sequence: ACTCCTACGGGAGGCAGCAG; Type: regular 5'; Length: 20; Trimmed: 34364 times.
+
+No. of allowed errors:
+0-9 bp: 0; 10-19 bp: 1; 20 bp: 2
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+13	2	0.0	1	2
+14	1	0.0	1	0 1
+15	1	0.0	1	1
+16	3	0.0	1	3
+17	4	0.0	1	2 2
+18	30	0.0	1	10 5 15
+19	379	0.0	1	64 311 4
+20	33906	0.0	2	33163 737 6
+21	31	0.0	2	6 24 1
+22	7	0.0	2	0 0 7
+
+This is cutadapt 1.14 with Python 3.6.2rc1
+Command line parameters: -g ACTCCTACGGGAGGCAGCAG -o ./MT-G-4_1.fq.gz.out ./MT-G-4_1.fq.gz
+Trimming 1 adapter with at most 10.0% errors in single-end mode ...
+Finished in 0.80 s (23 us/read; 2.62 M reads/minute).
+
+=== Summary ===
+
+Total reads processed:                  34,808
+Reads with adapters:                    34,774 (99.9%)
+Reads written (passing filters):        34,808 (100.0%)
+
+Total basepairs processed:    10,442,400 bp
+Total written (filtered):      9,747,393 bp (93.3%)
+
+=== Adapter 1 ===
+
+Sequence: ACTCCTACGGGAGGCAGCAG; Type: regular 5'; Length: 20; Trimmed: 34774 times.
+
+No. of allowed errors:
+0-9 bp: 0; 10-19 bp: 1; 20 bp: 2
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+14	4	0.0	1	3 1
+15	2	0.0	1	1 1
+16	3	0.0	1	1 2
+17	7	0.0	1	6 1
+18	23	0.0	1	4 7 12
+19	404	0.0	1	46 338 20
+20	34289	0.0	2	33345 932 12
+21	40	0.0	2	5 31 4
+22	2	0.0	2	0 0 2
+
+This is cutadapt 1.14 with Python 3.6.2rc1
+Command line parameters: -g ACTCCTACGGGAGGCAGCAG -o ./MT-H-1_1.fq.gz.out ./MT-H-1_1.fq.gz
+Trimming 1 adapter with at most 10.0% errors in single-end mode ...
+Finished in 0.80 s (23 us/read; 2.65 M reads/minute).
+
+=== Summary ===
+
+Total reads processed:                  35,244
+Reads with adapters:                    35,221 (99.9%)
+Reads written (passing filters):        35,244 (100.0%)
+
+Total basepairs processed:    10,502,712 bp
+Total written (filtered):      9,798,823 bp (93.3%)
+
+=== Adapter 1 ===
+
+Sequence: ACTCCTACGGGAGGCAGCAG; Type: regular 5'; Length: 20; Trimmed: 35221 times.
+
+No. of allowed errors:
+0-9 bp: 0; 10-19 bp: 1; 20 bp: 2
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+14	2	0.0	1	1 1
+15	4	0.0	1	4
+16	2	0.0	1	2
+17	3	0.0	1	1 2
+18	35	0.0	1	10 8 17
+19	463	0.0	1	80 358 25
+20	34667	0.0	2	33934 721 12
+21	39	0.0	2	12 27
+22	6	0.0	2	1 0 5
+
+This is cutadapt 1.14 with Python 3.6.2rc1
+Command line parameters: -g ACTCCTACGGGAGGCAGCAG -o ./MT-H-2_1.fq.gz.out ./MT-H-2_1.fq.gz
+Trimming 1 adapter with at most 10.0% errors in single-end mode ...
+Finished in 0.82 s (23 us/read; 2.59 M reads/minute).
+
+=== Summary ===
+
+Total reads processed:                  35,304
+Reads with adapters:                    35,272 (99.9%)
+Reads written (passing filters):        35,304 (100.0%)
+
+Total basepairs processed:    10,485,288 bp
+Total written (filtered):      9,780,483 bp (93.3%)
+
+=== Adapter 1 ===
+
+Sequence: ACTCCTACGGGAGGCAGCAG; Type: regular 5'; Length: 20; Trimmed: 35272 times.
+
+No. of allowed errors:
+0-9 bp: 0; 10-19 bp: 1; 20 bp: 2
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+15	5	0.0	1	4 1
+16	6	0.0	1	6
+17	8	0.0	1	5 3
+18	37	0.0	1	13 10 14
+19	520	0.0	1	152 364 4
+20	34670	0.0	2	33916 744 10
+21	20	0.0	2	4 16
+22	6	0.0	2	0 0 6
+
+This is cutadapt 1.14 with Python 3.6.2rc1
+Command line parameters: -g ACTCCTACGGGAGGCAGCAG -o ./MT-H-3_1.fq.gz.out ./MT-H-3_1.fq.gz
+Trimming 1 adapter with at most 10.0% errors in single-end mode ...
+Finished in 0.77 s (22 us/read; 2.69 M reads/minute).
+
+=== Summary ===
+
+Total reads processed:                  34,638
+Reads with adapters:                    34,610 (99.9%)
+Reads written (passing filters):        34,638 (100.0%)
+
+Total basepairs processed:    10,252,848 bp
+Total written (filtered):      9,561,205 bp (93.3%)
+
+=== Adapter 1 ===
+
+Sequence: ACTCCTACGGGAGGCAGCAG; Type: regular 5'; Length: 20; Trimmed: 34610 times.
+
+No. of allowed errors:
+0-9 bp: 0; 10-19 bp: 1; 20 bp: 2
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+9	1	0.1	0	1
+10	1	0.0	1	1
+13	3	0.0	1	2 1
+14	2	0.0	1	1 1
+15	2	0.0	1	1 1
+16	6	0.0	1	4 2
+17	6	0.0	1	4 2
+18	35	0.0	1	18 7 10
+19	470	0.0	1	146 320 4
+20	34019	0.0	2	33181 834 4
+21	42	0.0	2	10 30 2
+22	22	0.0	2	0 0 22
+23	1	0.0	2	1
+
+This is cutadapt 1.14 with Python 3.6.2rc1
+Command line parameters: -g ACTCCTACGGGAGGCAGCAG -o ./MT-H-4_1.fq.gz.out ./MT-H-4_1.fq.gz
+Trimming 1 adapter with at most 10.0% errors in single-end mode ...
+Finished in 0.81 s (23 us/read; 2.63 M reads/minute).
+
+=== Summary ===
+
+Total reads processed:                  35,280
+Reads with adapters:                    35,251 (99.9%)
+Reads written (passing filters):        35,280 (100.0%)
+
+Total basepairs processed:    10,372,320 bp
+Total written (filtered):      9,667,939 bp (93.2%)
+
+=== Adapter 1 ===
+
+Sequence: ACTCCTACGGGAGGCAGCAG; Type: regular 5'; Length: 20; Trimmed: 35251 times.
+
+No. of allowed errors:
+0-9 bp: 0; 10-19 bp: 1; 20 bp: 2
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+11	3	0.0	1	3
+13	1	0.0	1	1
+14	2	0.0	1	2
+15	4	0.0	1	4
+16	3	0.0	1	3
+17	8	0.0	1	8
+18	44	0.0	1	14 13 17
+19	613	0.0	1	219 362 32
+20	34421	0.0	2	33829 584 8
+21	140	0.0	2	94 46
+22	12	0.0	2	0 0 12
+
+MacQIIME ODPCiMac:Clean_Data $ find . -name "*_1.fq.gz" -exec cutadapt -g ACTCCTACGGGAGGCAGCAG -o {}.out {} \;
+This is cutadapt 1.14 with Python 3.6.2rc1
+Command line parameters: -g ACTCCTACGGGAGGCAGCAG -o ./MT-A-1_1.fq.gz.out ./MT-A-1_1.fq.gz
+Trimming 1 adapter with at most 10.0% errors in single-end mode ...
+Finished in 0.79 s (22 us/read; 2.68 M reads/minute).
+
+=== Summary ===
+
+Total reads processed:                  35,144
+ReadsThis is cutadapt 1.14 with Python 3.6.2rc1
+Command line parameters: -g ACTCCTACGGGAGGCAGCAG -o ./MT-I-1_1.fq.gz.out ./MT-I-1_1.fq.gz
+Trimming 1 adapter with at most 10.0% errors in single-end mode ...
+Finished in 0.79 s (22 us/read; 2.67 M reads/minute).
+
+=== Summary ===
+
+Total reads processed:                  35,289
+Reads with adapters:                    35,263 (99.9%)
+Reads written (passing filters):        35,289 (100.0%)
+
+Total basepairs processed:    10,339,677 bp
+Total written (filtered):      9,635,134 bp (93.2%)
+
+=== Adapter 1 ===
+
+Sequence: ACTCCTACGGGAGGCAGCAG; Type: regular 5'; Length: 20; Trimmed: 35263 times.
+
+No. of allowed errors:
+0-9 bp: 0; 10-19 bp: 1; 20 bp: 2
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+9	1	0.1	0	1
+10	1	0.0	1	1
+11	1	0.0	1	1
+13	10	0.0	1	10
+14	3	0.0	1	3
+15	4	0.0	1	3 1
+16	4	0.0	1	3 1
+17	16	0.0	1	14 2
+18	46	0.0	1	22 7 17
+19	519	0.0	1	236 280 3
+20	34570	0.0	2	33622 941 7
+21	80	0.0	2	46 34
+22	8	0.0	2	0 0 8
+
+This is cutadapt 1.14 with Python 3.6.2rc1
+Command line parameters: -g ACTCCTACGGGAGGCAGCAG -o ./MT-I-2_1.fq.gz.out ./MT-I-2_1.fq.gz
+Trimming 1 adapter with at most 10.0% errors in single-end mode ...
+Finished in 0.80 s (23 us/read; 2.60 M reads/minute).
+
+=== Summary ===
+
+Total reads processed:                  34,808
+Reads with adapters:                    34,769 (99.9%)
+Reads written (passing filters):        34,808 (100.0%)
+
+Total basepairs processed:    10,442,400 bp
+Total written (filtered):      9,747,540 bp (93.3%)
+
+=== Adapter 1 ===
+
+Sequence: ACTCCTACGGGAGGCAGCAG; Type: regular 5'; Length: 20; Trimmed: 34769 times.
+
+No. of allowed errors:
+0-9 bp: 0; 10-19 bp: 1; 20 bp: 2
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+14	2	0.0	1	2
+15	2	0.0	1	2
+16	5	0.0	1	5
+17	11	0.0	1	8 3
+18	29	0.0	1	3 6 20
+19	435	0.0	1	43 383 9
+20	34242	0.0	2	33361 867 14
+21	38	0.0	2	4 28 6
+22	5	0.0	2	0 0 5
+
+This is cutadapt 1.14 with Python 3.6.2rc1
+Command line parameters: -g ACTCCTACGGGAGGCAGCAG -o ./MT-I-3_1.fq.gz.out ./MT-I-3_1.fq.gz
+Trimming 1 adapter with at most 10.0% errors in single-end mode ...
+Finished in 0.78 s (22 us/read; 2.68 M reads/minute).
+
+=== Summary ===
+
+Total reads processed:                  34,732
+Reads with adapters:                    34,720 (100.0%)
+Reads written (passing filters):        34,732 (100.0%)
+
+Total basepairs processed:    10,384,868 bp
+Total written (filtered):      9,691,024 bp (93.3%)
+
+=== Adapter 1 ===
+
+Sequence: ACTCCTACGGGAGGCAGCAG; Type: regular 5'; Length: 20; Trimmed: 34720 times.
+
+No. of allowed errors:
+0-9 bp: 0; 10-19 bp: 1; 20 bp: 2
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+15	2	0.0	1	2
+16	2	0.0	1	2
+17	4	0.0	1	1 3
+18	39	0.0	1	11 6 22
+19	480	0.0	1	67 408 5
+20	34165	0.0	2	33375 778 12
+21	24	0.0	2	5 19
+22	4	0.0	2	0 0 4
+
+This is cutadapt 1.14 with Python 3.6.2rc1
+Command line parameters: -g ACTCCTACGGGAGGCAGCAG -o ./MT-I-4_1.fq.gz.out ./MT-I-4_1.fq.gz
+Trimming 1 adapter with at most 10.0% errors in single-end mode ...
+Finished in 0.80 s (23 us/read; 2.63 M reads/minute).
+
+=== Summary ===
+
+Total reads processed:                  35,017
+Reads with adapters:                    34,982 (99.9%)
+Reads written (passing filters):        35,017 (100.0%)
+
+Total basepairs processed:    10,505,100 bp
+Total written (filtered):      9,806,408 bp (93.3%)
+
+=== Adapter 1 ===
+
+Sequence: ACTCCTACGGGAGGCAGCAG; Type: regular 5'; Length: 20; Trimmed: 34982 times.
+
+No. of allowed errors:
+0-9 bp: 0; 10-19 bp: 1; 20 bp: 2
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+12	1	0.0	1	1
+14	1	0.0	1	1
+15	3	0.0	1	1 2
+16	2	0.0	1	1 1
+17	9	0.0	1	8 1
+18	22	0.0	1	2 5 15
+19	884	0.0	1	45 802 37
+20	34019	0.0	2	33127 876 16
+21	38	0.0	2	6 29 3
+22	3	0.0	2	1 0 2
+
+This is cutadapt 1.14 with Python 3.6.2rc1
+Command line parameters: -g ACTCCTACGGGAGGCAGCAG -o ./MT-J-1_1.fq.gz.out ./MT-J-1_1.fq.gz
+Trimming 1 adapter with at most 10.0% errors in single-end mode ...
+Finished in 0.80 s (23 us/read; 2.64 M reads/minute).
+
+=== Summary ===
+
+Total reads processed:                  35,135
+Reads with adapters:                    35,104 (99.9%)
+Reads written (passing filters):        35,135 (100.0%)
+
+Total basepairs processed:    10,470,230 bp
+Total written (filtered):      9,768,611 bp (93.3%)
+
+=== Adapter 1 ===
+
+Sequence: ACTCCTACGGGAGGCAGCAG; Type: regular 5'; Length: 20; Trimmed: 35104 times.
+
+No. of allowed errors:
+0-9 bp: 0; 10-19 bp: 1; 20 bp: 2
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+14	1	0.0	1	1
+15	6	0.0	1	5 1
+16	2	0.0	1	1 1
+18	37	0.0	1	8 6 23
+19	432	0.0	1	107 304 21
+20	34558	0.0	2	33856 696 6
+21	55	0.0	2	20 34 1
+22	10	0.0	2	1 0 9
+24	1	0.0	2	0 1
+25	2	0.0	2	2
+
+This is cutadapt 1.14 with Python 3.6.2rc1
+Command line parameters: -g ACTCCTACGGGAGGCAGCAG -o ./MT-J-2_1.fq.gz.out ./MT-J-2_1.fq.gz
+Trimming 1 adapter with at most 10.0% errors in single-end mode ...
+Finished in 0.79 s (23 us/read; 2.65 M reads/minute).
+
+=== Summary ===
+
+Total reads processed:                  35,060
+Reads with adapters:                    35,017 (99.9%)
+Reads written (passing filters):        35,060 (100.0%)
+
+Total basepairs processed:    10,412,820 bp
+Total written (filtered):      9,713,022 bp (93.3%)
+
+=== Adapter 1 ===
+
+Sequence: ACTCCTACGGGAGGCAGCAG; Type: regular 5'; Length: 20; Trimmed: 35017 times.
+
+No. of allowed errors:
+0-9 bp: 0; 10-19 bp: 1; 20 bp: 2
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+8	1	0.5	0	1
+10	1	0.0	1	1
+13	2	0.0	1	1 1
+15	5	0.0	1	2 3
+16	4	0.0	1	3 1
+17	4	0.0	1	2 2
+18	30	0.0	1	6 7 17
+19	450	0.0	1	138 309 3
+20	34471	0.0	2	33737 729 5
+21	41	0.0	2	8 33
+22	8	0.0	2	0 0 8
+
+This is cutadapt 1.14 with Python 3.6.2rc1
+Command line parameters: -g ACTCCTACGGGAGGCAGCAG -o ./MT-J-3_1.fq.gz.out ./MT-J-3_1.fq.gz
+Trimming 1 adapter with at most 10.0% errors in single-end mode ...
+Finished in 0.78 s (22 us/read; 2.68 M reads/minute).
+
+=== Summary ===
+
+Total reads processed:                  34,899
+Reads with adapters:                    34,863 (99.9%)
+Reads written (passing filters):        34,899 (100.0%)
+
+Total basepairs processed:    10,330,104 bp
+Total written (filtered):      9,633,403 bp (93.3%)
+
+=== Adapter 1 ===
+
+Sequence: ACTCCTACGGGAGGCAGCAG; Type: regular 5'; Length: 20; Trimmed: 34863 times.
+
+No. of allowed errors:
+0-9 bp: 0; 10-19 bp: 1; 20 bp: 2
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+13	1	0.0	1	0 1
+14	1	0.0	1	1
+15	3	0.0	1	1 2
+16	4	0.0	1	4
+17	6	0.0	1	2 4
+18	37	0.0	1	17 8 12
+19	504	0.0	1	164 335 5
+20	34245	0.0	2	33344 892 9
+21	43	0.0	2	11 31 1
+22	19	0.0	2	0 0 19
+
+This is cutadapt 1.14 with Python 3.6.2rc1
+Command line parameters: -g ACTCCTACGGGAGGCAGCAG -o ./MT-J-4_1.fq.gz.out ./MT-J-4_1.fq.gz
+Trimming 1 adapter with at most 10.0% errors in single-end mode ...
+Finished in 0.80 s (22 us/read; 2.68 M reads/minute).
+
+=== Summary ===
+
+Total reads processed:                  35,560
+Reads with adapters:                    35,521 (99.9%)
+Reads written (passing filters):        35,560 (100.0%)
+
+Total basepairs processed:    10,454,640 bp
+Total written (filtered):      9,744,930 bp (93.2%)
+
+=== Adapter 1 ===
+
+Sequence: ACTCCTACGGGAGGCAGCAG; Type: regular 5'; Length: 20; Trimmed: 35521 times.
+
+No. of allowed errors:
+0-9 bp: 0; 10-19 bp: 1; 20 bp: 2
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+11	2	0.0	1	1 1
+12	2	0.0	1	1 1
+14	2	0.0	1	2
+15	4	0.0	1	4
+16	6	0.0	1	6
+17	12	0.0	1	9 3
+18	39	0.0	1	19 11 9
+19	687	0.0	1	213 449 25
+20	34603	0.0	2	33951 644 8
+21	147	0.0	2	105 42
+22	17	0.0	2	1 0 16
+
+This is cutadapt 1.14 with Python 3.6.2rc1
+Command line parameters: -g ACTCCTACGGGAGGCAGCAG -o ./MT-K-1_1.fq.gz.out ./MT-K-1_1.fq.gz
+Trimming 1 adapter with at most 10.0% errors in single-end mode ...
+Finished in 0.79 s (22 us/read; 2.71 M reads/minute).
+
+=== Summary ===
+
+Total reads processed:                  35,518
+Reads with adapters:                    35,480 (99.9%)
+Reads written (passing filters):        35,518 (100.0%)
+
+Total basepairs processed:    10,406,774 bp
+Total written (filtered):      9,697,866 bp (93.2%)
+
+=== Adapter 1 ===
+
+Sequence: ACTCCTACGGGAGGCAGCAG; Type: regular 5'; Length: 20; Trimmed: 35480 times.
+
+No. of allowed errors:
+0-9 bp: 0; 10-19 bp: 1; 20 bp: 2
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+7	1	2.2	0	1
+10	1	0.0	1	1
+11	1	0.0	1	0 1
+12	2	0.0	1	2
+13	8	0.0	1	8
+14	4	0.0	1	3 1
+15	2	0.0	1	2
+17	21	0.0	1	17 4
+18	46	0.0	1	25 11 10
+19	485	0.0	1	239 242 4
+20	34836	0.0	2	33855 967 14
+21	60	0.0	2	32 28
+22	13	0.0	2	0 0 13
+
+This is cutadapt 1.14 with Python 3.6.2rc1
+Command line parameters: -g ACTCCTACGGGAGGCAGCAG -o ./MT-K-2_1.fq.gz.out ./MT-K-2_1.fq.gz
+Trimming 1 adapter with at most 10.0% errors in single-end mode ...
+Finished in 0.81 s (23 us/read; 2.60 M reads/minute).
+
+=== Summary ===
+
+Total reads processed:                  35,051
+Reads with adapters:                    35,021 (99.9%)
+Reads written (passing filters):        35,051 (100.0%)
+
+Total basepairs processed:    10,515,300 bp
+Total written (filtered):      9,815,497 bp (93.3%)
+
+=== Adapter 1 ===
+
+Sequence: ACTCCTACGGGAGGCAGCAG; Type: regular 5'; Length: 20; Trimmed: 35021 times.
+
+No. of allowed errors:
+0-9 bp: 0; 10-19 bp: 1; 20 bp: 2
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+12	1	0.0	1	1
+14	1	0.0	1	1
+15	2	0.0	1	2
+16	1	0.0	1	0 1
+17	20	0.0	1	10 10
+18	30	0.0	1	2 3 25
+19	517	0.0	1	64 438 15
+20	34410	0.0	2	33558 839 13
+21	34	0.0	2	11 22 1
+22	3	0.0	2	0 0 3
+24	2	0.0	2	2
+
+This is cutadapt 1.14 with Python 3.6.2rc1
+Command line parameters: -g ACTCCTACGGGAGGCAGCAG -o ./MT-K-3_1.fq.gz.out ./MT-K-3_1.fq.gz
+Trimming 1 adapter with at most 10.0% errors in single-end mode ...
+Finished in 0.77 s (22 us/read; 2.72 M reads/minute).
+
+=== Summary ===
+
+Total reads processed:                  34,807
+Reads with adapters:                    34,782 (99.9%)
+Reads written (passing filters):        34,807 (100.0%)
+
+Total basepairs processed:    10,407,293 bp
+Total written (filtered):      9,712,368 bp (93.3%)
+
+=== Adapter 1 ===
+
+Sequence: ACTCCTACGGGAGGCAGCAG; Type: regular 5'; Length: 20; Trimmed: 34782 times.
+
+No. of allowed errors:
+0-9 bp: 0; 10-19 bp: 1; 20 bp: 2
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+14	4	0.0	1	3 1
+15	1	0.0	1	1
+16	8	0.0	1	8
+17	5	0.0	1	2 3
+18	39	0.0	1	15 6 18
+19	603	0.0	1	84 509 10
+20	34083	0.0	2	33356 720 7
+21	36	0.0	2	5 30 1
+22	3	0.0	2	0 0 3
+
+This is cutadapt 1.14 with Python 3.6.2rc1
+Command line parameters: -g ACTCCTACGGGAGGCAGCAG -o ./MT-K-4_1.fq.gz.out ./MT-K-4_1.fq.gz
+Trimming 1 adapter with at most 10.0% errors in single-end mode ...
+Finished in 0.79 s (23 us/read; 2.65 M reads/minute).
+
+=== Summary ===
+
+Total reads processed:                  35,026
+Reads with adapters:                    34,990 (99.9%)
+Reads written (passing filters):        35,026 (100.0%)
+
+Total basepairs processed:    10,507,800 bp
+Total written (filtered):      9,808,898 bp (93.3%)
+
+=== Adapter 1 ===
+
+Sequence: ACTCCTACGGGAGGCAGCAG; Type: regular 5'; Length: 20; Trimmed: 34990 times.
+
+No. of allowed errors:
+0-9 bp: 0; 10-19 bp: 1; 20 bp: 2
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+13	1	0.0	1	0 1
+15	3	0.0	1	2 1
+17	12	0.0	1	11 1
+18	30	0.0	1	3 9 18
+19	825	0.0	1	60 735 30
+20	34082	0.0	2	33151 923 8
+21	29	0.0	2	5 22 2
+22	8	0.0	2	0 0 8
+
+This is cutadapt 1.14 with Python 3.6.2rc1
+Command line parameters: -g ACTCCTACGGGAGGCAGCAG -o ./MT-L-1_1.fq.gz.out ./MT-L-1_1.fq.gz
+Trimming 1 adapter with at most 10.0% errors in single-end mode ...
+Finished in 0.77 s (22 us/read; 2.71 M reads/minute).
+
+=== Summary ===
+
+Total reads processed:                  34,672
+Reads with adapters:                    34,637 (99.9%)
+Reads written (passing filters):        34,672 (100.0%)
+
+Total basepairs processed:    10,332,256 bp
+Total written (filtered):      9,639,986 bp (93.3%)
+
+=== Adapter 1 ===
+
+Sequence: ACTCCTACGGGAGGCAGCAG; Type: regular 5'; Length: 20; Trimmed: 34637 times.
+
+No. of allowed errors:
+0-9 bp: 0; 10-19 bp: 1; 20 bp: 2
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+11	1	0.0	1	1
+12	1	0.0	1	1
+14	1	0.0	1	1
+15	2	0.0	1	2
+16	1	0.0	1	1
+17	6	0.0	1	3 3
+18	26	0.0	1	12 5 9
+19	426	0.0	1	110 295 21
+20	34123	0.0	2	33490 620 13
+21	42	0.0	2	12 30
+22	6	0.0	2	0 0 6
+24	1	0.0	2	1
+25	1	0.0	2	1
+
+This is cutadapt 1.14 with Python 3.6.2rc1
+Command line parameters: -g ACTCCTACGGGAGGCAGCAG -o ./MT-L-2_1.fq.gz.out ./MT-L-2_1.fq.gz
+Trimming 1 adapter with at most 10.0% errors in single-end mode ...
+Finished in 0.79 s (22 us/read; 2.67 M reads/minute).
+
+=== Summary ===
+
+Total reads processed:                  35,102
+Reads with adapters:                    35,078 (99.9%)
+Reads written (passing filters):        35,102 (100.0%)
+
+Total basepairs processed:    10,425,294 bp
+Total written (filtered):      9,724,272 bp (93.3%)
+
+=== Adapter 1 ===
+
+Sequence: ACTCCTACGGGAGGCAGCAG; Type: regular 5'; Length: 20; Trimmed: 35078 times.
+
+No. of allowed errors:
+0-9 bp: 0; 10-19 bp: 1; 20 bp: 2
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+14	1	0.0	1	1
+15	1	0.0	1	1
+16	1	0.0	1	0 1
+17	7	0.0	1	4 3
+18	39	0.0	1	16 10 13
+19	482	0.0	1	147 331 4
+20	34500	0.0	2	33773 718 9
+21	37	0.0	2	10 27
+22	9	0.0	2	0 0 9
+23	1	0.0	2	0 1
+
+This is cutadapt 1.14 with Python 3.6.2rc1
+Command line parameters: -g ACTCCTACGGGAGGCAGCAG -o ./MT-L-3_1.fq.gz.out ./MT-L-3_1.fq.gz
+Trimming 1 adapter with at most 10.0% errors in single-end mode ...
+Finished in 0.79 s (23 us/read; 2.65 M reads/minute).
+
+=== Summary ===
+
+Total reads processed:                  35,043
+Reads with adapters:                    35,016 (99.9%)
+Reads written (passing filters):        35,043 (100.0%)
+
+Total basepairs processed:    10,372,728 bp
+Total written (filtered):      9,672,969 bp (93.3%)
+
+=== Adapter 1 ===
+
+Sequence: ACTCCTACGGGAGGCAGCAG; Type: regular 5'; Length: 20; Trimmed: 35016 times.
+
+No. of allowed errors:
+0-9 bp: 0; 10-19 bp: 1; 20 bp: 2
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+14	4	0.0	1	4
+15	1	0.0	1	1
+16	5	0.0	1	5
+17	7	0.0	1	4 3
+18	41	0.0	1	18 6 17
+19	469	0.0	1	158 307 4
+20	34439	0.0	2	33542 892 5
+21	40	0.0	2	6 29 5
+22	10	0.0	2	1 0 9
+
+This is cutadapt 1.14 with Python 3.6.2rc1
+Command line parameters: -g ACTCCTACGGGAGGCAGCAG -o ./MT-L-4_1.fq.gz.out ./MT-L-4_1.fq.gz
+Trimming 1 adapter with at most 10.0% errors in single-end mode ...
+Finished in 0.80 s (22 us/read; 2.67 M reads/minute).
+
+=== Summary ===
+
+Total reads processed:                  35,552
+Reads with adapters:                    35,524 (99.9%)
+Reads written (passing filters):        35,552 (100.0%)
+
+Total basepairs processed:    10,452,288 bp
+Total written (filtered):      9,742,438 bp (93.2%)
+
+=== Adapter 1 ===
+
+Sequence: ACTCCTACGGGAGGCAGCAG; Type: regular 5'; Length: 20; Trimmed: 35524 times.
+
+No. of allowed errors:
+0-9 bp: 0; 10-19 bp: 1; 20 bp: 2
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+14	4	0.0	1	4
+15	6	0.0	1	6
+16	6	0.0	1	5 1
+17	11	0.0	1	7 4
+18	43	0.0	1	12 12 19
+19	569	0.0	1	229 305 35
+20	34759	0.0	2	34053 698 8
+21	116	0.0	2	78 38
+22	10	0.0	2	0 0 10
+
+This is cutadapt 1.14 with Python 3.6.2rc1
+Command line parameters: -g ACTCCTACGGGAGGCAGCAG -o ./MT-M-1_1.fq.gz.out ./MT-M-1_1.fq.gz
+Trimming 1 adapter with at most 10.0% errors in single-end mode ...
+Finished in 0.79 s (23 us/read; 2.64 M reads/minute).
+
+=== Summary ===
+
+Total reads processed:                  35,035
+Reads with adapters:                    35,002 (99.9%)
+Reads written (passing filters):        35,035 (100.0%)
+
+Total basepairs processed:    10,265,255 bp
+Total written (filtered):      9,565,965 bp (93.2%)
+
+=== Adapter 1 ===
+
+Sequence: ACTCCTACGGGAGGCAGCAG; Type: regular 5'; Length: 20; Trimmed: 35002 times.
+
+No. of allowed errors:
+0-9 bp: 0; 10-19 bp: 1; 20 bp: 2
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+11	1	0.0	1	1
+12	2	0.0	1	2
+13	10	0.0	1	10
+14	3	0.0	1	1 2
+15	9	0.0	1	8 1
+16	8	0.0	1	7 1
+17	22	0.0	1	18 4
+18	42	0.0	1	20 11 11
+19	481	0.0	1	208 267 6
+20	34362	0.0	2	33423 927 12
+21	54	0.0	2	32 22
+22	7	0.0	2	0 1 6
+23	1	0.0	2	1
+
+This is cutadapt 1.14 with Python 3.6.2rc1
+Command line parameters: -g ACTCCTACGGGAGGCAGCAG -o ./MT-M-2_1.fq.gz.out ./MT-M-2_1.fq.gz
+Trimming 1 adapter with at most 10.0% errors in single-end mode ...
+Finished in 0.79 s (23 us/read; 2.63 M reads/minute).
+
+=== Summary ===
+
+Total reads processed:                  34,589
+Reads with adapters:                    34,559 (99.9%)
+Reads written (passing filters):        34,589 (100.0%)
+
+Total basepairs processed:    10,376,700 bp
+Total written (filtered):      9,686,136 bp (93.3%)
+
+=== Adapter 1 ===
+
+Sequence: ACTCCTACGGGAGGCAGCAG; Type: regular 5'; Length: 20; Trimmed: 34559 times.
+
+No. of allowed errors:
+0-9 bp: 0; 10-19 bp: 1; 20 bp: 2
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+14	3	0.0	1	3
+15	2	0.0	1	0 2
+16	3	0.0	1	2 1
+17	11	0.0	1	10 1
+18	38	0.0	1	2 12 24
+19	523	0.0	1	48 449 26
+20	33935	0.0	2	32998 927 10
+21	37	0.0	2	9 23 5
+22	6	0.0	2	0 0 6
+27	1	0.0	2	1
+
+This is cutadapt 1.14 with Python 3.6.2rc1
+Command line parameters: -g ACTCCTACGGGAGGCAGCAG -o ./MT-M-3_1.fq.gz.out ./MT-M-3_1.fq.gz
+Trimming 1 adapter with at most 10.0% errors in single-end mode ...
+Finished in 0.76 s (22 us/read; 2.75 M reads/minute).
+
+=== Summary ===
+
+Total reads processed:                  34,984
+Reads with adapters:                    34,959 (99.9%)
+Reads written (passing filters):        34,984 (100.0%)
+
+Total basepairs processed:    10,460,216 bp
+Total written (filtered):      9,761,518 bp (93.3%)
+
+=== Adapter 1 ===
+
+Sequence: ACTCCTACGGGAGGCAGCAG; Type: regular 5'; Length: 20; Trimmed: 34959 times.
+
+No. of allowed errors:
+0-9 bp: 0; 10-19 bp: 1; 20 bp: 2
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+14	2	0.0	1	1 1
+15	2	0.0	1	0 2
+16	3	0.0	1	3
+17	2	0.0	1	1 1
+18	25	0.0	1	5 7 13
+19	440	0.0	1	60 375 5
+20	34445	0.0	2	33669 767 9
+21	32	0.0	2	9 23
+22	8	0.0	2	0 0 8
+
+This is cutadapt 1.14 with Python 3.6.2rc1
+Command line parameters: -g ACTCCTACGGGAGGCAGCAG -o ./MT-M-4_1.fq.gz.out ./MT-M-4_1.fq.gz
+Trimming 1 adapter with at most 10.0% errors in single-end mode ...
+Finished in 0.80 s (23 us/read; 2.59 M reads/minute).
+
+=== Summary ===
+
+Total reads processed:                  34,580
+Reads with adapters:                    34,546 (99.9%)
+Reads written (passing filters):        34,580 (100.0%)
+
+Total basepairs processed:    10,374,000 bp
+Total written (filtered):      9,683,819 bp (93.3%)
+
+=== Adapter 1 ===
+
+Sequence: ACTCCTACGGGAGGCAGCAG; Type: regular 5'; Length: 20; Trimmed: 34546 times.
+
+No. of allowed errors:
+0-9 bp: 0; 10-19 bp: 1; 20 bp: 2
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+10	1	0.0	1	1
+13	1	0.0	1	1
+14	3	0.0	1	2 1
+15	1	0.0	1	1
+16	4	0.0	1	4
+17	10	0.0	1	9 1
+18	32	0.0	1	3 6 23
+19	654	0.0	1	54 582 18
+20	33791	0.0	2	32897 883 11
+21	39	0.0	2	7 28 4
+22	8	0.0	2	0 0 8
+23	1	0.0	2	1
+27	1	0.0	2	1
+
+This is cutadapt 1.14 with Python 3.6.2rc1
+Command line parameters: -g ACTCCTACGGGAGGCAGCAG -o ./MT-N-1_1.fq.gz.out ./MT-N-1_1.fq.gz
+Trimming 1 adapter with at most 10.0% errors in single-end mode ...
+Finished in 0.82 s (23 us/read; 2.59 M reads/minute).
+
+=== Summary ===
+
+Total reads processed:                  35,457
+Reads with adapters:                    35,434 (99.9%)
+Reads written (passing filters):        35,457 (100.0%)
+
+Total basepairs processed:    10,566,186 bp
+Total written (filtered):      9,857,941 bp (93.3%)
+
+=== Adapter 1 ===
+
+Sequence: ACTCCTACGGGAGGCAGCAG; Type: regular 5'; Length: 20; Trimmed: 35434 times.
+
+No. of allowed errors:
+0-9 bp: 0; 10-19 bp: 1; 20 bp: 2
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+11	1	0.0	1	1
+15	1	0.0	1	1
+16	2	0.0	1	1 1
+17	3	0.0	1	1 2
+18	28	0.0	1	7 9 12
+19	411	0.0	1	92 292 27
+20	34938	0.0	2	34228 704 6
+21	39	0.0	2	12 27
+22	10	0.0	2	0 0 10
+24	1	0.0	2	1
+
+This is cutadapt 1.14 with Python 3.6.2rc1
+Command line parameters: -g ACTCCTACGGGAGGCAGCAG -o ./MT-N-2_1.fq.gz.out ./MT-N-2_1.fq.gz
+Trimming 1 adapter with at most 10.0% errors in single-end mode ...
+Finished in 0.80 s (23 us/read; 2.65 M reads/minute).
+
+=== Summary ===
+
+Total reads processed:                  35,432
+Reads with adapters:                    35,409 (99.9%)
+Reads written (passing filters):        35,432 (100.0%)
+
+Total basepairs processed:    10,523,304 bp
+Total written (filtered):      9,815,745 bp (93.3%)
+
+=== Adapter 1 ===
+
+Sequence: ACTCCTACGGGAGGCAGCAG; Type: regular 5'; Length: 20; Trimmed: 35409 times.
+
+No. of allowed errors:
+0-9 bp: 0; 10-19 bp: 1; 20 bp: 2
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+9	1	0.1	0	1
+11	1	0.0	1	1
+12	1	0.0	1	1
+13	1	0.0	1	1
+14	1	0.0	1	1
+16	2	0.0	1	2
+17	9	0.0	1	7 2
+18	47	0.0	1	14 17 16
+19	504	0.0	1	162 334 8
+20	34799	0.0	2	34009 786 4
+21	35	0.0	2	6 29
+22	7	0.0	2	0 0 7
+24	1	0.0	2	1
+
+This is cutadapt 1.14 with Python 3.6.2rc1
+Command line parameters: -g ACTCCTACGGGAGGCAGCAG -o ./MT-N-3_1.fq.gz.out ./MT-N-3_1.fq.gz
+Trimming 1 adapter with at most 10.0% errors in single-end mode ...
+Finished in 0.78 s (22 us/read; 2.68 M reads/minute).
+
+=== Summary ===
+
+Total reads processed:                  34,831
+Reads with adapters:                    34,817 (100.0%)
+Reads written (passing filters):        34,831 (100.0%)
+
+Total basepairs processed:    10,309,976 bp
+Total written (filtered):      9,614,247 bp (93.3%)
+
+=== Adapter 1 ===
+
+Sequence: ACTCCTACGGGAGGCAGCAG; Type: regular 5'; Length: 20; Trimmed: 34817 times.
+
+No. of allowed errors:
+0-9 bp: 0; 10-19 bp: 1; 20 bp: 2
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+11	1	0.0	1	1
+14	3	0.0	1	3
+15	1	0.0	1	1
+16	5	0.0	1	3 2
+17	5	0.0	1	3 2
+18	35	0.0	1	16 8 11
+19	553	0.0	1	139 405 9
+20	34157	0.0	2	33318 835 4
+21	36	0.0	2	8 23 5
+22	20	0.0	2	1 0 19
+23	1	0.0	2	1
+
+This is cutadapt 1.14 with Python 3.6.2rc1
+Command line parameters: -g ACTCCTACGGGAGGCAGCAG -o ./MT-N-4_1.fq.gz.out ./MT-N-4_1.fq.gz
+Trimming 1 adapter with at most 10.0% errors in single-end mode ...
+Finished in 0.79 s (22 us/read; 2.69 M reads/minute).
+
+=== Summary ===
+
+Total reads processed:                  35,630
+Reads with adapters:                    35,602 (99.9%)
+Reads written (passing filters):        35,630 (100.0%)
+
+Total basepairs processed:    10,475,220 bp
+Total written (filtered):      9,763,846 bp (93.2%)
+
+=== Adapter 1 ===
+
+Sequence: ACTCCTACGGGAGGCAGCAG; Type: regular 5'; Length: 20; Trimmed: 35602 times.
+
+No. of allowed errors:
+0-9 bp: 0; 10-19 bp: 1; 20 bp: 2
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+11	1	0.0	1	1
+12	2	0.0	1	1 1
+13	1	0.0	1	1
+14	4	0.0	1	4
+15	3	0.0	1	2 1
+16	3	0.0	1	3
+17	8	0.0	1	5 3
+18	37	0.0	1	14 9 14
+19	631	0.0	1	223 380 28
+20	34774	0.0	2	34102 663 9
+21	130	0.0	2	92 36 2
+22	8	0.0	2	0 0 8
+
+This is cutadapt 1.14 with Python 3.6.2rc1
+Command line parameters: -g ACTCCTACGGGAGGCAGCAG -o ./MT-O-1_1.fq.gz.out ./MT-O-1_1.fq.gz
+Trimming 1 adapter with at most 10.0% errors in single-end mode ...
+Finished in 0.81 s (23 us/read; 2.63 M reads/minute).
+
+=== Summary ===
+
+Total reads processed:                  35,605
+Reads with adapters:                    35,574 (99.9%)
+Reads written (passing filters):        35,605 (100.0%)
+
+Total basepairs processed:    10,432,265 bp
+Total written (filtered):      9,721,533 bp (93.2%)
+
+=== Adapter 1 ===
+
+Sequence: ACTCCTACGGGAGGCAGCAG; Type: regular 5'; Length: 20; Trimmed: 35574 times.
+
+No. of allowed errors:
+0-9 bp: 0; 10-19 bp: 1; 20 bp: 2
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+10	1	0.0	1	1
+12	1	0.0	1	1
+13	7	0.0	1	7
+14	8	0.0	1	6 2
+15	3	0.0	1	3
+16	6	0.0	1	6
+17	9	0.0	1	9
+18	43	0.0	1	17 11 15
+19	568	0.0	1	245 310 13
+20	34850	0.0	2	33907 932 11
+21	69	0.0	2	42 27
+22	9	0.0	2	0 1 8
+
+This is cutadapt 1.14 with Python 3.6.2rc1
+Command line parameters: -g ACTCCTACGGGAGGCAGCAG -o ./MT-O-2_1.fq.gz.out ./MT-O-2_1.fq.gz
+Trimming 1 adapter with at most 10.0% errors in single-end mode ...
+Finished in 0.80 s (23 us/read; 2.63 M reads/minute).
+
+=== Summary ===
+
+Total reads processed:                  35,085
+Reads with adapters:                    35,046 (99.9%)
+Reads written (passing filters):        35,085 (100.0%)
+
+Total basepairs processed:    10,525,500 bp
+Total written (filtered):      9,825,054 bp (93.3%)
+
+=== Adapter 1 ===
+
+Sequence: ACTCCTACGGGAGGCAGCAG; Type: regular 5'; Length: 20; Trimmed: 35046 times.
+
+No. of allowed errors:
+0-9 bp: 0; 10-19 bp: 1; 20 bp: 2
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+13	1	0.0	1	1
+15	3	0.0	1	3
+17	10	0.0	1	6 4
+18	23	0.0	1	2 8 13
+19	421	0.0	1	56 342 23
+20	34550	0.0	2	33652 888 10
+21	31	0.0	2	4 25 2
+22	7	0.0	2	0 0 7
+
+This is cutadapt 1.14 with Python 3.6.2rc1
+Command line parameters: -g ACTCCTACGGGAGGCAGCAG -o ./MT-O-3_1.fq.gz.out ./MT-O-3_1.fq.gz
+Trimming 1 adapter with at most 10.0% errors in single-end mode ...
+Finished in 0.78 s (23 us/read; 2.66 M reads/minute).
+
+=== Summary ===
+
+Total reads processed:                  34,705
+Reads with adapters:                    34,690 (100.0%)
+Reads written (passing filters):        34,705 (100.0%)
+
+Total basepairs processed:    10,376,795 bp
+Total written (filtered):      9,683,395 bp (93.3%)
+
+=== Adapter 1 ===
+
+Sequence: ACTCCTACGGGAGGCAGCAG; Type: regular 5'; Length: 20; Trimmed: 34690 times.
+
+No. of allowed errors:
+0-9 bp: 0; 10-19 bp: 1; 20 bp: 2
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+14	2	0.0	1	1 1
+15	2	0.0	1	1 1
+16	1	0.0	1	1
+17	5	0.0	1	2 3
+18	37	0.0	1	14 10 13
+19	331	0.0	1	61 265 5
+20	34272	0.0	2	33513 752 7
+21	34	0.0	2	6 28
+22	6	0.0	2	0 0 6
+
+This is cutadapt 1.14 with Python 3.6.2rc1
+Command line parameters: -g ACTCCTACGGGAGGCAGCAG -o ./MT-O-4_1.fq.gz.out ./MT-O-4_1.fq.gz
+Trimming 1 adapter with at most 10.0% errors in single-end mode ...
+Finished in 0.70 s (23 us/read; 2.62 M reads/minute).
+
+=== Summary ===
+
+Total reads processed:                  30,635
+Reads with adapters:                    30,603 (99.9%)
+Reads written (passing filters):        30,635 (100.0%)
+
+Total basepairs processed:     9,190,500 bp
+Total written (filtered):      8,579,231 bp (93.3%)
+
+=== Adapter 1 ===
+
+Sequence: ACTCCTACGGGAGGCAGCAG; Type: regular 5'; Length: 20; Trimmed: 30603 times.
+
+No. of allowed errors:
+0-9 bp: 0; 10-19 bp: 1; 20 bp: 2
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+14	1	0.0	1	0 1
+15	2	0.0	1	1 1
+16	1	0.0	1	1
+17	8	0.0	1	4 4
+18	20	0.0	1	2 8 10
+19	780	0.0	1	56 700 24
+20	29735	0.0	2	28746 977 12
+21	49	0.0	2	3 45 1
+22	5	0.0	2	0 0 5
+27	2	0.0	2	2
+
+This is cutadapt 1.14 with Python 3.6.2rc1
+Command line parameters: -g ACTCCTACGGGAGGCAGCAG -o ./MT-P-1_1.fq.gz.out ./MT-P-1_1.fq.gz
+Trimming 1 adapter with at most 10.0% errors in single-end mode ...
+Finished in 0.78 s (22 us/read; 2.68 M reads/minute).
+
+=== Summary ===
+
+Total reads processed:                  34,687
+Reads with adapters:                    34,654 (99.9%)
+Reads written (passing filters):        34,687 (100.0%)
+
+Total basepairs processed:    10,336,726 bp
+Total written (filtered):      9,644,230 bp (93.3%)
+
+=== Adapter 1 ===
+
+Sequence: ACTCCTACGGGAGGCAGCAG; Type: regular 5'; Length: 20; Trimmed: 34654 times.
+
+No. of allowed errors:
+0-9 bp: 0; 10-19 bp: 1; 20 bp: 2
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+15	3	0.0	1	3
+16	1	0.0	1	1
+17	5	0.0	1	1 4
+18	28	0.0	1	11 7 10
+19	544	0.0	1	81 442 21
+20	34027	0.0	2	33374 643 10
+21	43	0.0	2	19 21 3
+22	2	0.0	2	0 0 2
+23	1	0.0	2	0 0 1
+
+This is cutadapt 1.14 with Python 3.6.2rc1
+Command line parameters: -g ACTCCTACGGGAGGCAGCAG -o ./MT-P-2_1.fq.gz.out ./MT-P-2_1.fq.gz
+Trimming 1 adapter with at most 10.0% errors in single-end mode ...
+Finished in 0.78 s (22 us/read; 2.70 M reads/minute).
+
+=== Summary ===
+
+Total reads processed:                  35,255
+Reads with adapters:                    35,227 (99.9%)
+Reads written (passing filters):        35,255 (100.0%)
+
+Total basepairs processed:    10,470,735 bp
+Total written (filtered):      9,766,751 bp (93.3%)
+
+=== Adapter 1 ===
+
+Sequence: ACTCCTACGGGAGGCAGCAG; Type: regular 5'; Length: 20; Trimmed: 35227 times.
+
+No. of allowed errors:
+0-9 bp: 0; 10-19 bp: 1; 20 bp: 2
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+11	1	0.0	1	0 1
+14	2	0.0	1	2
+15	1	0.0	1	0 1
+17	5	0.0	1	2 3
+18	37	0.0	1	14 10 13
+19	477	0.0	1	150 325 2
+20	34674	0.0	2	33954 711 9
+21	24	0.0	2	4 20
+22	6	0.0	2	0 0 6
+
+This is cutadapt 1.14 with Python 3.6.2rc1
+Command line parameters: -g ACTCCTACGGGAGGCAGCAG -o ./MT-P-3_1.fq.gz.out ./MT-P-3_1.fq.gz
+Trimming 1 adapter with at most 10.0% errors in single-end mode ...
+Finished in 0.80 s (23 us/read; 2.65 M reads/minute).
+
+=== Summary ===
+
+Total reads processed:                  35,196
+Reads with adapters:                    35,174 (99.9%)
+Reads written (passing filters):        35,196 (100.0%)
+
+Total basepairs processed:    10,418,016 bp
+Total written (filtered):      9,715,071 bp (93.3%)
+
+=== Adapter 1 ===
+
+Sequence: ACTCCTACGGGAGGCAGCAG; Type: regular 5'; Length: 20; Trimmed: 35174 times.
+
+No. of allowed errors:
+0-9 bp: 0; 10-19 bp: 1; 20 bp: 2
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+13	1	0.0	1	0 1
+14	2	0.0	1	1 1
+16	2	0.0	1	2
+17	7	0.0	1	5 2
+18	37	0.0	1	19 8 10
+19	467	0.0	1	157 306 4
+20	34615	0.0	2	33802 808 5
+21	32	0.0	2	8 23 1
+22	11	0.0	2	0 0 11
+
+This is cutadapt 1.14 with Python 3.6.2rc1
+Command line parameters: -g ACTCCTACGGGAGGCAGCAG -o ./MT-P-4_1.fq.gz.out ./MT-P-4_1.fq.gz
+Trimming 1 adapter with at most 10.0% errors in single-end mode ...
+Finished in 0.80 s (22 us/read; 2.69 M reads/minute).
+
+=== Summary ===
+
+Total reads processed:                  35,690
+Reads with adapters:                    35,657 (99.9%)
+Reads written (passing filters):        35,690 (100.0%)
+
+Total basepairs processed:    10,492,860 bp
+Total written (filtered):      9,780,464 bp (93.2%)
+
+=== Adapter 1 ===
+
+Sequence: ACTCCTACGGGAGGCAGCAG; Type: regular 5'; Length: 20; Trimmed: 35657 times.
+
+No. of allowed errors:
+0-9 bp: 0; 10-19 bp: 1; 20 bp: 2
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+9	2	0.1	0	2
+11	2	0.0	1	2
+12	1	0.0	1	0 1
+14	2	0.0	1	2
+15	1	0.0	1	1
+16	3	0.0	1	3
+17	3	0.0	1	3
+18	38	0.0	1	15 6 17
+19	727	0.0	1	225 469 33
+20	34742	0.0	2	34179 553 10
+21	127	0.0	2	90 37
+22	9	0.0	2	0 0 9
+
+This is cutadapt 1.14 with Python 3.6.2rc1
+Command line parameters: -g ACTCCTACGGGAGGCAGCAG -o ./MT-Q-1_1.fq.gz.out ./MT-Q-1_1.fq.gz
+Trimming 1 adapter with at most 10.0% errors in single-end mode ...
+Finished in 0.82 s (23 us/read; 2.60 M reads/minute).
+
+=== Summary ===
+
+Total reads processed:                  35,359
+Reads with adapters:                    35,332 (99.9%)
+Reads written (passing filters):        35,359 (100.0%)
+
+Total basepairs processed:    10,360,187 bp
+Total written (filtered):      9,654,396 bp (93.2%)
+
+=== Adapter 1 ===
+
+Sequence: ACTCCTACGGGAGGCAGCAG; Type: regular 5'; Length: 20; Trimmed: 35332 times.
+
+No. of allowed errors:
+0-9 bp: 0; 10-19 bp: 1; 20 bp: 2
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+9	1	0.1	0	1
+10	1	0.0	1	1
+12	1	0.0	1	1
+13	14	0.0	1	14
+14	4	0.0	1	4
+15	4	0.0	1	3 1
+16	3	0.0	1	3
+17	16	0.0	1	14 2
+18	46	0.0	1	22 10 14
+19	597	0.0	1	195 396 6
+20	34578	0.0	2	33669 900 9
+21	63	0.0	2	36 26 1
+22	4	0.0	2	0 0 4
+
+This is cutadapt 1.14 with Python 3.6.2rc1
+Command line parameters: -g ACTCCTACGGGAGGCAGCAG -o ./MT-Q-2_1.fq.gz.out ./MT-Q-2_1.fq.gz
+Trimming 1 adapter with at most 10.0% errors in single-end mode ...
+Finished in 0.80 s (23 us/read; 2.65 M reads/minute).
+
+=== Summary ===
+
+Total reads processed:                  35,296
+Reads with adapters:                    35,255 (99.9%)
+Reads written (passing filters):        35,296 (100.0%)
+
+Total basepairs processed:    10,588,800 bp
+Total written (filtered):      9,884,264 bp (93.3%)
+
+=== Adapter 1 ===
+
+Sequence: ACTCCTACGGGAGGCAGCAG; Type: regular 5'; Length: 20; Trimmed: 35255 times.
+
+No. of allowed errors:
+0-9 bp: 0; 10-19 bp: 1; 20 bp: 2
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+12	1	0.0	1	1
+13	1	0.0	1	1
+14	1	0.0	1	1
+15	2	0.0	1	1 1
+16	1	0.0	1	0 1
+17	12	0.0	1	9 3
+18	35	0.0	1	5 8 22
+19	469	0.0	1	51 395 23
+20	34693	0.0	2	33787 892 14
+21	34	0.0	2	3 29 2
+22	6	0.0	2	0 0 6
+
+This is cutadapt 1.14 with Python 3.6.2rc1
+Command line parameters: -g ACTCCTACGGGAGGCAGCAG -o ./MT-Q-3_1.fq.gz.out ./MT-Q-3_1.fq.gz
+Trimming 1 adapter with at most 10.0% errors in single-end mode ...
+Finished in 0.78 s (22 us/read; 2.69 M reads/minute).
+
+=== Summary ===
+
+Total reads processed:                  34,747
+Reads with adapters:                    34,731 (100.0%)
+Reads written (passing filters):        34,747 (100.0%)
+
+Total basepairs processed:    10,389,353 bp
+Total written (filtered):      9,695,143 bp (93.3%)
+
+=== Adapter 1 ===
+
+Sequence: ACTCCTACGGGAGGCAGCAG; Type: regular 5'; Length: 20; Trimmed: 34731 times.
+
+No. of allowed errors:
+0-9 bp: 0; 10-19 bp: 1; 20 bp: 2
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+14	1	0.0	1	1
+16	2	0.0	1	2
+17	3	0.0	1	1 2
+18	31	0.0	1	12 8 11
+19	375	0.0	1	79 294 2
+20	34277	0.0	2	33507 764 6
+21	34	0.0	2	7 26 1
+22	8	0.0	2	0 0 8
+
+This is cutadapt 1.14 with Python 3.6.2rc1
+Command line parameters: -g ACTCCTACGGGAGGCAGCAG -o ./MT-Q-4_1.fq.gz.out ./MT-Q-4_1.fq.gz
+Trimming 1 adapter with at most 10.0% errors in single-end mode ...
+Finished in 0.80 s (23 us/read; 2.59 M reads/minute).
+
+=== Summary ===
+
+Total reads processed:                  34,400
+Reads with adapters:                    34,378 (99.9%)
+Reads written (passing filters):        34,400 (100.0%)
+
+Total basepairs processed:    10,320,000 bp
+Total written (filtered):      9,633,188 bp (93.3%)
+
+=== Adapter 1 ===
+
+Sequence: ACTCCTACGGGAGGCAGCAG; Type: regular 5'; Length: 20; Trimmed: 34378 times.
+
+No. of allowed errors:
+0-9 bp: 0; 10-19 bp: 1; 20 bp: 2
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+14	3	0.0	1	3
+15	3	0.0	1	0 3
+16	1	0.0	1	0 1
+17	8	0.0	1	6 2
+18	23	0.0	1	6 6 11
+19	741	0.0	1	51 659 31
+20	33547	0.0	2	32637 899 11
+21	42	0.0	2	7 28 7
+22	9	0.0	2	0 0 9
+60	1	0.0	2	1
+
+This is cutadapt 1.14 with Python 3.6.2rc1
+Command line parameters: -g ACTCCTACGGGAGGCAGCAG -o ./MT-R-1_1.fq.gz.out ./MT-R-1_1.fq.gz
+Trimming 1 adapter with at most 10.0% errors in single-end mode ...
+Finished in 0.81 s (23 us/read; 2.56 M reads/minute).
+
+=== Summary ===
+
+Total reads processed:                  34,750
+Reads with adapters:                    34,723 (99.9%)
+Reads written (passing filters):        34,750 (100.0%)
+
+Total basepairs processed:    10,355,500 bp
+Total written (filtered):      9,661,475 bp (93.3%)
+
+=== Adapter 1 ===
+
+Sequence: ACTCCTACGGGAGGCAGCAG; Type: regular 5'; Length: 20; Trimmed: 34723 times.
+
+No. of allowed errors:
+0-9 bp: 0; 10-19 bp: 1; 20 bp: 2
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+13	1	0.0	1	0 1
+15	2	0.0	1	0 2
+16	5	0.0	1	2 3
+17	3	0.0	1	1 2
+18	22	0.0	1	5 3 14
+19	409	0.0	1	90 293 26
+20	34225	0.0	2	33559 658 8
+21	48	0.0	2	16 31 1
+22	8	0.0	2	1 0 7
+
+This is cutadapt 1.14 with Python 3.6.2rc1
+Command line parameters: -g ACTCCTACGGGAGGCAGCAG -o ./MT-R-2_1.fq.gz.out ./MT-R-2_1.fq.gz
+Trimming 1 adapter with at most 10.0% errors in single-end mode ...
+Finished in 0.80 s (23 us/read; 2.61 M reads/minute).
+
+=== Summary ===
+
+Total reads processed:                  34,825
+Reads with adapters:                    34,802 (99.9%)
+Reads written (passing filters):        34,825 (100.0%)
+
+Total basepairs processed:    10,343,025 bp
+Total written (filtered):      9,647,555 bp (93.3%)
+
+=== Adapter 1 ===
+
+Sequence: ACTCCTACGGGAGGCAGCAG; Type: regular 5'; Length: 20; Trimmed: 34802 times.
+
+No. of allowed errors:
+0-9 bp: 0; 10-19 bp: 1; 20 bp: 2
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+11	2	0.0	1	0 2
+14	1	0.0	1	1
+15	1	0.0	1	1
+16	3	0.0	1	3
+17	5	0.0	1	2 3
+18	42	0.0	1	16 11 15
+19	487	0.0	1	142 338 7
+20	34217	0.0	2	33483 728 6
+21	32	0.0	2	5 26 1
+22	11	0.0	2	0 0 11
+23	1	0.0	2	1
+
+This is cutadapt 1.14 with Python 3.6.2rc1
+Command line parameters: -g ACTCCTACGGGAGGCAGCAG -o ./MT-R-3_1.fq.gz.out ./MT-R-3_1.fq.gz
+Trimming 1 adapter with at most 10.0% errors in single-end mode ...
+Finished in 0.80 s (23 us/read; 2.63 M reads/minute).
+
+=== Summary ===
+
+Total reads processed:                  35,202
+Reads with adapters:                    35,184 (99.9%)
+Reads written (passing filters):        35,202 (100.0%)
+
+Total basepairs processed:    10,419,792 bp
+Total written (filtered):      9,716,830 bp (93.3%)
+
+=== Adapter 1 ===
+
+Sequence: ACTCCTACGGGAGGCAGCAG; Type: regular 5'; Length: 20; Trimmed: 35184 times.
+
+No. of allowed errors:
+0-9 bp: 0; 10-19 bp: 1; 20 bp: 2
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+11	1	0.0	1	1
+13	3	0.0	1	2 1
+14	2	0.0	1	2
+15	1	0.0	1	1
+16	1	0.0	1	1
+17	7	0.0	1	4 3
+18	54	0.0	1	19 14 21
+19	605	0.0	1	162 431 12
+20	34463	0.0	2	33628 826 9
+21	34	0.0	2	9 23 2
+22	12	0.0	2	0 0 12
+29	1	0.0	2	1
+
+This is cutadapt 1.14 with Python 3.6.2rc1
+Command line parameters: -g ACTCCTACGGGAGGCAGCAG -o ./MT-R-4_1.fq.gz.out ./MT-R-4_1.fq.gz
+Trimming 1 adapter with at most 10.0% errors in single-end mode ...
+Finished in 0.79 s (22 us/read; 2.67 M reads/minute).
+
+=== Summary ===
+
+Total reads processed:                  35,236
+Reads with adapters:                    35,210 (99.9%)
+Reads written (passing filters):        35,236 (100.0%)
+
+Total basepairs processed:    10,359,384 bp
+Total written (filtered):      9,655,729 bp (93.2%)
+
+=== Adapter 1 ===
+
+Sequence: ACTCCTACGGGAGGCAGCAG; Type: regular 5'; Length: 20; Trimmed: 35210 times.
+
+No. of allowed errors:
+0-9 bp: 0; 10-19 bp: 1; 20 bp: 2
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+11	1	0.0	1	1
+12	1	0.0	1	0 1
+14	2	0.0	1	2
+15	4	0.0	1	3 1
+16	5	0.0	1	4 1
+17	6	0.0	1	4 2
+18	42	0.0	1	18 6 18
+19	519	0.0	1	192 302 25
+20	34493	0.0	2	33843 641 9
+21	129	0.0	2	97 31 1
+22	8	0.0	2	0 0 8
+
+This is cutadapt 1.14 with Python 3.6.2rc1
+Command line parameters: -g ACTCCTACGGGAGGCAGCAG -o ./MT-S-1_1.fq.gz.out ./MT-S-1_1.fq.gz
+Trimming 1 adapter with at most 10.0% errors in single-end mode ...
+Finished in 0.78 s (23 us/read; 2.67 M reads/minute).
+
+=== Summary ===
+
+Total reads processed:                  34,874
+Reads with adapters:                    34,844 (99.9%)
+Reads written (passing filters):        34,874 (100.0%)
+
+Total basepairs processed:    10,218,082 bp
+Total written (filtered):      9,522,104 bp (93.2%)
+
+=== Adapter 1 ===
+
+Sequence: ACTCCTACGGGAGGCAGCAG; Type: regular 5'; Length: 20; Trimmed: 34844 times.
+
+No. of allowed errors:
+0-9 bp: 0; 10-19 bp: 1; 20 bp: 2
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+9	1	0.1	0	1
+10	1	0.0	1	1
+12	1	0.0	1	1
+13	9	0.0	1	9
+14	4	0.0	1	3 1
+15	2	0.0	1	2
+16	4	0.0	1	3 1
+17	13	0.0	1	12 1
+18	39	0.0	1	16 9 14
+19	721	0.0	1	220 487 14
+20	33977	0.0	2	33041 920 16
+21	66	0.0	2	40 26
+22	6	0.0	2	0 0 6
+
+This is cutadapt 1.14 with Python 3.6.2rc1
+Command line parameters: -g ACTCCTACGGGAGGCAGCAG -o ./MT-S-2_1.fq.gz.out ./MT-S-2_1.fq.gz
+Trimming 1 adapter with at most 10.0% errors in single-end mode ...
+Finished in 0.77 s (22 us/read; 2.68 M reads/minute).
+
+=== Summary ===
+
+Total reads processed:                  34,300
+Reads with adapters:                    34,280 (99.9%)
+Reads written (passing filters):        34,300 (100.0%)
+
+Total basepairs processed:    10,290,000 bp
+Total written (filtered):      9,604,821 bp (93.3%)
+
+=== Adapter 1 ===
+
+Sequence: ACTCCTACGGGAGGCAGCAG; Type: regular 5'; Length: 20; Trimmed: 34280 times.
+
+No. of allowed errors:
+0-9 bp: 0; 10-19 bp: 1; 20 bp: 2
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+16	1	0.0	1	0 1
+17	12	0.0	1	8 4
+18	29	0.0	1	7 7 15
+19	367	0.0	1	38 313 16
+20	33833	0.0	2	32945 878 10
+21	32	0.0	2	11 21
+22	6	0.0	2	0 0 6
+
+This is cutadapt 1.14 with Python 3.6.2rc1
+Command line parameters: -g ACTCCTACGGGAGGCAGCAG -o ./MT-S-3_1.fq.gz.out ./MT-S-3_1.fq.gz
+Trimming 1 adapter with at most 10.0% errors in single-end mode ...
+Finished in 0.78 s (22 us/read; 2.68 M reads/minute).
+
+=== Summary ===
+
+Total reads processed:                  34,909
+Reads with adapters:                    34,879 (99.9%)
+Reads written (passing filters):        34,909 (100.0%)
+
+Total basepairs processed:    10,437,791 bp
+Total written (filtered):      9,740,728 bp (93.3%)
+
+=== Adapter 1 ===
+
+Sequence: ACTCCTACGGGAGGCAGCAG; Type: regular 5'; Length: 20; Trimmed: 34879 times.
+
+No. of allowed errors:
+0-9 bp: 0; 10-19 bp: 1; 20 bp: 2
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+12	1	0.0	1	0 1
+14	3	0.0	1	3
+15	2	0.0	1	1 1
+16	3	0.0	1	3
+17	3	0.0	1	0 3
+18	29	0.0	1	6 6 17
+19	435	0.0	1	77 350 8
+20	34375	0.0	2	33609 763 3
+21	23	0.0	2	9 14
+22	5	0.0	2	0 0 5
+
+This is cutadapt 1.14 with Python 3.6.2rc1
+Command line parameters: -g ACTCCTACGGGAGGCAGCAG -o ./MT-S-4_1.fq.gz.out ./MT-S-4_1.fq.gz
+Trimming 1 adapter with at most 10.0% errors in single-end mode ...
+Finished in 0.80 s (23 us/read; 2.60 M reads/minute).
+
+=== Summary ===
+
+Total reads processed:                  34,430
+Reads with adapters:                    34,397 (99.9%)
+Reads written (passing filters):        34,430 (100.0%)
+
+Total basepairs processed:    10,260,140 bp
+Total written (filtered):      9,572,662 bp (93.3%)
+
+=== Adapter 1 ===
+
+Sequence: ACTCCTACGGGAGGCAGCAG; Type: regular 5'; Length: 20; Trimmed: 34397 times.
+
+No. of allowed errors:
+0-9 bp: 0; 10-19 bp: 1; 20 bp: 2
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+13	2	0.0	1	2
+14	1	0.0	1	1
+15	4	0.0	1	3 1
+16	1	0.0	1	1
+17	3	0.0	1	3
+18	26	0.0	1	12 4 10
+19	418	0.0	1	82 311 25
+20	33887	0.0	2	33202 679 6
+21	49	0.0	2	19 30
+22	6	0.0	2	0 0 6
+
+This is cutadapt 1.14 with Python 3.6.2rc1
+Command line parameters: -g ACTCCTACGGGAGGCAGCAG -o ./Transplant-A_1.fq.gz.out ./Transplant-A_1.fq.gz
+Trimming 1 adapter with at most 10.0% errors in single-end mode ...
+Finished in 0.80 s (23 us/read; 2.61 M reads/minute).
+
+=== Summary ===
+
+Total reads processed:                  34,958
+Reads with adapters:                    34,932 (99.9%)
+Reads written (passing filters):        34,958 (100.0%)
+
+Total basepairs processed:    10,487,400 bp
+Total written (filtered):      9,789,212 bp (93.3%)
+
+=== Adapter 1 ===
+
+Sequence: ACTCCTACGGGAGGCAGCAG; Type: regular 5'; Length: 20; Trimmed: 34932 times.
+
+No. of allowed errors:
+0-9 bp: 0; 10-19 bp: 1; 20 bp: 2
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+11	1	0.0	1	1
+14	1	0.0	1	1
+15	2	0.0	1	0 2
+16	1	0.0	1	1
+17	13	0.0	1	10 3
+18	22	0.0	1	3 6 13
+19	387	0.0	1	72 297 18
+20	34461	0.0	2	33475 974 12
+21	41	0.0	2	7 32 2
+22	3	0.0	2	0 0 3
+
+This is cutadapt 1.14 with Python 3.6.2rc1
+Command line parameters: -g ACTCCTACGGGAGGCAGCAG -o ./Transplant-C_1.fq.gz.out ./Transplant-C_1.fq.gz
+Trimming 1 adapter with at most 10.0% errors in single-end mode ...
+Finished in 0.79 s (23 us/read; 2.66 M reads/minute).
+
+=== Summary ===
+
+Total reads processed:                  34,958
+Reads with adapters:                    34,933 (99.9%)
+Reads written (passing filters):        34,958 (100.0%)
+
+Total basepairs processed:    10,417,484 bp
+Total written (filtered):      9,719,246 bp (93.3%)
+
+=== Adapter 1 ===
+
+Sequence: ACTCCTACGGGAGGCAGCAG; Type: regular 5'; Length: 20; Trimmed: 34933 times.
+
+No. of allowed errors:
+0-9 bp: 0; 10-19 bp: 1; 20 bp: 2
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+14	2	0.0	1	2
+15	4	0.0	1	3 1
+17	4	0.0	1	1 3
+18	29	0.0	1	10 5 14
+19	380	0.0	1	103 261 16
+20	34464	0.0	2	33760 695 9
+21	40	0.0	2	16 24
+22	10	0.0	2	0 0 10
+
+This is cutadapt 1.14 with Python 3.6.2rc1
+Command line parameters: -g ACTCCTACGGGAGGCAGCAG -o ./Transplant-F_1.fq.gz.out ./Transplant-F_1.fq.gz
+Trimming 1 adapter with at most 10.0% errors in single-end mode ...
+Finished in 0.80 s (23 us/read; 2.61 M reads/minute).
+
+=== Summary ===
+
+Total reads processed:                  34,815
+Reads with adapters:                    34,777 (99.9%)
+Reads written (passing filters):        34,815 (100.0%)
+
+Total basepairs processed:    10,340,055 bp
+Total written (filtered):      9,645,152 bp (93.3%)
+
+=== Adapter 1 ===
+
+Sequence: ACTCCTACGGGAGGCAGCAG; Type: regular 5'; Length: 20; Trimmed: 34777 times.
+
+No. of allowed errors:
+0-9 bp: 0; 10-19 bp: 1; 20 bp: 2
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+10	1	0.0	1	1
+11	1	0.0	1	0 1
+13	1	0.0	1	1
+14	3	0.0	1	2 1
+15	3	0.0	1	3
+16	1	0.0	1	1
+17	4	0.0	1	2 2
+18	47	0.0	1	16 13 18
+19	513	0.0	1	158 348 7
+20	34167	0.0	2	33261 896 10
+21	29	0.0	2	7 22
+22	6	0.0	2	0 0 6
+24	1	0.0	2	1
+
+This is cutadapt 1.14 with Python 3.6.2rc1
+Command line parameters: -g ACTCCTACGGGAGGCAGCAG -o ./Transplant-H_1.fq.gz.out ./Transplant-H_1.fq.gz
+Trimming 1 adapter with at most 10.0% errors in single-end mode ...
+Finished in 0.78 s (22 us/read; 2.69 M reads/minute).
+
+=== Summary ===
+
+Total reads processed:                  34,755
+Reads with adapters:                    34,730 (99.9%)
+Reads written (passing filters):        34,755 (100.0%)
+
+Total basepairs processed:    10,287,480 bp
+Total written (filtered):      9,593,457 bp (93.3%)
+
+=== Adapter 1 ===
+
+Sequence: ACTCCTACGGGAGGCAGCAG; Type: regular 5'; Length: 20; Trimmed: 34730 times.
+
+No. of allowed errors:
+0-9 bp: 0; 10-19 bp: 1; 20 bp: 2
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+13	1	0.0	1	1
+14	2	0.0	1	2
+15	2	0.0	1	2
+16	1	0.0	1	1
+17	5	0.0	1	3 2
+18	45	0.0	1	19 8 18
+19	508	0.0	1	157 351
+20	34115	0.0	2	33336 773 6
+21	34	0.0	2	12 19 3
+22	16	0.0	2	1 0 15
+23	1	0.0	2	1
+
+This is cutadapt 1.14 with Python 3.6.2rc1
+Command line parameters: -g ACTCCTACGGGAGGCAGCAG -o ./Transplant-J_1.fq.gz.out ./Transplant-J_1.fq.gz
+Trimming 1 adapter with at most 10.0% errors in single-end mode ...
+Finished in 0.79 s (23 us/read; 2.65 M reads/minute).
+
+=== Summary ===
+
+Total reads processed:                  34,907
+Reads with adapters:                    34,877 (99.9%)
+Reads written (passing filters):        34,907 (100.0%)
+
+Total basepairs processed:    10,262,658 bp
+Total written (filtered):      9,565,711 bp (93.2%)
+
+=== Adapter 1 ===
+
+Sequence: ACTCCTACGGGAGGCAGCAG; Type: regular 5'; Length: 20; Trimmed: 34877 times.
+
+No. of allowed errors:
+0-9 bp: 0; 10-19 bp: 1; 20 bp: 2
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+8	1	0.5	0	1
+11	1	0.0	1	1
+13	1	0.0	1	1
+14	2	0.0	1	2
+15	3	0.0	1	0 3
+16	5	0.0	1	3 2
+17	7	0.0	1	5 2
+18	44	0.0	1	23 9 12
+19	571	0.0	1	233 306 32
+20	34087	0.0	2	33392 688 7
+21	148	0.0	2	103 45
+22	7	0.0	2	0 0 7
+
+This is cutadapt 1.14 with Python 3.6.2rc1
+Command line parameters: -g ACTCCTACGGGAGGCAGCAG -o ./Transplant-L_1.fq.gz.out ./Transplant-L_1.fq.gz
+Trimming 1 adapter with at most 10.0% errors in single-end mode ...
+Finished in 0.81 s (23 us/read; 2.62 M reads/minute).
+
+=== Summary ===
+
+Total reads processed:                  35,545
+Reads with adapters:                    35,518 (99.9%)
+Reads written (passing filters):        35,545 (100.0%)
+
+Total basepairs processed:    10,414,685 bp
+Total written (filtered):      9,705,019 bp (93.2%)
+
+=== Adapter 1 ===
+
+Sequence: ACTCCTACGGGAGGCAGCAG; Type: regular 5'; Length: 20; Trimmed: 35518 times.
+
+No. of allowed errors:
+0-9 bp: 0; 10-19 bp: 1; 20 bp: 2
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+10	1	0.0	1	1
+12	1	0.0	1	1
+13	11	0.0	1	11
+14	2	0.0	1	2
+16	3	0.0	1	3
+17	22	0.0	1	21 1
+18	38	0.0	1	26 6 6
+19	539	0.0	1	255 276 8
+20	34808	0.0	2	33791 1003 14
+21	80	0.0	2	44 35 1
+22	13	0.0	2	0 0 13
+
+This is cutadapt 1.14 with Python 3.6.2rc1
+Command line parameters: -g ACTCCTACGGGAGGCAGCAG -o ./Transplant-N_1.fq.gz.out ./Transplant-N_1.fq.gz
+Trimming 1 adapter with at most 10.0% errors in single-end mode ...
+Finished in 0.78 s (22 us/read; 2.69 M reads/minute).
+
+=== Summary ===
+
+Total reads processed:                  35,093
+Reads with adapters:                    35,053 (99.9%)
+Reads written (passing filters):        35,093 (100.0%)
+
+Total basepairs processed:    10,527,900 bp
+Total written (filtered):      9,827,373 bp (93.3%)
+
+=== Adapter 1 ===
+
+Sequence: ACTCCTACGGGAGGCAGCAG; Type: regular 5'; Length: 20; Trimmed: 35053 times.
+
+No. of allowed errors:
+0-9 bp: 0; 10-19 bp: 1; 20 bp: 2
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+10	1	0.0	1	1
+12	1	0.0	1	0 1
+14	2	0.0	1	2
+16	5	0.0	1	3 2
+17	19	0.0	1	13 6
+18	21	0.0	1	5 8 8
+19	445	0.0	1	49 380 16
+20	34510	0.0	2	33542 957 11
+21	42	0.0	2	11 27 4
+22	6	0.0	2	0 0 6
+27	1	0.0	2	1
+
+This is cutadapt 1.14 with Python 3.6.2rc1
+Command line parameters: -g ACTCCTACGGGAGGCAGCAG -o ./Transplant-P_1.fq.gz.out ./Transplant-P_1.fq.gz
+Trimming 1 adapter with at most 10.0% errors in single-end mode ...
+Finished in 0.78 s (22 us/read; 2.69 M reads/minute).
+
+=== Summary ===
+
+Total reads processed:                  34,916
+Reads with adapters:                    34,868 (99.9%)
+Reads written (passing filters):        34,916 (100.0%)
+
+Total basepairs processed:    10,474,800 bp
+Total written (filtered):      9,777,897 bp (93.3%)
+
+=== Adapter 1 ===
+
+Sequence: ACTCCTACGGGAGGCAGCAG; Type: regular 5'; Length: 20; Trimmed: 34868 times.
+
+No. of allowed errors:
+0-9 bp: 0; 10-19 bp: 1; 20 bp: 2
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+14	3	0.0	1	3
+16	1	0.0	1	0 1
+17	9	0.0	1	8 1
+18	34	0.0	1	6 5 23
+19	414	0.0	1	67 336 11
+20	34357	0.0	2	33287 1054 16
+21	38	0.0	2	4 31 3
+22	8	0.0	2	0 0 8
+23	1	0.0	2	1
+24	1	0.0	2	1
+26	1	0.0	2	1
+27	1	0.0	2	1
+
+This is cutadapt 1.14 with Python 3.6.2rc1
+Command line parameters: -g ACTCCTACGGGAGGCAGCAG -o ./Transplant-Q_1.fq.gz.out ./Transplant-Q_1.fq.gz
+Trimming 1 adapter with at most 10.0% errors in single-end mode ...
+Finished in 0.79 s (22 us/read; 2.68 M reads/minute).
+
+=== Summary ===
+
+Total reads processed:                  35,457
+Reads with adapters:                    35,423 (99.9%)
+Reads written (passing filters):        35,457 (100.0%)
+
+Total basepairs processed:    10,566,186 bp
+Total written (filtered):      9,858,165 bp (93.3%)
+
+=== Adapter 1 ===
+
+Sequence: ACTCCTACGGGAGGCAGCAG; Type: regular 5'; Length: 20; Trimmed: 35423 times.
+
+No. of allowed errors:
+0-9 bp: 0; 10-19 bp: 1; 20 bp: 2
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+12	1	0.0	1	1
+15	1	0.0	1	1
+16	2	0.0	1	0 2
+17	2	0.0	1	0 2
+18	31	0.0	1	3 13 15
+19	425	0.0	1	109 293 23
+20	34901	0.0	2	34174 721 6
+21	48	0.0	2	16 32
+22	11	0.0	2	1 0 10
+25	1	0.0	2	1
+
+MacQIIME ODPCiMac:Clean_Data $ find . -name "*_2.fq.gz" -exec cutadapt -g GGACTACHVGGGTWTCTAAT -o {}.out {} \;
+This is cutadapt 1.14 with Python 3.6.2rc1
+Command line parameters: -g GGACTACHVGGGTWTCTAAT -o ./MT-A-1_2.fq.gz.out ./MT-A-1_2.fq.gz
+Trimming 1 adapter with at most 10.0% errors in single-end mode ...
+Finished in 0.88 s (25 us/read; 2.41 M reads/minute).
+
+=== Summary ===
+
+Total reads processed:                  35,144
+Reads with adapters:                    35,128 (100.0%)
+Reads written (passing filters):        35,144 (100.0%)
+
+Total basepairs processed:    10,297,192 bp
+Total written (filtered):      9,595,228 bp (93.2%)
+
+=== Adapter 1 ===
+
+Sequence: GGACTACHVGGGTWTCTAAT; Type: regular 5'; Length: 20; Trimmed: 35128 times.
+
+No. of allowed errors:
+0-9 bp: 0; 10-19 bp: 1; 20 bp: 2
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+11	1	0.0	1	1
+13	3	0.0	1	3
+14	2	0.0	1	2
+15	3	0.0	1	3
+16	7	0.0	1	5 2
+17	10	0.0	1	8 2
+18	31	0.0	1	15 8 8
+19	451	0.0	1	219 230 2
+20	34588	0.0	2	33930 654 4
+21	32	0.0	2	20 12
+
+This is cutadapt 1.14 with Python 3.6.2rc1
+Command line parameters: -g GGACTACHVGGGTWTCTAAT -o ./MT-A-2_2.fq.gz.out ./MT-A-2_2.fq.gz
+Trimming 1 adapter with at most 10.0% errors in single-end mode ...
+Finished in 0.89 s (25 us/read; 2.39 M reads/minute).
+
+=== Summary ===
+
+Total reads processed:                  35,500
+Reads with adapters:                    35,488 (100.0%)
+Reads written (passing filters):        35,500 (100.0%)
+
+Total basepairs processed:    10,401,500 bp
+Total written (filtered):      9,692,336 bp (93.2%)
+
+=== Adapter 1 ===
+
+Sequence: GGACTACHVGGGTWTCTAAT; Type: regular 5'; Length: 20; Trimmed: 35488 times.
+
+No. of allowed errors:
+0-9 bp: 0; 10-19 bp: 1; 20 bp: 2
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+13	3	0.0	1	3
+14	2	0.0	1	2
+15	3	0.0	1	3
+16	5	0.0	1	4 1
+17	11	0.0	1	9 2
+18	42	0.0	1	17 9 16
+19	440	0.0	1	247 190 3
+20	34953	0.0	2	34220 726 7
+21	29	0.0	2	12 16 1
+
+This is cutadapt 1.14 with Python 3.6.2rc1
+Command line parameters: -g GGACTACHVGGGTWTCTAAT -o ./MT-A-3_2.fq.gz.out ./MT-A-3_2.fq.gz
+Trimming 1 adapter with at most 10.0% errors in single-end mode ...
+Finished in 0.89 s (25 us/read; 2.36 M reads/minute).
+
+=== Summary ===
+
+Total reads processed:                  35,000
+Reads with adapters:                    34,995 (100.0%)
+Reads written (passing filters):        35,000 (100.0%)
+
+Total basepairs processed:    10,255,000 bp
+Total written (filtered):      9,555,654 bp (93.2%)
+
+=== Adapter 1 ===
+
+Sequence: GGACTACHVGGGTWTCTAAT; Type: regular 5'; Length: 20; Trimmed: 34995 times.
+
+No. of allowed errors:
+0-9 bp: 0; 10-19 bp: 1; 20 bp: 2
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+13	1	0.0	1	1
+14	1	0.0	1	1
+15	5	0.0	1	5
+16	5	0.0	1	3 2
+17	11	0.0	1	11
+18	39	0.0	1	23 7 9
+19	432	0.0	1	224 206 2
+20	34455	0.0	2	33739 712 4
+21	45	0.0	2	20 24 1
+22	1	0.0	2	0 0 1
+
+This is cutadapt 1.14 with Python 3.6.2rc1
+Command line parameters: -g GGACTACHVGGGTWTCTAAT -o ./MT-A-4_2.fq.gz.out ./MT-A-4_2.fq.gz
+Trimming 1 adapter with at most 10.0% errors in single-end mode ...
+Finished in 0.86 s (25 us/read; 2.43 M reads/minute).
+
+=== Summary ===
+
+Total reads processed:                  34,805
+Reads with adapters:                    34,794 (100.0%)
+Reads written (passing filters):        34,805 (100.0%)
+
+Total basepairs processed:    10,197,865 bp
+Total written (filtered):      9,502,525 bp (93.2%)
+
+=== Adapter 1 ===
+
+Sequence: GGACTACHVGGGTWTCTAAT; Type: regular 5'; Length: 20; Trimmed: 34794 times.
+
+No. of allowed errors:
+0-9 bp: 0; 10-19 bp: 1; 20 bp: 2
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+12	1	0.0	1	1
+13	1	0.0	1	1
+15	2	0.0	1	2
+16	2	0.0	1	1 1
+17	10	0.0	1	6 4
+18	46	0.0	1	22 6 18
+19	411	0.0	1	230 176 5
+20	34295	0.0	2	33634 654 7
+21	26	0.0	2	16 10
+
+This is cutadapt 1.14 with Python 3.6.2rc1
+Command line parameters: -g GGACTACHVGGGTWTCTAAT -o ./MT-B-1_2.fq.gz.out ./MT-B-1_2.fq.gz
+Trimming 1 adapter with at most 10.0% errors in single-end mode ...
+Finished in 0.87 s (25 us/read; 2.41 M reads/minute).
+
+=== Summary ===
+
+Total reads processed:                  34,992
+Reads with adapters:                    34,984 (100.0%)
+Reads written (passing filters):        34,992 (100.0%)
+
+Total basepairs processed:    10,252,656 bp
+Total written (filtered):      9,553,619 bp (93.2%)
+
+=== Adapter 1 ===
+
+Sequence: GGACTACHVGGGTWTCTAAT; Type: regular 5'; Length: 20; Trimmed: 34984 times.
+
+No. of allowed errors:
+0-9 bp: 0; 10-19 bp: 1; 20 bp: 2
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+13	4	0.0	1	4
+14	3	0.0	1	3
+15	2	0.0	1	1 1
+16	7	0.0	1	7
+17	5	0.0	1	5
+18	41	0.0	1	17 8 16
+19	483	0.0	1	249 233 1
+20	34418	0.0	2	33720 695 3
+21	21	0.0	2	8 13
+
+This is cutadapt 1.14 with Python 3.6.2rc1
+Command line parameters: -g GGACTACHVGGGTWTCTAAT -o ./MT-B-2_2.fq.gz.out ./MT-B-2_2.fq.gz
+Trimming 1 adapter with at most 10.0% errors in single-end mode ...
+Finished in 0.88 s (25 us/read; 2.41 M reads/minute).
+
+=== Summary ===
+
+Total reads processed:                  35,478
+Reads with adapters:                    35,475 (100.0%)
+Reads written (passing filters):        35,478 (100.0%)
+
+Total basepairs processed:    10,395,054 bp
+Total written (filtered):      9,686,159 bp (93.2%)
+
+=== Adapter 1 ===
+
+Sequence: GGACTACHVGGGTWTCTAAT; Type: regular 5'; Length: 20; Trimmed: 35475 times.
+
+No. of allowed errors:
+0-9 bp: 0; 10-19 bp: 1; 20 bp: 2
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+13	1	0.0	1	1
+14	1	0.0	1	1
+15	3	0.0	1	3
+16	4	0.0	1	4
+17	11	0.0	1	9 2
+18	59	0.0	1	33 12 14
+19	438	0.0	1	235 201 2
+20	34930	0.0	2	34223 703 4
+21	28	0.0	2	13 15
+
+This is cutadapt 1.14 with Python 3.6.2rc1
+Command line parameters: -g GGACTACHVGGGTWTCTAAT -o ./MT-B-3_2.fq.gz.out ./MT-B-3_2.fq.gz
+Trimming 1 adapter with at most 10.0% errors in single-end mode ...
+Finished in 0.89 s (25 us/read; 2.37 M reads/minute).
+
+=== Summary ===
+
+Total reads processed:                  35,060
+Reads with adapters:                    35,053 (100.0%)
+Reads written (passing filters):        35,060 (100.0%)
+
+Total basepairs processed:    10,272,580 bp
+Total written (filtered):      9,572,089 bp (93.2%)
+
+=== Adapter 1 ===
+
+Sequence: GGACTACHVGGGTWTCTAAT; Type: regular 5'; Length: 20; Trimmed: 35053 times.
+
+No. of allowed errors:
+0-9 bp: 0; 10-19 bp: 1; 20 bp: 2
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+13	2	0.0	1	2
+14	2	0.0	1	2
+15	2	0.0	1	2
+16	7	0.0	1	7
+17	11	0.0	1	11
+18	35	0.0	1	15 10 10
+19	429	0.0	1	222 205 2
+20	34538	0.0	2	33807 723 8
+21	27	0.0	2	13 14
+
+This is cutadapt 1.14 with Python 3.6.2rc1
+Command line parameters: -g GGACTACHVGGGTWTCTAAT -o ./MT-B-4_2.fq.gz.out ./MT-B-4_2.fq.gz
+Trimming 1 adapter with at most 10.0% errors in single-end mode ...
+Finished in 0.86 s (25 us/read; 2.41 M reads/minute).
+
+=== Summary ===
+
+Total reads processed:                  34,646
+Reads with adapters:                    34,638 (100.0%)
+Reads written (passing filters):        34,646 (100.0%)
+
+Total basepairs processed:    10,151,278 bp
+Total written (filtered):      9,459,017 bp (93.2%)
+
+=== Adapter 1 ===
+
+Sequence: GGACTACHVGGGTWTCTAAT; Type: regular 5'; Length: 20; Trimmed: 34638 times.
+
+No. of allowed errors:
+0-9 bp: 0; 10-19 bp: 1; 20 bp: 2
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+15	3	0.0	1	2 1
+16	2	0.0	1	1 1
+17	5	0.0	1	4 1
+18	36	0.0	1	13 9 14
+19	415	0.0	1	218 194 3
+20	34151	0.0	2	33449 690 12
+21	26	0.0	2	13 12 1
+
+This is cutadapt 1.14 with Python 3.6.2rc1
+Command line parameters: -g GGACTACHVGGGTWTCTAAT -o ./MT-C-1_2.fq.gz.out ./MT-C-1_2.fq.gz
+Trimming 1 adapter with at most 10.0% errors in single-end mode ...
+Finished in 0.87 s (25 us/read; 2.40 M reads/minute).
+
+=== Summary ===
+
+Total reads processed:                  34,817
+Reads with adapters:                    34,807 (100.0%)
+Reads written (passing filters):        34,817 (100.0%)
+
+Total basepairs processed:    10,445,100 bp
+Total written (filtered):      9,749,228 bp (93.3%)
+
+=== Adapter 1 ===
+
+Sequence: GGACTACHVGGGTWTCTAAT; Type: regular 5'; Length: 20; Trimmed: 34807 times.
+
+No. of allowed errors:
+0-9 bp: 0; 10-19 bp: 1; 20 bp: 2
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+12	1	0.0	1	1
+15	2	0.0	1	2
+17	1	0.0	1	1
+18	22	0.0	1	8 3 11
+19	279	0.0	1	85 189 5
+20	34466	0.0	2	33816 645 5
+21	23	0.0	2	10 13
+22	3	0.0	2	3
+23	3	0.0	2	2 1
+24	1	0.0	2	1
+25	3	0.0	2	2 1
+26	2	0.0	2	2
+27	1	0.0	2	1
+
+This is cutadapt 1.14 with Python 3.6.2rc1
+Command line parameters: -g GGACTACHVGGGTWTCTAAT -o ./MT-C-2_2.fq.gz.out ./MT-C-2_2.fq.gz
+Trimming 1 adapter with at most 10.0% errors in single-end mode ...
+Finished in 0.88 s (25 us/read; 2.39 M reads/minute).
+
+=== Summary ===
+
+Total reads processed:                  34,883
+Reads with adapters:                    34,876 (100.0%)
+Reads written (passing filters):        34,883 (100.0%)
+
+Total basepairs processed:    10,464,900 bp
+Total written (filtered):      9,767,643 bp (93.3%)
+
+=== Adapter 1 ===
+
+Sequence: GGACTACHVGGGTWTCTAAT; Type: regular 5'; Length: 20; Trimmed: 34876 times.
+
+No. of allowed errors:
+0-9 bp: 0; 10-19 bp: 1; 20 bp: 2
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+15	3	0.0	1	3
+17	2	0.0	1	1 1
+18	15	0.0	1	2 5 8
+19	340	0.0	1	97 240 3
+20	34459	0.0	2	33720 735 4
+21	34	0.0	2	13 21
+22	8	0.0	2	8
+23	3	0.0	2	3
+25	7	0.0	2	7
+26	1	0.0	2	1
+27	4	0.0	2	4
+
+This is cutadapt 1.14 with Python 3.6.2rc1
+Command line parameters: -g GGACTACHVGGGTWTCTAAT -o ./MT-C-3_2.fq.gz.out ./MT-C-3_2.fq.gz
+Trimming 1 adapter with at most 10.0% errors in single-end mode ...
+Finished in 0.89 s (25 us/read; 2.36 M reads/minute).
+
+=== Summary ===
+
+Total reads processed:                  34,992
+Reads with adapters:                    34,984 (100.0%)
+Reads written (passing filters):        34,992 (100.0%)
+
+Total basepairs processed:    10,497,600 bp
+Total written (filtered):      9,798,173 bp (93.3%)
+
+=== Adapter 1 ===
+
+Sequence: GGACTACHVGGGTWTCTAAT; Type: regular 5'; Length: 20; Trimmed: 34984 times.
+
+No. of allowed errors:
+0-9 bp: 0; 10-19 bp: 1; 20 bp: 2
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+15	2	0.0	1	2
+18	26	0.0	1	4 7 15
+19	327	0.0	1	107 218 2
+20	34580	0.0	2	33905 670 5
+21	26	0.0	2	7 19
+22	4	0.0	2	2 1 1
+23	3	0.0	2	3
+24	1	0.0	2	1
+25	4	0.0	2	4
+26	8	0.0	2	8
+27	3	0.0	2	3
+
+This is cutadapt 1.14 with Python 3.6.2rc1
+Command line parameters: -g GGACTACHVGGGTWTCTAAT -o ./MT-C-4_2.fq.gz.out ./MT-C-4_2.fq.gz
+Trimming 1 adapter with at most 10.0% errors in single-end mode ...
+Finished in 0.87 s (25 us/read; 2.40 M reads/minute).
+
+=== Summary ===
+
+Total reads processed:                  34,849
+Reads with adapters:                    34,843 (100.0%)
+Reads written (passing filters):        34,849 (100.0%)
+
+Total basepairs processed:    10,454,700 bp
+Total written (filtered):      9,758,093 bp (93.3%)
+
+=== Adapter 1 ===
+
+Sequence: GGACTACHVGGGTWTCTAAT; Type: regular 5'; Length: 20; Trimmed: 34843 times.
+
+No. of allowed errors:
+0-9 bp: 0; 10-19 bp: 1; 20 bp: 2
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+17	2	0.0	1	2
+18	17	0.0	1	4 3 10
+19	310	0.0	1	77 230 3
+20	34468	0.0	2	33905 560 3
+21	35	0.0	2	12 23
+25	4	0.0	2	4
+26	7	0.0	2	7
+
+This is cutadapt 1.14 with Python 3.6.2rc1
+Command line parameters: -g GGACTACHVGGGTWTCTAAT -o ./MT-D-1_2.fq.gz.out ./MT-D-1_2.fq.gz
+Trimming 1 adapter with at most 10.0% errors in single-end mode ...
+Finished in 0.88 s (25 us/read; 2.39 M reads/minute).
+
+=== Summary ===
+
+Total reads processed:                  35,000
+Reads with adapters:                    34,986 (100.0%)
+Reads written (passing filters):        35,000 (100.0%)
+
+Total basepairs processed:    10,500,000 bp
+Total written (filtered):      9,800,528 bp (93.3%)
+
+=== Adapter 1 ===
+
+Sequence: GGACTACHVGGGTWTCTAAT; Type: regular 5'; Length: 20; Trimmed: 34986 times.
+
+No. of allowed errors:
+0-9 bp: 0; 10-19 bp: 1; 20 bp: 2
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+17	1	0.0	1	1
+18	18	0.0	1	4 5 9
+19	297	0.0	1	84 210 3
+20	34629	0.0	2	34015 609 5
+21	27	0.0	2	13 14
+22	4	0.0	2	3 0 1
+24	1	0.0	2	1
+25	7	0.0	2	7
+27	2	0.0	2	2
+
+This is cutadapt 1.14 with Python 3.6.2rc1
+Command line parameters: -g GGACTACHVGGGTWTCTAAT -o ./MT-D-2_2.fq.gz.out ./MT-D-2_2.fq.gz
+Trimming 1 adapter with at most 10.0% errors in single-end mode ...
+Finished in 0.87 s (25 us/read; 2.43 M reads/minute).
+
+=== Summary ===
+
+Total reads processed:                  35,009
+Reads with adapters:                    35,001 (100.0%)
+Reads written (passing filters):        35,009 (100.0%)
+
+Total basepairs processed:    10,502,700 bp
+Total written (filtered):      9,802,868 bp (93.3%)
+
+=== Adapter 1 ===
+
+Sequence: GGACTACHVGGGTWTCTAAT; Type: regular 5'; Length: 20; Trimmed: 35001 times.
+
+No. of allowed errors:
+0-9 bp: 0; 10-19 bp: 1; 20 bp: 2
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+12	1	0.0	1	1
+15	1	0.0	1	1
+17	4	0.0	1	2 2
+18	21	0.0	1	4 3 14
+19	272	0.0	1	81 187 4
+20	34647	0.0	2	34036 603 8
+21	29	0.0	2	17 12
+22	3	0.0	2	3
+23	6	0.0	2	6
+24	2	0.0	2	2
+25	4	0.0	2	4
+26	7	0.0	2	7
+27	4	0.0	2	4
+
+This is cutadapt 1.14 with Python 3.6.2rc1
+Command line parameters: -g GGACTACHVGGGTWTCTAAT -o ./MT-D-3_2.fq.gz.out ./MT-D-3_2.fq.gz
+Trimming 1 adapter with at most 10.0% errors in single-end mode ...
+Finished in 0.86 s (25 us/read; 2.40 M reads/minute).
+
+=== Summary ===
+
+Total reads processed:                  34,617
+Reads with adapters:                    34,608 (100.0%)
+Reads written (passing filters):        34,617 (100.0%)
+
+Total basepairs processed:    10,385,100 bp
+Total written (filtered):      9,693,146 bp (93.3%)
+
+=== Adapter 1 ===
+
+Sequence: GGACTACHVGGGTWTCTAAT; Type: regular 5'; Length: 20; Trimmed: 34608 times.
+
+No. of allowed errors:
+0-9 bp: 0; 10-19 bp: 1; 20 bp: 2
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+15	6	0.0	1	4 2
+17	3	0.0	1	1 2
+18	16	0.0	1	5 4 7
+19	256	0.0	1	84 171 1
+20	34282	0.0	2	33630 650 2
+21	26	0.0	2	10 16
+22	2	0.0	2	2
+23	2	0.0	2	2
+24	1	0.0	2	1
+25	6	0.0	2	6
+26	5	0.0	2	5
+27	3	0.0	2	3
+
+This is cutadapt 1.14 with Python 3.6.2rc1
+Command line parameters: -g GGACTACHVGGGTWTCTAAT -o ./MT-D-4_2.fq.gz.out ./MT-D-4_2.fq.gz
+Trimming 1 adapter with at most 10.0% errors in single-end mode ...
+Finished in 0.87 s (25 us/read; 2.37 M reads/minute).
+
+=== Summary ===
+
+Total reads processed:                  34,408
+Reads with adapters:                    34,391 (100.0%)
+Reads written (passing filters):        34,408 (100.0%)
+
+Total basepairs processed:    10,322,400 bp
+Total written (filtered):      9,634,947 bp (93.3%)
+
+=== Adapter 1 ===
+
+Sequence: GGACTACHVGGGTWTCTAAT; Type: regular 5'; Length: 20; Trimmed: 34391 times.
+
+No. of allowed errors:
+0-9 bp: 0; 10-19 bp: 1; 20 bp: 2
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+13	1	0.0	1	1
+15	2	0.0	1	1 1
+17	1	0.0	1	0 1
+18	15	0.0	1	9 3 3
+19	351	0.0	1	80 267 4
+20	33990	0.0	2	33405 579 6
+21	30	0.0	2	15 15
+24	1	0.0	2	1
+
+This is cutadapt 1.14 with Python 3.6.2rc1
+Command line parameters: -g GGACTACHVGGGTWTCTAAT -o ./MT-E-I-1_2.fq.gz.out ./MT-E-I-1_2.fq.gz
+Trimming 1 adapter with at most 10.0% errors in single-end mode ...
+Finished in 0.86 s (25 us/read; 2.42 M reads/minute).
+
+=== Summary ===
+
+Total reads processed:                  34,772
+Reads with adapters:                    34,762 (100.0%)
+Reads written (passing filters):        34,772 (100.0%)
+
+Total basepairs processed:    10,222,968 bp
+Total written (filtered):      9,528,392 bp (93.2%)
+
+=== Adapter 1 ===
+
+Sequence: GGACTACHVGGGTWTCTAAT; Type: regular 5'; Length: 20; Trimmed: 34762 times.
+
+No. of allowed errors:
+0-9 bp: 0; 10-19 bp: 1; 20 bp: 2
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+11	1	0.0	1	1
+13	3	0.0	1	3
+15	5	0.0	1	4 1
+16	1	0.0	1	1
+17	7	0.0	1	5 2
+18	43	0.0	1	23 6 14
+19	542	0.0	1	256 283 3
+20	34116	0.0	2	33391 719 6
+21	44	0.0	2	28 16
+
+This is cutadapt 1.14 with Python 3.6.2rc1
+Command line parameters: -g GGACTACHVGGGTWTCTAAT -o ./MT-E-II-1_2.fq.gz.out ./MT-E-II-1_2.fq.gz
+Trimming 1 adapter with at most 10.0% errors in single-end mode ...
+Finished in 0.88 s (25 us/read; 2.38 M reads/minute).
+
+=== Summary ===
+
+Total reads processed:                  34,848
+Reads with adapters:                    34,840 (100.0%)
+Reads written (passing filters):        34,848 (100.0%)
+
+Total basepairs processed:    10,245,312 bp
+Total written (filtered):      9,549,081 bp (93.2%)
+
+=== Adapter 1 ===
+
+Sequence: GGACTACHVGGGTWTCTAAT; Type: regular 5'; Length: 20; Trimmed: 34840 times.
+
+No. of allowed errors:
+0-9 bp: 0; 10-19 bp: 1; 20 bp: 2
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+15	1	0.0	1	1
+16	3	0.0	1	3
+17	6	0.0	1	6
+18	42	0.0	1	23 8 11
+19	502	0.0	1	275 227
+20	34234	0.0	2		33458 770 6
+21	52	0.0	2	29 22 1
+
+This is cutadapt 1.14 with Python 3.6.2rc1
+Command line parameters: -g GGACTACHVGGGTWTCTAAT -o ./MT-E-III-1_2.fq.gz.out ./MT-E-III-1_2.fq.gz
+Trimming 1 adapter with at most 10.0% errors in single-end mode ...
+Finished in 0.88 s (25 us/read; 2.38 M reads/minute).
+
+=== Summary ===
+
+Total reads processed:                  34,949
+Reads with adapters:                    34,937 (100.0%)
+Reads written (passing filters):        34,949 (100.0%)
+
+Total basepairs processed:    10,275,006 bp
+Total written (filtered):      9,576,929 bp (93.2%)
+
+=== Adapter 1 ===
+
+Sequence: GGACTACHVGGGTWTCTAAT; Type: regular 5'; Length: 20; Trimmed: 34937 times.
+
+No. of allowed errors:
+0-9 bp: 0; 10-19 bp: 1; 20 bp: 2
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+12	2	0.0	1	2
+13	2	0.0	1	1 1
+14	2	0.0	1	1 1
+15	2	0.0	1	2
+16	7	0.0	1	6 1
+17	13	0.0	1	13
+18	42	0.0	1	21 8 13
+19	515	0.0	1	251 262 2
+20	34297	0.0	2	33596 696 5
+21	55	0.0	2	36 19
+
+This is cutadapt 1.14 with Python 3.6.2rc1
+Command line parameters: -g GGACTACHVGGGTWTCTAAT -o ./MT-E-IV-1_2.fq.gz.out ./MT-E-IV-1_2.fq.gz
+Trimming 1 adapter with at most 10.0% errors in single-end mode ...
+Finished in 0.88 s (25 us/read; 2.37 M reads/minute).
+
+=== Summary ===
+
+Total reads processed:                  34,941
+Reads with adapters:                    34,934 (100.0%)
+Reads written (passing filters):        34,941 (100.0%)
+
+Total basepairs processed:    10,272,654 bp
+Total written (filtered):      9,574,623 bp (93.2%)
+
+=== Adapter 1 ===
+
+Sequence: GGACTACHVGGGTWTCTAAT; Type: regular 5'; Length: 20; Trimmed: 34934 times.
+
+No. of allowed errors:
+0-9 bp: 0; 10-19 bp: 1; 20 bp: 2
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+13	2	0.0	1	2
+14	3	0.0	1	3
+15	1	0.0	1	1
+16	4	0.0	1	3 1
+17	5	0.0	1	5
+18	48	0.0	1	21 8 19
+19	537	0.0	1	223 311 3
+20	34283	0.0	2	33531 745 7
+21	50	0.0	2	31 19
+22	1	0.0	2	0 0 1
+
+This is cutadapt 1.14 with Python 3.6.2rc1
+Command line parameters: -g GGACTACHVGGGTWTCTAAT -o ./MT-E-V-1_2.fq.gz.out ./MT-E-V-1_2.fq.gz
+Trimming 1 adapter with at most 10.0% errors in single-end mode ...
+Finished in 0.87 s (25 us/read; 2.41 M reads/minute).
+
+=== Summary ===
+
+Total reads processed:                  35,034
+Reads with adapters:                    35,023 (100.0%)
+Reads written (passing filters):        35,034 (100.0%)
+
+Total basepairs processed:    10,299,996 bp
+Total written (filtered):      9,600,281 bp (93.2%)
+
+=== Adapter 1 ===
+
+Sequence: GGACTACHVGGGTWTCTAAT; Type: regular 5'; Length: 20; Trimmed: 35023 times.
+
+No. of allowed errors:
+0-9 bp: 0; 10-19 bp: 1; 20 bp: 2
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+11	1	0.0	1	1
+12	1	0.0	1	1
+13	2	0.0	1	1 1
+14	4	0.0	1	4
+15	3	0.0	1	3
+16	12	0.0	1	11 1
+17	15	0.0	1	14 1
+18	47	0.0	1	26 7 14
+19	534	0.0	1	271 263
+20	34358	0.0	2	33521 832 5
+21	46	0.0	2	26 19 1
+
+This is cutadapt 1.14 with Python 3.6.2rc1
+Command line parameters: -g GGACTACHVGGGTWTCTAAT -o ./MT-E-V-2_2.fq.gz.out ./MT-E-V-2_2.fq.gz
+Trimming 1 adapter with at most 10.0% errors in single-end mode ...
+Finished in 0.87 s (25 us/read; 2.41 M reads/minute).
+
+=== Summary ===
+
+Total reads processed:                  34,975
+Reads with adapters:                    34,964 (100.0%)
+Reads written (passing filters):        34,975 (100.0%)
+
+Total basepairs processed:    10,282,650 bp
+Total written (filtered):      9,583,923 bp (93.2%)
+
+=== Adapter 1 ===
+
+Sequence: GGACTACHVGGGTWTCTAAT; Type: regular 5'; Length: 20; Trimmed: 34964 times.
+
+No. of allowed errors:
+0-9 bp: 0; 10-19 bp: 1; 20 bp: 2
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+13	1	0.0	1	1
+14	1	0.0	1	0 1
+16	2	0.0	1	2
+17	7	0.0	1	6 1
+18	43	0.0	1	17 9 17
+19	483	0.0	1	239 237 7
+20	34372	0.0	2	33249 1110 13
+21	54	0.0	2	30 24
+24	1	0.0	2	1
+
+This is cutadapt 1.14 with Python 3.6.2rc1
+Command line parameters: -g GGACTACHVGGGTWTCTAAT -o ./MT-F-1_2.fq.gz.out ./MT-F-1_2.fq.gz
+Trimming 1 adapter with at most 10.0% errors in single-end mode ...
+Finished in 0.91 s (26 us/read; 2.28 M reads/minute).
+
+=== Summary ===
+
+Total reads processed:                  34,633
+Reads with adapters:                    34,624 (100.0%)
+Reads written (passing filters):        34,633 (100.0%)
+
+Total basepairs processed:    10,320,634 bp
+Total written (filtered):      9,628,737 bp (93.3%)
+
+=== Adapter 1 ===
+
+Sequence: GGACTACHVGGGTWTCTAAT; Type: regular 5'; Length: 20; Trimmed: 34624 times.
+
+No. of allowed errors:
+0-9 bp: 0; 10-19 bp: 1; 20 bp: 2
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+12	1	0.0	1	1
+13	2	0.0	1	2
+15	1	0.0	1	1
+16	3	0.0	1	2 1
+17	1	0.0	1	1
+18	25	0.0	1	7 5 13
+19	545	0.0	1	106 403 36
+20	34007	0.0	2	30395 3566 46
+21	32	0.0	2	19 10 3
+22	2	0.0	2	2
+23	3	0.0	2	3
+24	1	0.0	2	1
+25	1	0.0	2	1
+
+This is cutadapt 1.14 with Python 3.6.2rc1
+Command line parameters: -g GGACTACHVGGGTWTCTAAT -o ./MT-F-2_2.fq.gz.out ./MT-F-2_2.fq.gz
+Trimming 1 adapter with at most 10.0% errors in single-end mode ...
+Finished in 0.91 s (26 us/read; 2.30 M reads/minute).
+
+=== Summary ===
+
+Total reads processed:                  34,933
+Reads with adapters:                    34,917 (100.0%)
+Reads written (passing filters):        34,933 (100.0%)
+
+Total basepairs processed:    10,410,034 bp
+Total written (filtered):      9,712,084 bp (93.3%)
+
+=== Adapter 1 ===
+
+Sequence: GGACTACHVGGGTWTCTAAT; Type: regular 5'; Length: 20; Trimmed: 34917 times.
+
+No. of allowed errors:
+0-9 bp: 0; 10-19 bp: 1; 20 bp: 2
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+13	2	0.0	1	1 1
+15	1	0.0	1	0 1
+16	1	0.0	1	1
+17	5	0.0	1	4 1
+18	28	0.0	1	10 3 15
+19	357	0.0	1	136 200 21
+20	34483	0.0	2	30677 3758 48
+21	32	0.0	2	14 14 4
+22	1	0.0	2	1
+23	3	0.0	2	3
+24	2	0.0	2	2
+25	2	0.0	2	2
+
+This is cutadapt 1.14 with Python 3.6.2rc1
+Command line parameters: -g GGACTACHVGGGTWTCTAAT -o ./MT-F-3_2.fq.gz.out ./MT-F-3_2.fq.gz
+Trimming 1 adapter with at most 10.0% errors in single-end mode ...
+Finished in 0.92 s (26 us/read; 2.29 M reads/minute).
+
+=== Summary ===
+
+Total reads processed:                  35,009
+Reads with adapters:                    34,989 (99.9%)
+Reads written (passing filters):        35,009 (100.0%)
+
+Total basepairs processed:    10,432,682 bp
+Total written (filtered):      9,733,285 bp (93.3%)
+
+=== Adapter 1 ===
+
+Sequence: GGACTACHVGGGTWTCTAAT; Type: regular 5'; Length: 20; Trimmed: 34989 times.
+
+No. of allowed errors:
+0-9 bp: 0; 10-19 bp: 1; 20 bp: 2
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+13	2	0.0	1	1 1
+16	1	0.0	1	1
+17	5	0.0	1	3 2
+18	30	0.0	1	13 7 10
+19	343	0.0	1	109 225 9
+20	34563	0.0	2	30871 3647 45
+21	40	0.0	2	17 21 2
+22	3	0.0	2	2 1
+23	1	0.0	2	1
+24	1	0.0	2	1
+
+This is cutadapt 1.14 with Python 3.6.2rc1
+Command line parameters: -g GGACTACHVGGGTWTCTAAT -o ./MT-F-4_2.fq.gz.out ./MT-F-4_2.fq.gz
+Trimming 1 adapter with at most 10.0% errors in single-end mode ...
+Finished in 0.91 s (26 us/read; 2.32 M reads/minute).
+
+=== Summary ===
+
+Total reads processed:                  35,169
+Reads with adapters:                    35,148 (99.9%)
+Reads written (passing filters):        35,169 (100.0%)
+
+Total basepairs processed:    10,480,362 bp
+Total written (filtered):      9,777,776 bp (93.3%)
+
+=== Adapter 1 ===
+
+Sequence: GGACTACHVGGGTWTCTAAT; Type: regular 5'; Length: 20; Trimmed: 35148 times.
+
+No. of allowed errors:
+0-9 bp: 0; 10-19 bp: 1; 20 bp: 2
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+13	3	0.0	1	3
+16	3	0.0	1	3
+17	2	0.0	1	2
+18	30	0.0	1	14 2 14
+19	335	0.0	1	116 204 15
+20	34738	0.0	2	31114 3578 46
+21	28	0.0	2	11 15 2
+22	1	0.0	2	1
+23	4	0.0	2	4
+24	2	0.0	2	2
+25	2	0.0	2	2
+
+This is cutadapt 1.14 with Python 3.6.2rc1
+Command line parameters: -g GGACTACHVGGGTWTCTAAT -o ./MT-G-1_2.fq.gz.out ./MT-G-1_2.fq.gz
+Trimming 1 adapter with at most 10.0% errors in single-end mode ...
+Finished in 0.91 s (26 us/read; 2.32 M reads/minute).
+
+=== Summary ===
+
+Total reads processed:                  35,246
+Reads with adapters:                    35,237 (100.0%)
+Reads written (passing filters):        35,246 (100.0%)
+
+Total basepairs processed:    10,503,308 bp
+Total written (filtered):      9,798,952 bp (93.3%)
+
+=== Adapter 1 ===
+
+Sequence: GGACTACHVGGGTWTCTAAT; Type: regular 5'; Length: 20; Trimmed: 35237 times.
+
+No. of allowed errors:
+0-9 bp: 0; 10-19 bp: 1; 20 bp: 2
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+13	2	0.0	1	1 1
+15	1	0.0	1	1
+16	1	0.0	1	0 1
+17	2	0.0	1	2
+18	41	0.0	1	17 7 17
+19	340	0.0	1	95 215 30
+20	34809	0.0	2	31082 3672 55
+21	28	0.0	2	18 8 2
+22	4	0.0	2	3 0 1
+23	6	0.0	2	6
+24	2	0.0	2	2
+25	1	0.0	2	1
+
+This is cutadapt 1.14 with Python 3.6.2rc1
+Command line parameters: -g GGACTACHVGGGTWTCTAAT -o ./MT-G-2_2.fq.gz.out ./MT-G-2_2.fq.gz
+Trimming 1 adapter with at most 10.0% errors in single-end mode ...
+Finished in 0.90 s (26 us/read; 2.31 M reads/minute).
+
+=== Summary ===
+
+Total reads processed:                  34,549
+Reads with adapters:                    34,530 (99.9%)
+Reads written (passing filters):        34,549 (100.0%)
+
+Total basepairs processed:    10,295,602 bp
+Total written (filtered):      9,605,401 bp (93.3%)
+
+=== Adapter 1 ===
+
+Sequence: GGACTACHVGGGTWTCTAAT; Type: regular 5'; Length: 20; Trimmed: 34530 times.
+
+No. of allowed errors:
+0-9 bp: 0; 10-19 bp: 1; 20 bp: 2
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+17	4	0.0	1	3 1
+18	37	0.0	1	12 7 18
+19	354	0.0	1	112 232 10
+20	34107	0.0	2	30401 3644 62
+21	23	0.0	2	12 11
+22	1	0.0	2	1
+23	1	0.0	2	1
+24	2	0.0	2	2
+25	1	0.0	2	1
+
+This is cutadapt 1.14 with Python 3.6.2rc1
+Command line parameters: -g GGACTACHVGGGTWTCTAAT -o ./MT-G-3_2.fq.gz.out ./MT-G-3_2.fq.gz
+Trimming 1 adapter with at most 10.0% errors in single-end mode ...
+Finished in 0.91 s (26 us/read; 2.28 M reads/minute).
+
+=== Summary ===
+
+Total reads processed:                  34,389
+Reads with adapters:                    34,376 (100.0%)
+Reads written (passing filters):        34,389 (100.0%)
+
+Total basepairs processed:    10,247,922 bp
+Total written (filtered):      9,560,825 bp (93.3%)
+
+=== Adapter 1 ===
+
+Sequence: GGACTACHVGGGTWTCTAAT; Type: regular 5'; Length: 20; Trimmed: 34376 times.
+
+No. of allowed errors:
+0-9 bp: 0; 10-19 bp: 1; 20 bp: 2
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+16	1	0.0	1	0 1
+17	4	0.0	1	3 1
+18	44	0.0	1	17 5 22
+19	344	0.0	1	125 205 14
+20	33961	0.0	2	30309 3611 41
+21	21	0.0	2	11 9 1
+24	1	0.0	2	1
+
+This is cutadapt 1.14 with Python 3.6.2rc1
+Command line parameters: -g GGACTACHVGGGTWTCTAAT -o ./MT-G-4_2.fq.gz.out ./MT-G-4_2.fq.gz
+Trimming 1 adapter with at most 10.0% errors in single-end mode ...
+Finished in 0.87 s (25 us/read; 2.39 M reads/minute).
+
+=== Summary ===
+
+Total reads processed:                  34,808
+Reads with adapters:                    34,794 (100.0%)
+Reads written (passing filters):        34,808 (100.0%)
+
+Total basepairs processed:    10,337,976 bp
+Total written (filtered):      9,642,640 bp (93.3%)
+
+=== Adapter 1 ===
+
+Sequence: GGACTACHVGGGTWTCTAAT; Type: regular 5'; Length: 20; Trimmed: 34794 times.
+
+No. of allowed errors:
+0-9 bp: 0; 10-19 bp: 1; 20 bp: 2
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+11	1	0.0	1	1
+12	1	0.0	1	1
+13	1	0.0	1	1
+14	2	0.0	1	2
+15	4	0.0	1	4
+16	7	0.0	1	6 1
+17	4	0.0	1	2 2
+18	31	0.0	1	14 3 14
+19	445	0.0	1	170 273 2
+20	34250	0.0	2	33635 608 7
+21	41	0.0	2	19 22
+22	4	0.0	2	4
+23	2	0.0	2	2
+24	1	0.0	2	1
+
+This is cutadapt 1.14 with Python 3.6.2rc1
+Command line parameters: -g GGACTACHVGGGTWTCTAAT -o ./MT-H-1_2.fq.gz.out ./MT-H-1_2.fq.gz
+Trimming 1 adapter with at most 10.0% errors in single-end mode ...
+Finished in 0.90 s (26 us/read; 2.34 M reads/minute).
+
+=== Summary ===
+
+Total reads processed:                  35,244
+Reads with adapters:                    35,234 (100.0%)
+Reads written (passing filters):        35,244 (100.0%)
+
+Total basepairs processed:    10,467,468 bp
+Total written (filtered):      9,763,294 bp (93.3%)
+
+=== Adapter 1 ===
+
+Sequence: GGACTACHVGGGTWTCTAAT; Type: regular 5'; Length: 20; Trimmed: 35234 times.
+
+No. of allowed errors:
+0-9 bp: 0; 10-19 bp: 1; 20 bp: 2
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+15	2	0.0	1	2
+16	2	0.0	1	2
+17	2	0.0	1	2
+18	26	0.0	1	10 6 10
+19	481	0.0	1	169 310 2
+20	34678	0.0	2	34054 619 5
+21	37	0.0	2	11 26
+22	4	0.0	2	3 0 1
+23	2	0.0	2	2
+
+This is cutadapt 1.14 with Python 3.6.2rc1
+Command line parameters: -g GGACTACHVGGGTWTCTAAT -o ./MT-H-2_2.fq.gz.out ./MT-H-2_2.fq.gz
+Trimming 1 adapter with at most 10.0% errors in single-end mode ...
+Finished in 0.89 s (25 us/read; 2.38 M reads/minute).
+
+=== Summary ===
+
+Total reads processed:                  35,304
+Reads with adapters:                    35,295 (100.0%)
+Reads written (passing filters):        35,304 (100.0%)
+
+Total basepairs processed:    10,485,288 bp
+Total written (filtered):      9,779,877 bp (93.3%)
+
+=== Adapter 1 ===
+
+Sequence: GGACTACHVGGGTWTCTAAT; Type: regular 5'; Length: 20; Trimmed: 35295 times.
+
+No. of allowed errors:
+0-9 bp: 0; 10-19 bp: 1; 20 bp: 2
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+13	1	0.0	1	1
+16	2	0.0	1	2
+17	5	0.0	1	2 3
+18	35	0.0	1	12 7 16
+19	437	0.0	1	188 245 4
+20	34777	0.0	2	34182 589 6
+21	32	0.0	2	12 20
+22	3	0.0	2	3
+23	2	0.0	2	2
+24	1	0.0	2	1
+
+This is cutadapt 1.14 with Python 3.6.2rc1
+Command line parameters: -g GGACTACHVGGGTWTCTAAT -o ./MT-H-3_2.fq.gz.out ./MT-H-3_2.fq.gz
+Trimming 1 adapter with at most 10.0% errors in single-end mode ...
+Finished in 0.87 s (25 us/read; 2.38 M reads/minute).
+
+=== Summary ===
+
+Total reads processed:                  34,638
+Reads with adapters:                    34,628 (100.0%)
+Reads written (passing filters):        34,638 (100.0%)
+
+Total basepairs processed:    10,287,486 bp
+Total written (filtered):      9,595,364 bp (93.3%)
+
+=== Adapter 1 ===
+
+Sequence: GGACTACHVGGGTWTCTAAT; Type: regular 5'; Length: 20; Trimmed: 34628 times.
+
+No. of allowed errors:
+0-9 bp: 0; 10-19 bp: 1; 20 bp: 2
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+14	1	0.0	1	1
+15	1	0.0	1	1
+16	2	0.0	1	2
+17	6	0.0	1	4 2
+18	33	0.0	1	12 4 17
+19	391	0.0	1	188 200 3
+20	34157	0.0	2	33626 528 3
+21	28	0.0	2	12 16
+22	1	0.0	2	1
+23	6	0.0	2	6
+24	2	0.0	2	2
+
+This is cutadapt 1.14 with Python 3.6.2rc1
+Command line parameters: -g GGACTACHVGGGTWTCTAAT -o ./MT-H-4_2.fq.gz.out ./MT-H-4_2.fq.gz
+Trimming 1 adapter with at most 10.0% errors in single-end mode ...
+Finished in 0.89 s (25 us/read; 2.38 M reads/minute).
+
+=== Summary ===
+
+Total reads processed:                  35,280
+Reads with adapters:                    35,270 (100.0%)
+Reads written (passing filters):        35,280 (100.0%)
+
+Total basepairs processed:    10,478,160 bp
+Total written (filtered):      9,773,252 bp (93.3%)
+
+=== Adapter 1 ===
+
+Sequence: GGACTACHVGGGTWTCTAAT; Type: regular 5'; Length: 20; Trimmed: 35270 times.
+
+No. of allowed errors:
+0-9 bp: 0; 10-19 bp: 1; 20 bp: 2
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+14	1	0.0	1	1
+15	1	0.0	1	1
+16	1	0.0	1	1
+17	4	0.0	1	2 2
+18	28	0.0	1	10 8 10
+19	463	0.0	1	158 305
+20	34733	0.0	2	34131 601 1
+21	31	0.0	2	16 15
+22	4	0.0	2	4
+23	1	0.0	2	1
+24	3	0.0	2	3
+
+This is cutadapt 1.14 with Python 3.6.2rc1
+Command line parameters: -g GGACTACHVGGGTWTCTAAT -o ./MT-I-1_2.fq.gz.out ./MT-I-1_2.fq.gz
+Trimming 1 adapter with at most 10.0% errors in single-end mode ...
+Finished in 0.90 s (26 us/read; 2.34 M reads/minute).
+
+=== Summary ===
+
+Total reads processed:                  35,289
+Reads with adapters:                    35,278 (100.0%)
+Reads written (passing filters):        35,289 (100.0%)
+
+Total basepairs processed:    10,480,833 bp
+Total written (filtered):      9,775,706 bp (93.3%)
+
+=== Adapter 1 ===
+
+Sequence: GGACTACHVGGGTWTCTAAT; Type: regular 5'; Length: 20; Trimmed: 35278 times.
+
+No. of allowed errors:
+0-9 bp: 0; 10-19 bp: 1; 20 bp: 2
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+13	1	0.0	1	1
+16	2	0.0	1	2
+17	7	0.0	1	6 1
+18	25	0.0	1	12 5 8
+19	404	0.0	1	168 234 2
+20	34798	0.0	2	34175 620 3
+21	32	0.0	2	18 14
+22	3	0.0	2	3
+23	5	0.0	2	5
+24	1	0.0	2	1
+
+This is cutadapt 1.14 with Python 3.6.2rc1
+Command line parameters: -g GGACTACHVGGGTWTCTAAT -o ./MT-I-2_2.fq.gz.out ./MT-I-2_2.fq.gz
+Trimming 1 adapter with at most 10.0% errors in single-end mode ...
+Finished in 0.89 s (25 us/read; 2.36 M reads/minute).
+
+=== Summary ===
+
+Total reads processed:                  34,808
+Reads with adapters:                    34,803 (100.0%)
+Reads written (passing filters):        34,808 (100.0%)
+
+Total basepairs processed:    10,337,976 bp
+Total written (filtered):      9,642,476 bp (93.3%)
+
+=== Adapter 1 ===
+
+Sequence: GGACTACHVGGGTWTCTAAT; Type: regular 5'; Length: 20; Trimmed: 34803 times.
+
+No. of allowed errors:
+0-9 bp: 0; 10-19 bp: 1; 20 bp: 2
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+14	1	0.0	1	1
+16	6	0.0	1	5 1
+17	4	0.0	1	3 1
+18	49	0.0	1	21 6 22
+19	453	0.0	1	193 258 2
+20	34265	0.0	2	33623 638 4
+21	19	0.0	2	11 8
+22	4	0.0	2	4
+23	2	0.0	2	2
+
+This is cutadapt 1.14 with Python 3.6.2rc1
+Command line parameters: -g GGACTACHVGGGTWTCTAAT -o ./MT-I-3_2.fq.gz.out ./MT-I-3_2.fq.gz
+Trimming 1 adapter with at most 10.0% errors in single-end mode ...
+Finished in 0.90 s (26 us/read; 2.33 M reads/minute).
+
+=== Summary ===
+
+Total reads processed:                  34,732
+Reads with adapters:                    34,723 (100.0%)
+Reads written (passing filters):        34,732 (100.0%)
+
+Total basepairs processed:    10,315,404 bp
+Total written (filtered):      9,621,367 bp (93.3%)
+
+=== Adapter 1 ===
+
+Sequence: GGACTACHVGGGTWTCTAAT; Type: regular 5'; Length: 20; Trimmed: 34723 times.
+
+No. of allowed errors:
+0-9 bp: 0; 10-19 bp: 1; 20 bp: 2
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+14	1	0.0	1	1
+16	2	0.0	1	2
+17	5	0.0	1	4 1
+18	24	0.0	1	9 3 12
+19	389	0.0	1	180 206 3
+20	34262	0.0	2	33171 1072 19
+21	38	0.0	2	17 21
+22	1	0.0	2	0 0 1
+23	1	0.0	2	1
+
+This is cutadapt 1.14 with Python 3.6.2rc1
+Command line parameters: -g GGACTACHVGGGTWTCTAAT -o ./MT-I-4_2.fq.gz.out ./MT-I-4_2.fq.gz
+Trimming 1 adapter with at most 10.0% errors in single-end mode ...
+Finished in 0.89 s (26 us/read; 2.35 M reads/minute).
+
+=== Summary ===
+
+Total reads processed:                  35,017
+Reads with adapters:                    35,008 (100.0%)
+Reads written (passing filters):        35,017 (100.0%)
+
+Total basepairs processed:    10,365,032 bp
+Total written (filtered):      9,665,290 bp (93.2%)
+
+=== Adapter 1 ===
+
+Sequence: GGACTACHVGGGTWTCTAAT; Type: regular 5'; Length: 20; Trimmed: 35008 times.
+
+No. of allowed errors:
+0-9 bp: 0; 10-19 bp: 1; 20 bp: 2
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+8	1	0.5	0	1
+12	1	0.0	1	1
+15	2	0.0	1	2
+16	3	0.0	1	3
+17	8	0.0	1	7 1
+18	30	0.0	1	8 3 19
+19	367	0.0	1	143 220 4
+20	34529	0.0	2	33799 722 8
+21	60	0.0	2	32 27 1
+22	6	0.0	2	6
+23	1	0.0	2	1
+
+This is cutadapt 1.14 with Python 3.6.2rc1
+Command line parameters: -g GGACTACHVGGGTWTCTAAT -o ./MT-J-1_2.fq.gz.out ./MT-J-1_2.fq.gz
+Trimming 1 adapter with at most 10.0% errors in single-end mode ...
+Finished in 0.88 s (25 us/read; 2.41 M reads/minute).
+
+=== Summary ===
+
+Total reads processed:                  35,135
+Reads with adapters:                    35,124 (100.0%)
+Reads written (passing filters):        35,135 (100.0%)
+
+Total basepairs processed:    10,399,960 bp
+Total written (filtered):      9,698,041 bp (93.3%)
+
+=== Adapter 1 ===
+
+Sequence: GGACTACHVGGGTWTCTAAT; Type: regular 5'; Length: 20; Trimmed: 35124 times.
+
+No. of allowed errors:
+0-9 bp: 0; 10-19 bp: 1; 20 bp: 2
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+12	1	0.0	1	1
+13	2	0.0	1	2
+14	3	0.0	1	2 1
+15	1	0.0	1	1
+16	3	0.0	1	3
+17	5	0.0	1	4 1
+18	36	0.0	1	10 9 17
+19	485	0.0	1	142 338 5
+20	34524	0.0	2	33828 695 1
+21	61	0.0	2	38 23
+22	2	0.0	2	2
+23	1	0.0	2	1
+
+This is cutadapt 1.14 with Python 3.6.2rc1
+Command line parameters: -g GGACTACHVGGGTWTCTAAT -o ./MT-J-2_2.fq.gz.out ./MT-J-2_2.fq.gz
+Trimming 1 adapter with at most 10.0% errors in single-end mode ...
+Finished in 0.88 s (25 us/read; 2.38 M reads/minute).
+
+=== Summary ===
+
+Total reads processed:                  35,060
+Reads with adapters:                    35,051 (100.0%)
+Reads written (passing filters):        35,060 (100.0%)
+
+Total basepairs processed:    10,377,760 bp
+Total written (filtered):      9,677,121 bp (93.2%)
+
+=== Adapter 1 ===
+
+Sequence: GGACTACHVGGGTWTCTAAT; Type: regular 5'; Length: 20; Trimmed: 35051 times.
+
+No. of allowed errors:
+0-9 bp: 0; 10-19 bp: 1; 20 bp: 2
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+15	4	0.0	1	2 2
+16	2	0.0	1	2
+17	8	0.0	1	7 1
+18	35	0.0	1	12 6 17
+19	340	0.0	1	142 195 3
+20	34585	0.0	2	33820 758 7
+21	73	0.0	2	36 37
+22	4	0.0	2	4
+
+This is cutadapt 1.14 with Python 3.6.2rc1
+Command line parameters: -g GGACTACHVGGGTWTCTAAT -o ./MT-J-3_2.fq.gz.out ./MT-J-3_2.fq.gz
+Trimming 1 adapter with at most 10.0% errors in single-end mode ...
+Finished in 0.90 s (26 us/read; 2.33 M reads/minute).
+
+=== Summary ===
+
+Total reads processed:                  34,899
+Reads with adapters:                    34,896 (100.0%)
+Reads written (passing filters):        34,899 (100.0%)
+
+Total basepairs processed:    10,330,104 bp
+Total written (filtered):      9,632,591 bp (93.2%)
+
+=== Adapter 1 ===
+
+Sequence: GGACTACHVGGGTWTCTAAT; Type: regular 5'; Length: 20; Trimmed: 34896 times.
+
+No. of allowed errors:
+0-9 bp: 0; 10-19 bp: 1; 20 bp: 2
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+11	3	0.0	1	3
+12	1	0.0	1	1
+13	2	0.0	1	2
+16	4	0.0	1	4
+17	1	0.0	1	1
+18	32	0.0	1	14 5 13
+19	358	0.0	1	129 229
+20	34416	0.0	2	33764 644 8
+21	75	0.0	2	47 28
+22	4	0.0	2	3 0 1
+
+This is cutadapt 1.14 with Python 3.6.2rc1
+Command line parameters: -g GGACTACHVGGGTWTCTAAT -o ./MT-J-4_2.fq.gz.out ./MT-J-4_2.fq.gz
+Trimming 1 adapter with at most 10.0% errors in single-end mode ...
+Finished in 0.93 s (26 us/read; 2.29 M reads/minute).
+
+=== Summary ===
+
+Total reads processed:                  35,560
+Reads with adapters:                    35,550 (100.0%)
+Reads written (passing filters):        35,560 (100.0%)
+
+Total basepairs processed:    10,525,760 bp
+Total written (filtered):      9,815,218 bp (93.2%)
+
+=== Adapter 1 ===
+
+Sequence: GGACTACHVGGGTWTCTAAT; Type: regular 5'; Length: 20; Trimmed: 35550 times.
+
+No. of allowed errors:
+0-9 bp: 0; 10-19 bp: 1; 20 bp: 2
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+11	2	0.0	1	2
+12	2	0.0	1	2
+13	2	0.0	1	2
+14	2	0.0	1	2
+15	5	0.0	1	4 1
+16	7	0.0	1	6 1
+17	3	0.0	1	3
+18	35	0.0	1	16 6 13
+19	344	0.0	1	144 196 4
+20	35073	0.0	2	34295 773 5
+21	73	0.0	2	41 32
+22	1	0.0	2	1
+23	1	0.0	2	1
+
+This is cutadapt 1.14 with Python 3.6.2rc1
+Command line parameters: -g GGACTACHVGGGTWTCTAAT -o ./MT-K-1_2.fq.gz.out ./MT-K-1_2.fq.gz
+Trimming 1 adapter with at most 10.0% errors in single-end mode ...
+Finished in 0.90 s (25 us/read; 2.37 M reads/minute).
+
+=== Summary ===
+
+Total reads processed:                  35,518
+Reads with adapters:                    35,510 (100.0%)
+Reads written (passing filters):        35,518 (100.0%)
+
+Total basepairs processed:    10,513,328 bp
+Total written (filtered):      9,803,506 bp (93.2%)
+
+=== Adapter 1 ===
+
+Sequence: GGACTACHVGGGTWTCTAAT; Type: regular 5'; Length: 20; Trimmed: 35510 times.
+
+No. of allowed errors:
+0-9 bp: 0; 10-19 bp: 1; 20 bp: 2
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+14	1	0.0	1	1
+16	2	0.0	1	2
+17	5	0.0	1	4 1
+18	35	0.0	1	16 5 14
+19	366	0.0	1	134 229 3
+20	35021	0.0	2	34215 801 5
+21	75	0.0	2	40 35
+22	3	0.0	2	3
+23	2	0.0	2	2
+
+This is cutadapt 1.14 with Python 3.6.2rc1
+Command line parameters: -g GGACTACHVGGGTWTCTAAT -o ./MT-K-2_2.fq.gz.out ./MT-K-2_2.fq.gz
+Trimming 1 adapter with at most 10.0% errors in single-end mode ...
+Finished in 0.89 s (25 us/read; 2.36 M reads/minute).
+
+=== Summary ===
+
+Total reads processed:                  35,051
+Reads with adapters:                    35,043 (100.0%)
+Reads written (passing filters):        35,051 (100.0%)
+
+Total basepairs processed:    10,375,096 bp
+Total written (filtered):      9,674,587 bp (93.2%)
+
+=== Adapter 1 ===
+
+Sequence: GGACTACHVGGGTWTCTAAT; Type: regular 5'; Length: 20; Trimmed: 35043 times.
+
+No. of allowed errors:
+0-9 bp: 0; 10-19 bp: 1; 20 bp: 2
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+11	1	0.0	1	1
+14	1	0.0	1	1
+15	2	0.0	1	2
+16	3	0.0	1	3
+17	3	0.0	1	2 1
+18	28	0.0	1	12 3 13
+19	318	0.0	1	137 180 1
+20	34626	0.0	2	33909 709 8
+21	54	0.0	2	34 20
+22	6	0.0	2	5 1
+23	1	0.0	2	1
+
+This is cutadapt 1.14 with Python 3.6.2rc1
+Command line parameters: -g GGACTACHVGGGTWTCTAAT -o ./MT-K-3_2.fq.gz.out ./MT-K-3_2.fq.gz
+Trimming 1 adapter with at most 10.0% errors in single-end mode ...
+Finished in 0.90 s (26 us/read; 2.33 M reads/minute).
+
+=== Summary ===
+
+Total reads processed:                  34,807
+Reads with adapters:                    34,803 (100.0%)
+Reads written (passing filters):        34,807 (100.0%)
+
+Total basepairs processed:    10,302,872 bp
+Total written (filtered):      9,607,205 bp (93.2%)
+
+=== Adapter 1 ===
+
+Sequence: GGACTACHVGGGTWTCTAAT; Type: regular 5'; Length: 20; Trimmed: 34803 times.
+
+No. of allowed errors:
+0-9 bp: 0; 10-19 bp: 1; 20 bp: 2
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+11	1	0.0	1	1
+12	1	0.0	1	1
+14	1	0.0	1	1
+15	4	0.0	1	4
+16	4	0.0	1	4
+17	4	0.0	1	4
+18	32	0.0	1	13 4 15
+19	324	0.0	1	133 188 3
+20	34366	0.0	2	33586 770 10
+21	66	0.0	2	29 37
+
+This is cutadapt 1.14 with Python 3.6.2rc1
+Command line parameters: -g GGACTACHVGGGTWTCTAAT -o ./MT-K-4_2.fq.gz.out ./MT-K-4_2.fq.gz
+Trimming 1 adapter with at most 10.0% errors in single-end mode ...
+Finished in 0.89 s (25 us/read; 2.37 M reads/minute).
+
+=== Summary ===
+
+Total reads processed:                  35,026
+Reads with adapters:                    35,008 (99.9%)
+Reads written (passing filters):        35,026 (100.0%)
+
+Total basepairs processed:    10,332,670 bp
+Total written (filtered):      9,632,922 bp (93.2%)
+
+=== Adapter 1 ===
+
+Sequence: GGACTACHVGGGTWTCTAAT; Type: regular 5'; Length: 20; Trimmed: 35008 times.
+
+No. of allowed errors:
+0-9 bp: 0; 10-19 bp: 1; 20 bp: 2
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+12	1	0.0	1	1
+14	1	0.0	1	1
+15	1	0.0	1	1
+16	4	0.0	1	4
+17	11	0.0	1	7 4
+18	36	0.0	1	11 9 16
+19	393	0.0	1	164 225 4
+20	34443	0.0	2	33717 723 3
+21	115	0.0	2	74 41
+22	3	0.0	2	2 0 1
+
+This is cutadapt 1.14 with Python 3.6.2rc1
+Command line parameters: -g GGACTACHVGGGTWTCTAAT -o ./MT-L-1_2.fq.gz.out ./MT-L-1_2.fq.gz
+Trimming 1 adapter with at most 10.0% errors in single-end mode ...
+Finished in 0.89 s (26 us/read; 2.35 M reads/minute).
+
+=== Summary ===
+
+Total reads processed:                  34,672
+Reads with adapters:                    34,662 (100.0%)
+Reads written (passing filters):        34,672 (100.0%)
+
+Total basepairs processed:    10,228,240 bp
+Total written (filtered):      9,535,441 bp (93.2%)
+
+=== Adapter 1 ===
+
+Sequence: GGACTACHVGGGTWTCTAAT; Type: regular 5'; Length: 20; Trimmed: 34662 times.
+
+No. of allowed errors:
+0-9 bp: 0; 10-19 bp: 1; 20 bp: 2
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+13	1	0.0	1	0 1
+15	3	0.0	1	3
+16	4	0.0	1	4
+17	19	0.0	1	15 4
+18	31	0.0	1	9 5 17
+19	395	0.0	1	184 209 2
+20	34099	0.0	2	33280 814 5
+21	109	0.0	2	74 34 1
+22	1	0.0	2	1
+
+This is cutadapt 1.14 with Python 3.6.2rc1
+Command line parameters: -g GGACTACHVGGGTWTCTAAT -o ./MT-L-2_2.fq.gz.out ./MT-L-2_2.fq.gz
+Trimming 1 adapter with at most 10.0% errors in single-end mode ...
+Finished in 0.89 s (25 us/read; 2.37 M reads/minute).
+
+=== Summary ===
+
+Total reads processed:                  35,102
+Reads with adapters:                    35,090 (100.0%)
+Reads written (passing filters):        35,102 (100.0%)
+
+Total basepairs processed:    10,355,090 bp
+Total written (filtered):      9,653,754 bp (93.2%)
+
+=== Adapter 1 ===
+
+Sequence: GGACTACHVGGGTWTCTAAT; Type: regular 5'; Length: 20; Trimmed: 35090 times.
+
+No. of allowed errors:
+0-9 bp: 0; 10-19 bp: 1; 20 bp: 2
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+15	4	0.0	1	4
+16	7	0.0	1	7
+17	14	0.0	1	13 1
+18	35	0.0	1	13 6 16
+19	409	0.0	1	189 215 5
+20	34520	0.0	2	33775 737 8
+21	97	0.0	2	65 31 1
+22	4	0.0	2	4
+
+This is cutadapt 1.14 with Python 3.6.2rc1
+Command line parameters: -g GGACTACHVGGGTWTCTAAT -o ./MT-L-3_2.fq.gz.out ./MT-L-3_2.fq.gz
+Trimming 1 adapter with at most 10.0% errors in single-end mode ...
+Finished in 0.88 s (25 us/read; 2.38 M reads/minute).
+
+=== Summary ===
+
+Total reads processed:                  35,043
+Reads with adapters:                    35,026 (100.0%)
+Reads written (passing filters):        35,043 (100.0%)
+
+Total basepairs processed:    10,337,685 bp
+Total written (filtered):      9,637,585 bp (93.2%)
+
+=== Adapter 1 ===
+
+Sequence: GGACTACHVGGGTWTCTAAT; Type: regular 5'; Length: 20; Trimmed: 35026 times.
+
+No. of allowed errors:
+0-9 bp: 0; 10-19 bp: 1; 20 bp: 2
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+10	1	0.0	1	1
+14	2	0.0	1	2
+15	5	0.0	1	5
+16	6	0.0	1	6
+17	4	0.0	1	1 3
+18	35	0.0	1	18 3 14
+19	410	0.0	1	199 209 2
+20	34423	0.0	2	33647 772 4
+21	137	0.0	2	103 34
+22	3	0.0	2	2 0 1
+
+This is cutadapt 1.14 with Python 3.6.2rc1
+Command line parameters: -g GGACTACHVGGGTWTCTAAT -o ./MT-L-4_2.fq.gz.out ./MT-L-4_2.fq.gz
+Trimming 1 adapter with at most 10.0% errors in single-end mode ...
+Finished in 0.90 s (25 us/read; 2.37 M reads/minute).
+
+=== Summary ===
+
+Total reads processed:                  35,552
+Reads with adapters:                    35,540 (100.0%)
+Reads written (passing filters):        35,552 (100.0%)
+
+Total basepairs processed:    10,487,840 bp
+Total written (filtered):      9,777,520 bp (93.2%)
+
+=== Adapter 1 ===
+
+Sequence: GGACTACHVGGGTWTCTAAT; Type: regular 5'; Length: 20; Trimmed: 35540 times.
+
+No. of allowed errors:
+0-9 bp: 0; 10-19 bp: 1; 20 bp: 2
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+14	3	0.0	1	1 2
+15	5	0.0	1	4 1
+16	10	0.0	1	9 1
+17	17	0.0	1	13 4
+18	41	0.0	1	14 5 22
+19	394	0.0	1	168 223 3
+20	34941	0.0	2	34106 831 4
+21	128	0.0	2	90 36 2
+22	1	0.0	2	1
+
+This is cutadapt 1.14 with Python 3.6.2rc1
+Command line parameters: -g GGACTACHVGGGTWTCTAAT -o ./MT-M-1_2.fq.gz.out ./MT-M-1_2.fq.gz
+Trimming 1 adapter with at most 10.0% errors in single-end mode ...
+Finished in 0.92 s (26 us/read; 2.29 M reads/minute).
+
+=== Summary ===
+
+Total reads processed:                  35,035
+Reads with adapters:                    35,018 (100.0%)
+Reads written (passing filters):        35,035 (100.0%)
+
+Total basepairs processed:    10,335,325 bp
+Total written (filtered):      9,635,446 bp (93.2%)
+
+=== Adapter 1 ===
+
+Sequence: GGACTACHVGGGTWTCTAAT; Type: regular 5'; Length: 20; Trimmed: 35018 times.
+
+No. of allowed errors:
+0-9 bp: 0; 10-19 bp: 1; 20 bp: 2
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+12	1	0.0	1	1
+15	4	0.0	1	3 1
+16	15	0.0	1	15
+17	14	0.0	1	13 1
+18	33	0.0	1	14 6 13
+19	420	0.0	1	192 224 4
+20	34400	0.0	2	33641 752 7
+21	127	0.0	2	89 37 1
+22	4	0.0	2	4
+
+This is cutadapt 1.14 with Python 3.6.2rc1
+Command line parameters: -g GGACTACHVGGGTWTCTAAT -o ./MT-M-2_2.fq.gz.out ./MT-M-2_2.fq.gz
+Trimming 1 adapter with at most 10.0% errors in single-end mode ...
+Finished in 0.87 s (25 us/read; 2.39 M reads/minute).
+
+=== Summary ===
+
+Total reads processed:                  34,589
+Reads with adapters:                    34,574 (100.0%)
+Reads written (passing filters):        34,589 (100.0%)
+
+Total basepairs processed:    10,203,755 bp
+Total written (filtered):      9,512,676 bp (93.2%)
+
+=== Adapter 1 ===
+
+Sequence: GGACTACHVGGGTWTCTAAT; Type: regular 5'; Length: 20; Trimmed: 34574 times.
+
+No. of allowed errors:
+0-9 bp: 0; 10-19 bp: 1; 20 bp: 2
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+13	1	0.0	1	1
+15	3	0.0	1	3
+16	3	0.0	1	3
+17	13	0.0	1	11 2
+18	28	0.0	1	12 3 13
+19	390	0.0	1	192 197 1
+20	34020	0.0	2	33237 775 8
+21	114	0.0	2	72 42
+22	2	0.0	2	2
+
+This is cutadapt 1.14 with Python 3.6.2rc1
+Command line parameters: -g GGACTACHVGGGTWTCTAAT -o ./MT-M-3_2.fq.gz.out ./MT-M-3_2.fq.gz
+Trimming 1 adapter with at most 10.0% errors in single-end mode ...
+Finished in 0.87 s (25 us/read; 2.40 M reads/minute).
+
+=== Summary ===
+
+Total reads processed:                  34,984
+Reads with adapters:                    34,969 (100.0%)
+Reads written (passing filters):        34,984 (100.0%)
+
+Total basepairs processed:    10,320,280 bp
+Total written (filtered):      9,621,344 bp (93.2%)
+
+=== Adapter 1 ===
+
+Sequence: GGACTACHVGGGTWTCTAAT; Type: regular 5'; Length: 20; Trimmed: 34969 times.
+
+No. of allowed errors:
+0-9 bp: 0; 10-19 bp: 1; 20 bp: 2
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+13	2	0.0	1	2
+15	4	0.0	1	3 1
+16	10	0.0	1	10
+17	16	0.0	1	14 2
+18	20	0.0	1	8 1 11
+19	392	0.0	1	179 211 2
+20	34416	0.0	2	33456 950 10
+21	108	0.0	2	66 42
+22	1	0.0	2	1
+
+This is cutadapt 1.14 with Python 3.6.2rc1
+Command line parameters: -g GGACTACHVGGGTWTCTAAT -o ./MT-M-4_2.fq.gz.out ./MT-M-4_2.fq.gz
+Trimming 1 adapter with at most 10.0% errors in single-end mode ...
+Finished in 0.85 s (25 us/read; 2.43 M reads/minute).
+
+=== Summary ===
+
+Total reads processed:                  34,580
+Reads with adapters:                    34,572 (100.0%)
+Reads written (passing filters):        34,580 (100.0%)
+
+Total basepairs processed:    10,166,520 bp
+Total written (filtered):      9,475,710 bp (93.2%)
+
+=== Adapter 1 ===
+
+Sequence: GGACTACHVGGGTWTCTAAT; Type: regular 5'; Length: 20; Trimmed: 34572 times.
+
+No. of allowed errors:
+0-9 bp: 0; 10-19 bp: 1; 20 bp: 2
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+14	1	0.0	1	1
+15	4	0.0	1	3 1
+16	1	0.0	1	1
+17	12	0.0	1	8 4
+18	37	0.0	1	16 9 12
+19	533	0.0	1	259 269 5
+20	33941	0.0	2	33309 624 8
+21	43	0.0	2	22 21
+
+This is cutadapt 1.14 with Python 3.6.2rc1
+Command line parameters: -g GGACTACHVGGGTWTCTAAT -o ./MT-N-1_2.fq.gz.out ./MT-N-1_2.fq.gz
+Trimming 1 adapter with at most 10.0% errors in single-end mode ...
+Finished in 0.89 s (25 us/read; 2.39 M reads/minute).
+
+=== Summary ===
+
+Total reads processed:                  35,457
+Reads with adapters:                    35,445 (100.0%)
+Reads written (passing filters):        35,457 (100.0%)
+
+Total basepairs processed:    10,424,358 bp
+Total written (filtered):      9,716,273 bp (93.2%)
+
+=== Adapter 1 ===
+
+Sequence: GGACTACHVGGGTWTCTAAT; Type: regular 5'; Length: 20; Trimmed: 35445 times.
+
+No. of allowed errors:
+0-9 bp: 0; 10-19 bp: 1; 20 bp: 2
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+9	1	0.1	0	1
+12	1	0.0	1	1
+14	5	0.0	1	5
+15	1	0.0	1	1
+16	3	0.0	1	2 1
+17	15	0.0	1	14 1
+18	38	0.0	1	14 11 13
+19	670	0.0	1	258 409 3
+20	34671	0.0	2	33938 730 3
+21	39	0.0	2	16 23
+23	1	0.0	2	0 0 1
+
+This is cutadapt 1.14 with Python 3.6.2rc1
+Command line parameters: -g GGACTACHVGGGTWTCTAAT -o ./MT-N-2_2.fq.gz.out ./MT-N-2_2.fq.gz
+Trimming 1 adapter with at most 10.0% errors in single-end mode ...
+Finished in 0.87 s (25 us/read; 2.45 M reads/minute).
+
+=== Summary ===
+
+Total reads processed:                  35,432
+Reads with adapters:                    35,418 (100.0%)
+Reads written (passing filters):        35,432 (100.0%)
+
+Total basepairs processed:    10,417,008 bp
+Total written (filtered):      9,709,314 bp (93.2%)
+
+=== Adapter 1 ===
+
+Sequence: GGACTACHVGGGTWTCTAAT; Type: regular 5'; Length: 20; Trimmed: 35418 times.
+
+No. of allowed errors:
+0-9 bp: 0; 10-19 bp: 1; 20 bp: 2
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+14	2	0.0	1	2
+15	5	0.0	1	3 2
+16	7	0.0	1	6 1
+17	14	0.0	1	14
+18	58	0.0	1	23 10 25
+19	491	0.0	1	260 228 3
+20	34793	0.0	2	34070 716 7
+21	48	0.0	2	24 24
+
+This is cutadapt 1.14 with Python 3.6.2rc1
+Command line parameters: -g GGACTACHVGGGTWTCTAAT -o ./MT-N-3_2.fq.gz.out ./MT-N-3_2.fq.gz
+Trimming 1 adapter with at most 10.0% errors in single-end mode ...
+Finished in 0.87 s (25 us/read; 2.39 M reads/minute).
+
+=== Summary ===
+
+Total reads processed:                  34,831
+Reads with adapters:                    34,820 (100.0%)
+Reads written (passing filters):        34,831 (100.0%)
+
+Total basepairs processed:    10,240,314 bp
+Total written (filtered):      9,544,471 bp (93.2%)
+
+=== Adapter 1 ===
+
+Sequence: GGACTACHVGGGTWTCTAAT; Type: regular 5'; Length: 20; Trimmed: 34820 times.
+
+No. of allowed errors:
+0-9 bp: 0; 10-19 bp: 1; 20 bp: 2
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+14	2	0.0	1	2
+15	4	0.0	1	4
+16	1	0.0	1	1
+17	8	0.0	1	7 1
+18	35	0.0	1	15 10 10
+19	461	0.0	1	231 227 3
+20	34275	0.0	2	33636 633 6
+21	34	0.0	2	18 16
+
+This is cutadapt 1.14 with Python 3.6.2rc1
+Command line parameters: -g GGACTACHVGGGTWTCTAAT -o ./MT-N-4_2.fq.gz.out ./MT-N-4_2.fq.gz
+Trimming 1 adapter with at most 10.0% errors in single-end mode ...
+Finished in 0.88 s (25 us/read; 2.43 M reads/minute).
+
+=== Summary ===
+
+Total reads processed:                  35,630
+Reads with adapters:                    35,618 (100.0%)
+Reads written (passing filters):        35,630 (100.0%)
+
+Total basepairs processed:    10,475,220 bp
+Total written (filtered):      9,763,583 bp (93.2%)
+
+=== Adapter 1 ===
+
+Sequence: GGACTACHVGGGTWTCTAAT; Type: regular 5'; Length: 20; Trimmed: 35618 times.
+
+No. of allowed errors:
+0-9 bp: 0; 10-19 bp: 1; 20 bp: 2
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+13	2	0.0	1	2
+14	2	0.0	1	2
+15	1	0.0	1	1
+16	9	0.0	1	9
+17	7	0.0	1	4 3
+18	40	0.0	1	20 10 10
+19	593	0.0	1	303 287 3
+20	34926	0.0	2	34180 738 8
+21	38	0.0	2	10 27 1
+
+This is cutadapt 1.14 with Python 3.6.2rc1
+Command line parameters: -g GGACTACHVGGGTWTCTAAT -o ./MT-O-1_2.fq.gz.out ./MT-O-1_2.fq.gz
+Trimming 1 adapter with at most 10.0% errors in single-end mode ...
+Finished in 0.88 s (25 us/read; 2.42 M reads/minute).
+
+=== Summary ===
+
+Total reads processed:                  35,605
+Reads with adapters:                    35,589 (100.0%)
+Reads written (passing filters):        35,605 (100.0%)
+
+Total basepairs processed:    10,467,870 bp
+Total written (filtered):      9,756,850 bp (93.2%)
+
+=== Adapter 1 ===
+
+Sequence: GGACTACHVGGGTWTCTAAT; Type: regular 5'; Length: 20; Trimmed: 35589 times.
+
+No. of allowed errors:
+0-9 bp: 0; 10-19 bp: 1; 20 bp: 2
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+13	1	0.0	1	1
+14	5	0.0	1	5
+15	5	0.0	1	4 1
+16	5	0.0	1	5
+17	10	0.0	1	10
+18	41	0.0	1	17 8 16
+19	606	0.0	1	283 316 7
+20	34876	0.0	2	34184 689 3
+21	40	0.0	2	23 16 1
+
+This is cutadapt 1.14 with Python 3.6.2rc1
+Command line parameters: -g GGACTACHVGGGTWTCTAAT -o ./MT-O-2_2.fq.gz.out ./MT-O-2_2.fq.gz
+Trimming 1 adapter with at most 10.0% errors in single-end mode ...
+Finished in 0.88 s (25 us/read; 2.38 M reads/minute).
+
+=== Summary ===
+
+Total reads processed:                  35,085
+Reads with adapters:                    35,076 (100.0%)
+Reads written (passing filters):        35,085 (100.0%)
+
+Total basepairs processed:    10,314,990 bp
+Total written (filtered):      9,614,081 bp (93.2%)
+
+=== Adapter 1 ===
+
+Sequence: GGACTACHVGGGTWTCTAAT; Type: regular 5'; Length: 20; Trimmed: 35076 times.
+
+No. of allowed errors:
+0-9 bp: 0; 10-19 bp: 1; 20 bp: 2
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+11	1	0.0	1	1
+13	1	0.0	1	1
+14	1	0.0	1	1
+15	2	0.0	1	2
+16	5	0.0	1	4 1
+17	9	0.0	1	8 1
+18	39	0.0	1	22 8 9
+19	496	0.0	1	280 212 4
+20	34480	0.0	2	33744 727 9
+21	42	0.0	2	20 22
+
+This is cutadapt 1.14 with Python 3.6.2rc1
+Command line parameters: -g GGACTACHVGGGTWTCTAAT -o ./MT-O-3_2.fq.gz.out ./MT-O-3_2.fq.gz
+Trimming 1 adapter with at most 10.0% errors in single-end mode ...
+Finished in 0.88 s (25 us/read; 2.38 M reads/minute).
+
+=== Summary ===
+
+Total reads processed:                  34,705
+Reads with adapters:                    34,693 (100.0%)
+Reads written (passing filters):        34,705 (100.0%)
+
+Total basepairs processed:    10,203,270 bp
+Total written (filtered):      9,509,923 bp (93.2%)
+
+=== Adapter 1 ===
+
+Sequence: GGACTACHVGGGTWTCTAAT; Type: regular 5'; Length: 20; Trimmed: 34693 times.
+
+No. of allowed errors:
+0-9 bp: 0; 10-19 bp: 1; 20 bp: 2
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+14	1	0.0	1	1
+15	2	0.0	1	2
+16	3	0.0	1	2 1
+17	4	0.0	1	4
+18	30	0.0	1	13 9 8
+19	456	0.0	1	240 210 6
+20	34157	0.0	2	33151 982 24
+21	39	0.0	2	10 29
+24	1	0.0	2	0 1
+
+This is cutadapt 1.14 with Python 3.6.2rc1
+Command line parameters: -g GGACTACHVGGGTWTCTAAT -o ./MT-O-4_2.fq.gz.out ./MT-O-4_2.fq.gz
+Trimming 1 adapter with at most 10.0% errors in single-end mode ...
+Finished in 0.76 s (25 us/read; 2.41 M reads/minute).
+
+=== Summary ===
+
+Total reads processed:                  30,635
+Reads with adapters:                    30,630 (100.0%)
+Reads written (passing filters):        30,635 (100.0%)
+
+Total basepairs processed:     8,976,055 bp
+Total written (filtered):      8,364,240 bp (93.2%)
+
+=== Adapter 1 ===
+
+Sequence: GGACTACHVGGGTWTCTAAT; Type: regular 5'; Length: 20; Trimmed: 30630 times.
+
+No. of allowed errors:
+0-9 bp: 0; 10-19 bp: 1; 20 bp: 2
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+12	1	0.0	1	1
+13	1	0.0	1	0 1
+14	2	0.0	1	2
+15	6	0.0	1	6
+16	17	0.0	1	16 1
+17	20	0.0	1	19 1
+18	48	0.0	1	17 10 21
+19	553	0.0	1	289 261 3
+20	29933	0.0	2	29267 662 4
+21	49	0.0	2	18 28 3
+
+This is cutadapt 1.14 with Python 3.6.2rc1
+Command line parameters: -g GGACTACHVGGGTWTCTAAT -o ./MT-P-1_2.fq.gz.out ./MT-P-1_2.fq.gz
+Trimming 1 adapter with at most 10.0% errors in single-end mode ...
+Finished in 0.86 s (25 us/read; 2.42 M reads/minute).
+
+=== Summary ===
+
+Total reads processed:                  34,687
+Reads with adapters:                    34,677 (100.0%)
+Reads written (passing filters):        34,687 (100.0%)
+
+Total basepairs processed:    10,163,291 bp
+Total written (filtered):      9,470,427 bp (93.2%)
+
+=== Adapter 1 ===
+
+Sequence: GGACTACHVGGGTWTCTAAT; Type: regular 5'; Length: 20; Trimmed: 34677 times.
+
+No. of allowed errors:
+0-9 bp: 0; 10-19 bp: 1; 20 bp: 2
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+11	1	0.0	1	1
+14	3	0.0	1	3
+15	5	0.0	1	5
+16	7	0.0	1	5 2
+17	10	0.0	1	9 1
+18	28	0.0	1	11 7 10
+19	541	0.0	1	287 250 4
+20	34051	0.0	2	33378 670 3
+21	31	0.0	2	15 14 2
+
+This is cutadapt 1.14 with Python 3.6.2rc1
+Command line parameters: -g GGACTACHVGGGTWTCTAAT -o ./MT-P-2_2.fq.gz.out ./MT-P-2_2.fq.gz
+Trimming 1 adapter with at most 10.0% errors in single-end mode ...
+Finished in 0.89 s (25 us/read; 2.38 M reads/minute).
+
+=== Summary ===
+
+Total reads processed:                  35,255
+Reads with adapters:                    35,245 (100.0%)
+Reads written (passing filters):        35,255 (100.0%)
+
+Total basepairs processed:    10,329,715 bp
+Total written (filtered):      9,625,502 bp (93.2%)
+
+=== Adapter 1 ===
+
+Sequence: GGACTACHVGGGTWTCTAAT; Type: regular 5'; Length: 20; Trimmed: 35245 times.
+
+No. of allowed errors:
+0-9 bp: 0; 10-19 bp: 1; 20 bp: 2
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+12	2	0.0	1	2
+13	4	0.0	1	4
+14	1	0.0	1	1
+15	3	0.0	1	3
+16	7	0.0	1	7
+17	10	0.0	1	10
+18	53	0.0	1	26 11 16
+19	496	0.0	1	253 241 2
+20	34631	0.0	2	33975 647 9
+21	38	0.0	2	17 21
+
+This is cutadapt 1.14 with Python 3.6.2rc1
+Command line parameters: -g GGACTACHVGGGTWTCTAAT -o ./MT-P-3_2.fq.gz.out ./MT-P-3_2.fq.gz
+Trimming 1 adapter with at most 10.0% errors in single-end mode ...
+Finished in 0.89 s (25 us/read; 2.38 M reads/minute).
+
+=== Summary ===
+
+Total reads processed:                  35,196
+Reads with adapters:                    35,191 (100.0%)
+Reads written (passing filters):        35,196 (100.0%)
+
+Total basepairs processed:    10,312,428 bp
+Total written (filtered):      9,609,229 bp (93.2%)
+
+=== Adapter 1 ===
+
+Sequence: GGACTACHVGGGTWTCTAAT; Type: regular 5'; Length: 20; Trimmed: 35191 times.
+
+No. of allowed errors:
+0-9 bp: 0; 10-19 bp: 1; 20 bp: 2
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+13	1	0.0	1	1
+14	2	0.0	1	2
+15	4	0.0	1	4
+16	6	0.0	1	5 1
+17	8	0.0	1	7 1
+18	43	0.0	1	16 8 19
+19	481	0.0	1	249 229 3
+20	34613	0.0	2	34022 586 5
+21	33	0.0	2	19 14
+
+This is cutadapt 1.14 with Python 3.6.2rc1
+Command line parameters: -g GGACTACHVGGGTWTCTAAT -o ./MT-P-4_2.fq.gz.out ./MT-P-4_2.fq.gz
+Trimming 1 adapter with at most 10.0% errors in single-end mode ...
+Finished in 0.93 s (26 us/read; 2.31 M reads/minute).
+
+=== Summary ===
+
+Total reads processed:                  35,690
+Reads with adapters:                    35,681 (100.0%)
+Reads written (passing filters):        35,690 (100.0%)
+
+Total basepairs processed:    10,457,170 bp
+Total written (filtered):      9,744,164 bp (93.2%)
+
+=== Adapter 1 ===
+
+Sequence: GGACTACHVGGGTWTCTAAT; Type: regular 5'; Length: 20; Trimmed: 35681 times.
+
+No. of allowed errors:
+0-9 bp: 0; 10-19 bp: 1; 20 bp: 2
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+12	2	0.0	1	2
+13	1	0.0	1	1
+14	2	0.0	1	1 1
+15	1	0.0	1	1
+16	5	0.0	1	5
+17	8	0.0	1	6 2
+18	41	0.0	1	22 6 13
+19	480	0.0	1	256 222 2
+20	35109	0.0	2	34429 678 2
+21	32	0.0	2	10 20 2
+
+This is cutadapt 1.14 with Python 3.6.2rc1
+Command line parameters: -g GGACTACHVGGGTWTCTAAT -o ./MT-Q-1_2.fq.gz.out ./MT-Q-1_2.fq.gz
+Trimming 1 adapter with at most 10.0% errors in single-end mode ...
+Finished in 0.91 s (26 us/read; 2.33 M reads/minute).
+
+=== Summary ===
+
+Total reads processed:                  35,359
+Reads with adapters:                    35,349 (100.0%)
+Reads written (passing filters):        35,359 (100.0%)
+
+Total basepairs processed:    10,360,187 bp
+Total written (filtered):      9,653,797 bp (93.2%)
+
+=== Adapter 1 ===
+
+Sequence: GGACTACHVGGGTWTCTAAT; Type: regular 5'; Length: 20; Trimmed: 35349 times.
+
+No. of allowed errors:
+0-9 bp: 0; 10-19 bp: 1; 20 bp: 2
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+10	1	0.0	1	1
+12	1	0.0	1	1
+13	3	0.0	1	2 1
+14	2	0.0	1	2
+15	4	0.0	1	4
+16	5	0.0	1	5
+17	10	0.0	1	9 1
+18	41	0.0	1	24 5 12
+19	419	0.0	1	200 214 5
+20	34831	0.0	2	34204 625 2
+21	32	0.0	2	16 15 1
+
+This is cutadapt 1.14 with Python 3.6.2rc1
+Command line parameters: -g GGACTACHVGGGTWTCTAAT -o ./MT-Q-2_2.fq.gz.out ./MT-Q-2_2.fq.gz
+Trimming 1 adapter with at most 10.0% errors in single-end mode ...
+Finished in 0.89 s (25 us/read; 2.38 M reads/minute).
+
+=== Summary ===
+
+Total reads processed:                  35,296
+Reads with adapters:                    35,290 (100.0%)
+Reads written (passing filters):        35,296 (100.0%)
+
+Total basepairs processed:    10,341,728 bp
+Total written (filtered):      9,636,595 bp (93.2%)
+
+=== Adapter 1 ===
+
+Sequence: GGACTACHVGGGTWTCTAAT; Type: regular 5'; Length: 20; Trimmed: 35290 times.
+
+No. of allowed errors:
+0-9 bp: 0; 10-19 bp: 1; 20 bp: 2
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+11	1	0.0	1	1
+13	1	0.0	1	1
+14	2	0.0	1	2
+15	5	0.0	1	5
+16	2	0.0	1	2
+17	15	0.0	1	13 2
+18	47	0.0	1	18 10 19
+19	504	0.0	1	269 233 2
+20	34676	0.0	2	34014 660 2
+21	37	0.0	2	13 24
+
+This is cutadapt 1.14 with Python 3.6.2rc1
+Command line parameters: -g GGACTACHVGGGTWTCTAAT -o ./MT-Q-3_2.fq.gz.out ./MT-Q-3_2.fq.gz
+Trimming 1 adapter with at most 10.0% errors in single-end mode ...
+Finished in 0.88 s (25 us/read; 2.38 M reads/minute).
+
+=== Summary ===
+
+Total reads processed:                  34,747
+Reads with adapters:                    34,739 (100.0%)
+Reads written (passing filters):        34,747 (100.0%)
+
+Total basepairs processed:    10,180,871 bp
+Total written (filtered):      9,486,652 bp (93.2%)
+
+=== Adapter 1 ===
+
+Sequence: GGACTACHVGGGTWTCTAAT; Type: regular 5'; Length: 20; Trimmed: 34739 times.
+
+No. of allowed errors:
+0-9 bp: 0; 10-19 bp: 1; 20 bp: 2
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+11	1	0.0	1	1
+12	1	0.0	1	1
+14	2	0.0	1	2
+15	2	0.0	1	2
+16	5	0.0	1	3 2
+17	9	0.0	1	6 3
+18	36	0.0	1	14 10 12
+19	430	0.0	1	271 155 4
+20	34226	0.0	2	33533 689 4
+21	27	0.0	2	13 14
+
+This is cutadapt 1.14 with Python 3.6.2rc1
+Command line parameters: -g GGACTACHVGGGTWTCTAAT -o ./MT-Q-4_2.fq.gz.out ./MT-Q-4_2.fq.gz
+Trimming 1 adapter with at most 10.0% errors in single-end mode ...
+Finished in 0.88 s (26 us/read; 2.35 M reads/minute).
+
+=== Summary ===
+
+Total reads processed:                  34,400
+Reads with adapters:                    34,390 (100.0%)
+Reads written (passing filters):        34,400 (100.0%)
+
+Total basepairs processed:    10,320,000 bp
+Total written (filtered):      9,632,417 bp (93.3%)
+
+=== Adapter 1 ===
+
+Sequence: GGACTACHVGGGTWTCTAAT; Type: regular 5'; Length: 20; Trimmed: 34390 times.
+
+No. of allowed errors:
+0-9 bp: 0; 10-19 bp: 1; 20 bp: 2
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+14	1	0.0	1	1
+15	3	0.0	1	3
+16	1	0.0	1	0 1
+17	1	0.0	1	0 1
+18	17	0.0	1	3 6 8
+19	262	0.0	1	91 166 5
+20	34051	0.0	2	33520 529 2
+21	38	0.0	2	14 23 1
+22	2	0.0	2	1 1
+23	3	0.0	2	3
+24	2	0.0	2	2
+25	6	0.0	2	6
+26	3	0.0	2	3
+
+This is cutadapt 1.14 with Python 3.6.2rc1
+Command line parameters: -g GGACTACHVGGGTWTCTAAT -o ./MT-R-1_2.fq.gz.out ./MT-R-1_2.fq.gz
+Trimming 1 adapter with at most 10.0% errors in single-end mode ...
+Finished in 0.86 s (25 us/read; 2.41 M reads/minute).
+
+=== Summary ===
+
+Total reads processed:                  34,750
+Reads with adapters:                    34,741 (100.0%)
+Reads written (passing filters):        34,750 (100.0%)
+
+Total basepairs processed:    10,425,000 bp
+Total written (filtered):      9,730,440 bp (93.3%)
+
+=== Adapter 1 ===
+
+Sequence: GGACTACHVGGGTWTCTAAT; Type: regular 5'; Length: 20; Trimmed: 34741 times.
+
+No. of allowed errors:
+0-9 bp: 0; 10-19 bp: 1; 20 bp: 2
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+15	1	0.0	1	1
+16	2	0.0	1	2
+17	1	0.0	1	0 1
+18	25	0.0	1	2 4 19
+19	292	0.0	1	86 204 2
+20	34366	0.0	2	33726 631 9
+21	39	0.0	2	16 22 1
+22	4	0.0	2	4
+23	2	0.0	2	2
+24	1	0.0	2	1
+25	7	0.0	2	7
+26	1	0.0	2	1
+
+This is cutadapt 1.14 with Python 3.6.2rc1
+Command line parameters: -g GGACTACHVGGGTWTCTAAT -o ./MT-R-2_2.fq.gz.out ./MT-R-2_2.fq.gz
+Trimming 1 adapter with at most 10.0% errors in single-end mode ...
+Finished in 0.88 s (25 us/read; 2.37 M reads/minute).
+
+=== Summary ===
+
+Total reads processed:                  34,825
+Reads with adapters:                    34,817 (100.0%)
+Reads written (passing filters):        34,825 (100.0%)
+
+Total basepairs processed:    10,447,500 bp
+Total written (filtered):      9,751,374 bp (93.3%)
+
+=== Adapter 1 ===
+
+Sequence: GGACTACHVGGGTWTCTAAT; Type: regular 5'; Length: 20; Trimmed: 34817 times.
+
+No. of allowed errors:
+0-9 bp: 0; 10-19 bp: 1; 20 bp: 2
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+12	1	0.0	1	1
+18	14	0.0	1	5 2 7
+19	277	0.0	1	91 183 3
+20	34473	0.0	2	33899 567 7
+21	37	0.0	2	16 20 1
+22	5	0.0	2	3 1 1
+23	3	0.0	2	3
+24	1	0.0	2	1
+25	1	0.0	2	1
+26	1	0.0	2	1
+27	4	0.0	2	4
+
+This is cutadapt 1.14 with Python 3.6.2rc1
+Command line parameters: -g GGACTACHVGGGTWTCTAAT -o ./MT-R-3_2.fq.gz.out ./MT-R-3_2.fq.gz
+Trimming 1 adapter with at most 10.0% errors in single-end mode ...
+Finished in 0.90 s (26 us/read; 2.34 M reads/minute).
+
+=== Summary ===
+
+Total reads processed:                  35,202
+Reads with adapters:                    35,195 (100.0%)
+Reads written (passing filters):        35,202 (100.0%)
+
+Total basepairs processed:    10,560,600 bp
+Total written (filtered):      9,856,939 bp (93.3%)
+
+=== Adapter 1 ===
+
+Sequence: GGACTACHVGGGTWTCTAAT; Type: regular 5'; Length: 20; Trimmed: 35195 times.
+
+No. of allowed errors:
+0-9 bp: 0; 10-19 bp: 1; 20 bp: 2
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+15	1	0.0	1	1
+16	2	0.0	1	2
+17	6	0.0	1	3 3
+18	29	0.0	1	4 7 18
+19	272	0.0	1	81 191
+20	34823	0.0	2	34276 543 4
+21	47	0.0	2	18 29
+23	2	0.0	2	2
+24	3	0.0	2	3
+25	6	0.0	2	6
+26	1	0.0	2	1
+27	3	0.0	2	3
+
+This is cutadapt 1.14 with Python 3.6.2rc1
+Command line parameters: -g GGACTACHVGGGTWTCTAAT -o ./MT-R-4_2.fq.gz.out ./MT-R-4_2.fq.gz
+Trimming 1 adapter with at most 10.0% errors in single-end mode ...
+Finished in 0.91 s (26 us/read; 2.33 M reads/minute).
+
+=== Summary ===
+
+Total reads processed:                  35,236
+Reads with adapters:                    35,224 (100.0%)
+Reads written (passing filters):        35,236 (100.0%)
+
+Total basepairs processed:    10,570,800 bp
+Total written (filtered):      9,866,562 bp (93.3%)
+
+=== Adapter 1 ===
+
+Sequence: GGACTACHVGGGTWTCTAAT; Type: regular 5'; Length: 20; Trimmed: 35224 times.
+
+No. of allowed errors:
+0-9 bp: 0; 10-19 bp: 1; 20 bp: 2
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+14	1	0.0	1	0 1
+15	1	0.0	1	1
+17	2	0.0	1	2
+18	22	0.0	1	2 3 17
+19	286	0.0	1	76 208 2
+20	34862	0.0	2	34317 540 5
+21	34	0.0	2	11 23
+22	3	0.0	2	2 1
+23	2	0.0	2	2
+24	3	0.0	2	3
+25	4	0.0	2	4
+26	1	0.0	2	1
+27	3	0.0	2	3
+
+This is cutadapt 1.14 with Python 3.6.2rc1
+Command line parameters: -g GGACTACHVGGGTWTCTAAT -o ./MT-S-1_2.fq.gz.out ./MT-S-1_2.fq.gz
+Trimming 1 adapter with at most 10.0% errors in single-end mode ...
+Finished in 0.90 s (26 us/read; 2.34 M reads/minute).
+
+=== Summary ===
+
+Total reads processed:                  34,874
+Reads with adapters:                    34,865 (100.0%)
+Reads written (passing filters):        34,874 (100.0%)
+
+Total basepairs processed:    10,462,200 bp
+Total written (filtered):      9,765,150 bp (93.3%)
+
+=== Adapter 1 ===
+
+Sequence: GGACTACHVGGGTWTCTAAT; Type: regular 5'; Length: 20; Trimmed: 34865 times.
+
+No. of allowed errors:
+0-9 bp: 0; 10-19 bp: 1; 20 bp: 2
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+13	1	0.0	1	0 1
+15	2	0.0	1	1 1
+16	2	0.0	1	2
+17	1	0.0	1	1
+18	19	0.0	1	9 1 9
+19	315	0.0	1	81 233 1
+20	34469	0.0	2	33879 580 10
+21	37	0.0	2	17 19 1
+22	2	0.0	2	2
+23	2	0.0	2	2
+24	2	0.0	2	2
+25	6	0.0	2	6
+26	3	0.0	2	2 1
+27	4	0.0	2	4
+
+This is cutadapt 1.14 with Python 3.6.2rc1
+Command line parameters: -g GGACTACHVGGGTWTCTAAT -o ./MT-S-2_2.fq.gz.out ./MT-S-2_2.fq.gz
+Trimming 1 adapter with at most 10.0% errors in single-end mode ...
+Finished in 0.85 s (25 us/read; 2.41 M reads/minute).
+
+=== Summary ===
+
+Total reads processed:                  34,300
+Reads with adapters:                    34,287 (100.0%)
+Reads written (passing filters):        34,300 (100.0%)
+
+Total basepairs processed:    10,290,000 bp
+Total written (filtered):      9,604,571 bp (93.3%)
+
+=== Adapter 1 ===
+
+Sequence: GGACTACHVGGGTWTCTAAT; Type: regular 5'; Length: 20; Trimmed: 34287 times.
+
+No. of allowed errors:
+0-9 bp: 0; 10-19 bp: 1; 20 bp: 2
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+13	1	0.0	1	1
+15	2	0.0	1	2
+16	2	0.0	1	1 1
+17	1	0.0	1	0 1
+18	22	0.0	1	5 3 14
+19	286	0.0	1	84 196 6
+20	33926	0.0	2	33361 553 12
+21	47	0.0	2	18 29
+
+This is cutadapt 1.14 with Python 3.6.2rc1
+Command line parameters: -g GGACTACHVGGGTWTCTAAT -o ./MT-S-3_2.fq.gz.out ./MT-S-3_2.fq.gz
+Trimming 1 adapter with at most 10.0% errors in single-end mode ...
+Finished in 0.88 s (25 us/read; 2.38 M reads/minute).
+
+=== Summary ===
+
+Total reads processed:                  34,909
+Reads with adapters:                    34,900 (100.0%)
+Reads written (passing filters):        34,909 (100.0%)
+
+Total basepairs processed:    10,472,700 bp
+Total written (filtered):      9,774,985 bp (93.3%)
+
+=== Adapter 1 ===
+
+Sequence: GGACTACHVGGGTWTCTAAT; Type: regular 5'; Length: 20; Trimmed: 34900 times.
+
+No. of allowed errors:
+0-9 bp: 0; 10-19 bp: 1; 20 bp: 2
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+15	2	0.0	1	2
+16	2	0.0	1	2
+18	19	0.0	1	3 2 14
+19	278	0.0	1	75 198 5
+20	34563	0.0	2	34015 545 3
+21	33	0.0	2	8 25
+25	2	0.0	2	2
+26	1	0.0	2	1
+
+This is cutadapt 1.14 with Python 3.6.2rc1
+Command line parameters: -g GGACTACHVGGGTWTCTAAT -o ./MT-S-4_2.fq.gz.out ./MT-S-4_2.fq.gz
+Trimming 1 adapter with at most 10.0% errors in single-end mode ...
+Finished in 0.88 s (25 us/read; 2.36 M reads/minute).
+
+=== Summary ===
+
+Total reads processed:                  34,430
+Reads with adapters:                    34,423 (100.0%)
+Reads written (passing filters):        34,430 (100.0%)
+
+Total basepairs processed:    10,260,140 bp
+Total written (filtered):      9,571,985 bp (93.3%)
+
+=== Adapter 1 ===
+
+Sequence: GGACTACHVGGGTWTCTAAT; Type: regular 5'; Length: 20; Trimmed: 34423 times.
+
+No. of allowed errors:
+0-9 bp: 0; 10-19 bp: 1; 20 bp: 2
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+13	1	0.0	1	1
+16	2	0.0	1	1 1
+17	7	0.0	1	6 1
+18	32	0.0	1	15 4 13
+19	251	0.0	1	87 161 3
+20	34089	0.0	2	33399 687 3
+21	39	0.0	2	14 25
+23	1	0.0	2	1
+24	1	0.0	2	1
+
+This is cutadapt 1.14 with Python 3.6.2rc1
+Command line parameters: -g GGACTACHVGGGTWTCTAAT -o ./Transplant-A_2.fq.gz.out ./Transplant-A_2.fq.gz
+Trimming 1 adapter with at most 10.0% errors in single-end mode ...
+Finished in 0.89 s (25 us/read; 2.36 M reads/minute).
+
+=== Summary ===
+
+Total reads processed:                  34,958
+Reads with adapters:                    34,947 (100.0%)
+Reads written (passing filters):        34,958 (100.0%)
+
+Total basepairs processed:    10,312,610 bp
+Total written (filtered):      9,614,147 bp (93.2%)
+
+=== Adapter 1 ===
+
+Sequence: GGACTACHVGGGTWTCTAAT; Type: regular 5'; Length: 20; Trimmed: 34947 times.
+
+No. of allowed errors:
+0-9 bp: 0; 10-19 bp: 1; 20 bp: 2
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+15	3	0.0	1	3
+16	2	0.0	1	1 1
+17	7	0.0	1	5 2
+18	33	0.0	1	13 3 17
+19	435	0.0	1	220 214 1
+20	34399	0.0	2	33756 638 5
+21	68	0.0	2	51 17
+
+This is cutadapt 1.14 with Python 3.6.2rc1
+Command line parameters: -g GGACTACHVGGGTWTCTAAT -o ./Transplant-C_2.fq.gz.out ./Transplant-C_2.fq.gz
+Trimming 1 adapter with at most 10.0% errors in single-end mode ...
+Finished in 0.87 s (25 us/read; 2.40 M reads/minute).
+
+=== Summary ===
+
+Total reads processed:                  34,958
+Reads with adapters:                    34,948 (100.0%)
+Reads written (passing filters):        34,958 (100.0%)
+
+Total basepairs processed:    10,312,610 bp
+Total written (filtered):      9,614,187 bp (93.2%)
+
+=== Adapter 1 ===
+
+Sequence: GGACTACHVGGGTWTCTAAT; Type: regular 5'; Length: 20; Trimmed: 34948 times.
+
+No. of allowed errors:
+0-9 bp: 0; 10-19 bp: 1; 20 bp: 2
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+13	1	0.0	1	1
+15	2	0.0	1	2
+16	5	0.0	1	5
+17	7	0.0	1	5 2
+18	38	0.0	1	14 6 18
+19	459	0.0	1	217 239 3
+20	34382	0.0	2	33835 537 10
+21	52	0.0	2	35 17
+22	2	0.0	2	1 1
+
+This is cutadapt 1.14 with Python 3.6.2rc1
+Command line parameters: -g GGACTACHVGGGTWTCTAAT -o ./Transplant-F_2.fq.gz.out ./Transplant-F_2.fq.gz
+Trimming 1 adapter with at most 10.0% errors in single-end mode ...
+Finished in 0.89 s (26 us/read; 2.35 M reads/minute).
+
+=== Summary ===
+
+Total reads processed:                  34,815
+Reads with adapters:                    34,804 (100.0%)
+Reads written (passing filters):        34,815 (100.0%)
+
+Total basepairs processed:    10,270,425 bp
+Total written (filtered):      9,574,913 bp (93.2%)
+
+=== Adapter 1 ===
+
+Sequence: GGACTACHVGGGTWTCTAAT; Type: regular 5'; Length: 20; Trimmed: 34804 times.
+
+No. of allowed errors:
+0-9 bp: 0; 10-19 bp: 1; 20 bp: 2
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+14	1	0.0	1	1
+16	2	0.0	1	2
+17	5	0.0	1	3 2
+18	35	0.0	1	19 5 11
+19	537	0.0	1	230 305 2
+20	34158	0.0	2	33545 609 4
+21	64	0.0	2	48 16
+22	2	0.0	2	2
+
+This is cutadapt 1.14 with Python 3.6.2rc1
+Command line parameters: -g GGACTACHVGGGTWTCTAAT -o ./Transplant-H_2.fq.gz.out ./Transplant-H_2.fq.gz
+Trimming 1 adapter with at most 10.0% errors in single-end mode ...
+Finished in 0.86 s (25 us/read; 2.43 M reads/minute).
+
+=== Summary ===
+
+Total reads processed:                  34,755
+Reads with adapters:                    34,747 (100.0%)
+Reads written (passing filters):        34,755 (100.0%)
+
+Total basepairs processed:    10,252,725 bp
+Total written (filtered):      9,558,254 bp (93.2%)
+
+=== Adapter 1 ===
+
+Sequence: GGACTACHVGGGTWTCTAAT; Type: regular 5'; Length: 20; Trimmed: 34747 times.
+
+No. of allowed errors:
+0-9 bp: 0; 10-19 bp: 1; 20 bp: 2
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+7	1	2.1	0	1
+14	1	0.0	1	1
+15	1	0.0	1	1
+16	2	0.0	1	2
+17	1	0.0	1	0 1
+18	32	0.0	1	12 9 11
+19	433	0.0	1	190 243
+20	34214	0.0	2	33715 494 5
+21	61	0.0	2	41 20
+22	1	0.0	2	1
+
+This is cutadapt 1.14 with Python 3.6.2rc1
+Command line parameters: -g GGACTACHVGGGTWTCTAAT -o ./Transplant-J_2.fq.gz.out ./Transplant-J_2.fq.gz
+Trimming 1 adapter with at most 10.0% errors in single-end mode ...
+Finished in 0.87 s (25 us/read; 2.39 M reads/minute).
+
+=== Summary ===
+
+Total reads processed:                  34,907
+Reads with adapters:                    34,902 (100.0%)
+Reads written (passing filters):        34,907 (100.0%)
+
+Total basepairs processed:    10,297,565 bp
+Total written (filtered):      9,600,009 bp (93.2%)
+
+=== Adapter 1 ===
+
+Sequence: GGACTACHVGGGTWTCTAAT; Type: regular 5'; Length: 20; Trimmed: 34902 times.
+
+No. of allowed errors:
+0-9 bp: 0; 10-19 bp: 1; 20 bp: 2
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+13	1	0.0	1	1
+16	4	0.0	1	4
+17	6	0.0	1	5 1
+18	40	0.0	1	12 10 18
+19	444	0.0	1	230 211 3
+20	34329	0.0	2	33714 610 5
+21	75	0.0	2	54 21
+22	3	0.0	2	3
+
+This is cutadapt 1.14 with Python 3.6.2rc1
+Command line parameters: -g GGACTACHVGGGTWTCTAAT -o ./Transplant-L_2.fq.gz.out ./Transplant-L_2.fq.gz
+Trimming 1 adapter with at most 10.0% errors in single-end mode ...
+Finished in 0.92 s (26 us/read; 2.32 M reads/minute).
+
+=== Summary ===
+
+Total reads processed:                  35,545
+Reads with adapters:                    35,535 (100.0%)
+Reads written (passing filters):        35,545 (100.0%)
+
+Total basepairs processed:    10,485,775 bp
+Total written (filtered):      9,775,579 bp (93.2%)
+
+=== Adapter 1 ===
+
+Sequence: GGACTACHVGGGTWTCTAAT; Type: regular 5'; Length: 20; Trimmed: 35535 times.
+
+No. of allowed errors:
+0-9 bp: 0; 10-19 bp: 1; 20 bp: 2
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+11	1	0.0	1	1
+14	1	0.0	1	0 1
+15	2	0.0	1	2
+16	1	0.0	1	1
+17	6	0.0	1	5 1
+18	35	0.0	1	12 8 15
+19	455	0.0	1	224 229 2
+20	34969	0.0	2	34397 569 3
+21	63	0.0	2	42 19 2
+22	1	0.0	2	1
+23	1	0.0	2	1
+
+This is cutadapt 1.14 with Python 3.6.2rc1
+Command line parameters: -g GGACTACHVGGGTWTCTAAT -o ./Transplant-N_2.fq.gz.out ./Transplant-N_2.fq.gz
+Trimming 1 adapter with at most 10.0% errors in single-end mode ...
+Finished in 0.90 s (26 us/read; 2.35 M reads/minute).
+
+=== Summary ===
+
+Total reads processed:                  35,093
+Reads with adapters:                    35,081 (100.0%)
+Reads written (passing filters):        35,093 (100.0%)
+
+Total basepairs processed:    10,352,435 bp
+Total written (filtered):      9,651,299 bp (93.2%)
+
+=== Adapter 1 ===
+
+Sequence: GGACTACHVGGGTWTCTAAT; Type: regular 5'; Length: 20; Trimmed: 35081 times.
+
+No. of allowed errors:
+0-9 bp: 0; 10-19 bp: 1; 20 bp: 2
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+14	1	0.0	1	1
+15	3	0.0	1	2 1
+16	1	0.0	1	1
+17	4	0.0	1	4
+18	40	0.0	1	13 3 24
+19	437	0.0	1	210 226 1
+20	34526	0.0	2	33874 650 2
+21	68	0.0	2	52 16
+22	1	0.0	2	1
+
+This is cutadapt 1.14 with Python 3.6.2rc1
+Command line parameters: -g GGACTACHVGGGTWTCTAAT -o ./Transplant-P_2.fq.gz.out ./Transplant-P_2.fq.gz
+Trimming 1 adapter with at most 10.0% errors in single-end mode ...
+Finished in 0.87 s (25 us/read; 2.40 M reads/minute).
+
+=== Summary ===
+
+Total reads processed:                  34,916
+Reads with adapters:                    34,909 (100.0%)
+Reads written (passing filters):        34,916 (100.0%)
+
+Total basepairs processed:    10,265,304 bp
+Total written (filtered):      9,567,680 bp (93.2%)
+
+=== Adapter 1 ===
+
+Sequence: GGACTACHVGGGTWTCTAAT; Type: regular 5'; Length: 20; Trimmed: 34909 times.
+
+No. of allowed errors:
+0-9 bp: 0; 10-19 bp: 1; 20 bp: 2
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+9	1	0.1	0	1
+13	3	0.0	1	2 1
+14	2	0.0	1	2
+15	2	0.0	1	2
+16	1	0.0	1	1
+17	4	0.0	1	4
+18	44	0.0	1	25 5 14
+19	447	0.0	1	253 191 3
+20	34359	0.0	2	33604 749 6
+21	45	0.0	2	30 15
+24	1	0.0	2	1
+
+This is cutadapt 1.14 with Python 3.6.2rc1
+Command line parameters: -g GGACTACHVGGGTWTCTAAT -o ./Transplant-Q_2.fq.gz.out ./Transplant-Q_2.fq.gz
+Trimming 1 adapter with at most 10.0% errors in single-end mode ...
+Finished in 0.89 s (25 us/read; 2.40 M reads/minute).
+
+=== Summary ===
+
+Total reads processed:                  35,457
+Reads with adapters:                    35,448 (100.0%)
+Reads written (passing filters):        35,457 (100.0%)
+
+Total basepairs processed:    10,424,358 bp
+Total written (filtered):      9,716,068 bp (93.2%)
+
+=== Adapter 1 ===
+
+Sequence: GGACTACHVGGGTWTCTAAT; Type: regular 5'; Length: 20; Trimmed: 35448 times.
+
+No. of allowed errors:
+0-9 bp: 0; 10-19 bp: 1; 20 bp: 2
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+9	1	0.1	0	1
+10	1	0.0	1	1
+12	1	0.0	1	1
+14	4	0.0	1	3 1
+15	2	0.0	1	2
+16	6	0.0	1	5 1
+17	5	0.0	1	5
+18	57	0.0	1	31 7 19
+19	509	0.0	1	264 242 3
+20	34808	0.0	2	33946 846 16
+21	53	0.0	2	38 15
+22	1	0.0	2	1
