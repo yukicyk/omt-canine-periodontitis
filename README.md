@@ -71,10 +71,11 @@ renv::restore()
 │   ├── 02_dada2_and_phyloseq.R
 │   ├── 03_diversity_and_ordination_analysis.R
 │   ├── 04_statistical_and_clinical_analysis.R
-│   └── 05_functional_prediction_analysis.R
+│   ├── 05_functional_prediction_analysis.R
+│   └── 06_animated_visualizations.R   <-- NEW SCRIPT
 ├── data/
 │   ├── metadata.txt
-│   └── (This directory should contain non-sensitive input files like the mapping file)
+│   └── synthetic_clinical_data.csv
 ├── results/
 │   ├── figures/
 │   └── tables/
@@ -83,7 +84,7 @@ renv::restore()
 │   ├── PRC.docx
 │   └── power.docx
 ├── archive/
-│   ├── (Old and exploratory scripts are kept here for a complete record)
+│   ├── (All original, unedited scripts)
 ├── .gitignore
 ├── Canine_Periodontitis_OMT.Rproj
 ├── README.md
@@ -157,6 +158,12 @@ find . -name "*_2.fq.gz" -exec cutadapt -g GGACTACHVGGGTWTCTAAT -o {}.out {} \;
 *   **Description:** This script details the workflow for predicting the functional potential of the microbial communities. It first prepares the DADA2 output for use with PICRUSt (Phylogenetic Investigation of Communities by Reconstruction of Unobserved States). It then analyzes the resulting KEGG Orthology (KO) abundance tables to find functional pathways that differ between groups and timepoints.
 *   **Inputs:** `seqtab_final.rds`, Greengenes reference database.
 *   **Outputs:** Predicted KEGG pathway abundance tables and plots comparing functional profiles.
+
+#### **Step 6: Create Animated Visualizations (Optional)**
+*   **Script:** `R/06_animated_visualizations.R`
+*   **Description:** This script uses the `gganimate` package to create animated ordination plots (MDS on Bray-Curtis dissimilarity). These animations visualize the trajectory of the microbial community for each dog over the 12-week study period, providing an intuitive view of community shifts in the control and recipient groups.
+*   **Inputs:** `phyloseq_object.rds`.
+*   **Outputs:** Animated `.gif` files (e.g., `control_group_shift.gif`, `recipient_group_shift.gif`) saved to the `results/figures/` directory.
 
 ---
 
