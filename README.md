@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 # Oral Microbiota Transplant in Dogs with Naturally Occurring Periodontitis
 
 This repository contains the complete analysis workflow for the study "Oral Microbiota Transplant in Dogs with Naturally Occurring Periodontitis," published in the *Journal of Dental Research*.
@@ -184,6 +184,3 @@ To create a fully functional and self-contained repository that allows for the i
 This approach respects the data governance policies of the original research while upholding the principles of open and reproducible science (e.g., FAIR, ALCOA+), ensuring the computational methods are transparent and executable.
 
 =======
-# omt-canine-periodontitis
-This repository contains the complete analysis workflow for the study "Oral Microbiota Transplant in Dogs with Naturally Occurring Periodontitis," published in the Journal of Dental Research
->>>>>>> 03eca4f2d7b60ef06118e4dfb9f32b3ae3f5a7d1
