@@ -100,7 +100,7 @@ Follow these steps in order to reproduce the analysis from the raw data.
 #### **Step 0: Setup Taxonomy Reference Database**
 *   **Script:** `R/00_setup_taxonomy_reference.R`
 *   **Source Files:** `tidying_up_taxonomy_ref.R`, `tidying_up_taxonomy_species_ref.R`
-*   **Description:** This script prepares the custom taxonomy reference files from the Canine Oral Microbiome (COT) and Human Oral Microbiome Database (HOMD). This is a one-time setup step required before running the main DADA2 pipeline.
+*   **Description:** This script prepares the custom taxonomy reference files from the RDP, the Canine Oral Microbiome (COT) and Human Oral Microbiome Database (HOMD). This is a one-time setup step required before running the main DADA2 pipeline.
 *   **Inputs:** Raw FASTA and taxonomy files from HOMD/COT.
 *   **Outputs:** Formatted `COT_HOMD_RDP_train_set.fa` and `COT_HOMD_RDP_spec_assign_v2.txt` files for DADA2.
 
