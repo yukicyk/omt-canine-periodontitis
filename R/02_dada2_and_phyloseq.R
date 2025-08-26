@@ -22,7 +22,7 @@
 # It's good practice to install/load all packages at the beginning.
 # renv will manage versions automatically.
 if (!require("pacman")) install.packages("pacman")
-pacman::p_load(dada2, phyloseq, ggplot2, seqinr, ape, BiocManager)
+pacman::p_load(BiocManager, dada2, phyloseq, ggplot2, seqinr, ape)
 
 # Define relative paths for clarity and reproducibility
 fastq_path <- "data/trimmed_fastq" # Path to your trimmed .fastq.gz files
