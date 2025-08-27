@@ -3,7 +3,7 @@
 
 This repository contains the complete analysis workflow for the study "Oral Microbiota Transplant in Dogs with Naturally Occurring Periodontitis," published in the *Journal of Dental Research*.
 
-**Publication:** Beikler, T., Bunte, K., Chan, Y., et al. (2021). Oral Microbiota Transplant in Dogs with Naturally Occurring Periodontitis. *Journal of Dental Research*, 100(7), 764–770. [https://doi.org/10.1177/0022034521995423](https://doi.org/10.1177/0022034521995423)
+**Publication:** Beikler, T., Bunte, K., Chan, Y., et al. (2021). Oral Microbiota Transplant in Dogs with Naturally Occurring Periodontitis. *Journal of Dental Research*, 100(7), 764–770. [https://doi.org/10.1177/0022034521995423](https://doi.org/10.1177/0022034521995423) 
 
 **Data Availability:** Raw sequencing data is available at the NCBI Sequence Read Archive (SRA) under accession number **PRJNA598540**.
 
@@ -74,17 +74,22 @@ renv::restore()
 │   ├── 05_functional_prediction_analysis.R
 │   └── 06_animated_visualizations.R   <-- NEW SCRIPT
 ├── data/
+│   ├── raw_fastq/              <- fastq QC graphs
+│   ├── data_README.md
 │   ├── metadata.txt
-│   └── synthetic_clinical_data.csv
+│   ├── ASV_phylogeny.nwk
+│   └── clinical_metadata.csv
 ├── results/
 │   ├── figures/
 │   └── tables/
 ├── docs/
-│   ├── Canine_MiSeq_LOG_copy.txt
-│   ├── PRC.docx
-│   └── power.docx
+│   ├── analysis_methods_explained.md
+│   ├── analysis_narrative.md
+│   ├── taxonomy.md
+│   ├── OMT_Dog_JDR2021.pdf
+│   └── SI_OMT_Dog_JDR2021.pdf
 ├── archive/
-│   ├── (All original, unedited scripts)
+│   ├── (All original, unedited logs, scripts and reports)
 ├── .gitignore
 ├── Canine_Periodontitis_OMT.Rproj
 ├── README.md
@@ -100,14 +105,14 @@ Follow these steps in order to reproduce the analysis from the raw data.
 #### **Step 0: Setup Taxonomy Reference Database**
 *   **Script:** `R/00_setup_taxonomy_reference.R`
 *   **Source Files:** `tidying_up_taxonomy_ref.R`, `tidying_up_taxonomy_species_ref.R`
-*   **Description:** This script prepares the custom taxonomy reference files from the RDP, the Canine Oral Microbiome (COT) and Human Oral Microbiome Database (HOMD). This is a one-time setup step required before running the main DADA2 pipeline.
+*   **Description:** This script prepares the custom taxonomy reference files from the RDP, the Canine Oral Microbiome (COT) and Human Oral Microbiome Database (HOMD). This is a one-time setup step required before running the main DADA2 pipeline. See `docs/taxonomy.md` for details. 
 *   **Inputs:** Raw FASTA and taxonomy files from HOMD/COT.
 *   **Outputs:** Formatted `COT_HOMD_RDP_train_set.fa` and `COT_HOMD_RDP_spec_assign_v2.txt` files for DADA2.
 
 #### **Step 1: Raw Sequence Pre-processing**
 *   **Script:** `R/01_preprocessing.sh`
 *   **Source Files:** `Canine_MiSeq_LOG copy.txt`, `Cutadapt.log.txt`
-*   **Description:** This shell script uses `cutadapt` to trim the 341F and 806R 16S rRNA gene primers from the raw, paired-end `.fq.gz` files.
+*   **Description:** This shell script uses `cutadapt` to trim the 341F and 806R 16S rRNA gene primers from the raw, paired-end `.fq.gz` files. See `data/data_README.md` for details.
 *   **Inputs:** Raw `.fq.gz` files for forward and reverse reads.
 *   **Outputs:** Trimmed `.fq.gz.out` files for each sample, ready for DADA2.
 
@@ -137,15 +142,15 @@ find . -name "*_2.fq.gz" -exec cutadapt -g GGACTACHVGGGTWTCTAAT -o {}.out {} \;
 #### **Step 3: Diversity and Ordination Analysis**
 *   **Script:** `R/03_diversity_and_ordination_analysis.R`
 *   **Source Files:** `canine_analysisv2.R`
-*   **Description:** This script handles the core ecological analyses presented in the paper. It calculates alpha diversity metrics (Shannon, Observed ASVs) and performs beta diversity analysis using Bray-Curtis and weighted/unweighted UniFrac distances. It generates ordination plots (PCoA, NMDS) to visualize community differences (Figures 2 & 3 in the paper) and performs PERMANOVA tests to assess statistical significance.
+*   **Description:** This script handles the core ecological analyses presented in the paper. It calculates alpha diversity metrics (Shannon, Observed ASVs) and performs beta diversity analysis using Bray-Curtis and weighted/unweighted UniFrac distances. It generates ordination plots (PCoA, NMDS) to visualize community differences (Figures 2 & 3 in the paper) and performs PERMANOVA tests to assess statistical significance. For a detailed explanation of PERMANOVA and the associated power analysis, see `docs/analysis_methods_explained.md`.
 *   **Inputs:** `phyloseq_object.rds`.
 *   **Outputs:** Alpha and beta diversity plots, ordination plots, and statistical results tables.
 
 #### **Step 4: Advanced Statistical and Clinical Analysis**
 *   **Script:** `R/04_statistical_and_clinical_analysis.R`
-*   **Source Files:** `PRC.docx`, `power.docx`, `correlationAnalysis.R`, `cforestAnalysisWithMeta.R`
+*   **Source Files:** `PRC.pdf`, `power.pdf`, `correlationAnalysis.R`, `cforestAnalysisWithMeta.R`
 *   **Description:** This script brings together several advanced analyses:
-    *   **Principal Response Curve (PRC):** To visualize the effect of the OMT on the community over time relative to the control (Figure 4 in the paper).
+    *   **Principal Response Curve (PRC):** To visualize the effect of the OMT on the community over time relative to the control (Figure 4 in the paper). For a detailed theoretical explanation of the PRC method, see `docs/analysis_methods_explained.md`.
     *   **PERMANOVA Power Analysis:** A retrospective analysis to confirm the statistical power of the study design.
     *   **Correlation Analysis:** Uses Pearson correlation to find significant associations between microbial taxa (ASVs/Species) and clinical parameters (BOP, PPD).
     *   **Predictive Modeling:** Employs Random Forest to identify which taxa are most predictive of clinical outcomes.
@@ -171,16 +176,14 @@ find . -name "*_2.fq.gz" -exec cutadapt -g GGACTACHVGGGTWTCTAAT -o {}.out {} \;
 
 **Primary Data:** The raw 16S rRNA gene sequencing data is publicly available from the NCBI Sequence Read Archive (SRA) under accession number **PRJNA598540**.
 
-**Metadata and Clinical Data:** In accordance with institutional data management policies and the approved animal research ethics protocol (**Landesamt für Natur und Verbraucherschutz, #84-02.04.2014.A449**), the primary metadata and detailed clinical data (PPD, BOP, Plaque Index) are archived at the research institution and are not publicly distributed in this repository. This practice ensures the long-term integrity and controlled access to the original study data.
+**Metadata and Clinical Data:** To ensure full computational reproducibility, this repository includes all metadata required to execute the analysis workflow from start to finish. The data is provided in two key files:
 
-To create a fully functional and self-contained repository that allows for the independent verification of the *analytical methodology*, this repository uses reconstructed and synthetic data:
+  - `data/metadata.txt`: Links sample IDs to their respective treatment groups, dog IDs, and timepoints.
+  - `data/clinical_metadata.csv`: Provides the deanonymized clinical parameters (e.g., mean PPD, BOP% and Plaque%) for each sample and timepoint.
 
-1.  **Reconstructed Metadata (`data/metadata.txt`):** The sample mapping file, which links sample IDs to their respective groups and timepoints, has been reconstructed based on information from the data processing logs and the published study design. This allows the analysis scripts to correctly assign samples to their experimental groups.
+All data in this repository has been fully deanonymized and contains the same information on experimental groups and clinical outcomes that was used for the analyses presented in the publication.
 
-2.  **Synthetic Clinical Data (`data/synthetic_clinical_data.csv`):** The detailed, per-subject clinical data is not included. Instead, a synthetic dataset has been generated based on the summary statistics (mean and standard deviation) published in **Table 1** of the manuscript.
-    *   The script `R/generate_synthetic_clinical_data.R` creates this dataset.
-    *   **Important:** The purpose of this synthetic data is to allow the correlation and machine learning scripts (`04_statistical_and_clinical_analysis.R`) to execute without error. The specific numerical results from these scripts (e.g., exact correlation coefficients, variable importance scores) will naturally differ from the original publication. The goal is to validate the *process*, not the original findings.
+For compliance with the approved animal research ethics protocol **(Landesamt für Natur und Verbraucherschutz, #84-02.04.2014.A449)** and institutional data management policies, the original, non-anonymized source records and primary clinical charts are securely archived at the research institution.
 
-This approach respects the data governance policies of the original research while upholding the principles of open and reproducible science (e.g., FAIR, ALCOA+), ensuring the computational methods are transparent and executable.
-
+This approach ensures that the computational methods are transparent and fully executable, respecting data governance policies while upholding the principles of open and reproducible science (e.g., FAIR, ALCOA+).
 =======
