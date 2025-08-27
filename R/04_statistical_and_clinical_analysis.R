@@ -2,7 +2,7 @@
 # SCRIPT: 04_statistical_and_clinical_analysis.R
 #
 # PURPOSE: Perform advanced statistical analyses, including Principal Response
-#          Curve (PRC), correlation with clinical variables, and predictive
+#          Curve (PRC), PERMANOVA Power Analysis, correlation with clinical variables and predictive
 #          modeling with Random Forest.
 #
 # INPUTS:
@@ -11,6 +11,7 @@
 #
 # OUTPUTS:
 #   - PRC plots and tables saved to `results/`.
+#   - PERMANOVA power analysis summary table saved to `results/tables/`.
 #   - Correlation heatmaps with FDR correction saved to `results/figures/`.
 #   - Random Forest variable importance plots saved to `results/figures/`.
 #
@@ -18,7 +19,12 @@
 # --- 1. Load Libraries and Data ---
 
 if (!require("pacman")) install.packages("pacman")
-pacman::p_load(phyloseq, ggplot2, dplyr, tidyr, Hmisc, randomForest, pheatmap, vegan)
+# micropower is on GitHub, so we need a special check for it.
+if (!require("micropower")) {
+  if (!require("devtools")) install.packages("devtools")
+  devtools::install_github("brendankelly/micropower") 
+}
+pacman::p_load(phyloseq, ggplot2, dplyr, tidyr, Hmisc, randomForest, pheatmap, vegan, micropower)
 
 # Define output paths
 fig_path <- "results/figures"
@@ -128,11 +134,178 @@ prc_abundance_plot <- ggplot(plot_df, aes(x = Week, y = Abundance, group = Dog, 
 
 ggsave(file.path(fig_path, "prc_top20_asv_abundances.png"), prc_abundance_plot, width = 12, height = 10)
 
-# --- 4. Genus-Level Data Preparation ---
+# --- 4. PERMANOVA Power Analysis (Retrospective) ---
+# This section implements a robust, retrospective power analysis by replicating
+# the logic of the micropower::bootPower function. Power is estimated by
+# bootstrapping the original distance matrix and re-calculating PERMANOVA
+# significance across hundreds of iterations, as described in the internal
+# report "Power estimation for the multivariate microbiome data.pdf".
+
+print("--- Performing retrospective PERMANOVA power analysis ---")
+
+# Step 4.1: Prepare the data
+# The analysis is based on a Bray-Curtis dissimilarity matrix.
+ps.ra <- transform_sample_counts(ps, function(x) x / sum(x)) 
+dist_bc <- as.matrix(phyloseq::distance(ps.ra, method = "bray")) 
+full_meta <- as(sample_data(ps.ra), "data.frame")
+
+# Step 4.2: Define the comparisons to be tested.
+comparisons <- list(
+  "All_Control_vs_Test"      = list(filter_col = "Treatment", groups = c("Control", "Recipient")),
+  "Wk-2_Control_vs_Test" = list(filter_col = "Treatment", groups = c("Control", "Recipient"), time_filter = "T1"),
+  "Baseline_Control_vs_Test"      = list(filter_col = "Treatment", groups = c("Control", "Recipient"), time_filter = "T2"),
+  "Wk2_Control_vs_Test"     = list(filter_col = "Treatment", groups = c("Control", "Recipient"), time_filter = "T3"),
+  "Wk12_Control_vs_Test"     = list(filter_col = "Treatment", groups = c("Control", "Recipient"), time_filter = "T4"),
+  "Control_Baseline_vs_Wk2"      = list(filter_col = "Timepoint",      groups = c("T2", "T3"), treatment_filter = "Control"),
+  "Test_Baseline_vs_Wk2"         = list(filter_col = "Timepoint",      groups = c("T2", "T3"), treatment_filter = "Recipient")
+)
+
+# Step 4.3: Loop through each comparison, run PERMANOVA, and calculate power via bootstrapping.
+power_results_list <- list()
+set.seed(42) # for reproducibility of the entire analysis
+n_boots <- 99 # (999) Number of bootstrap iterations for power calculation
+alpha <- 0.05 # Significance level
+
+# --- NEW: Get the total number of comparisons for progress reporting ---
+total_comparisons <- length(comparisons)
+current_comparison_num <- 0
+
+for (comp_name in names(comparisons)) {
+  current_comparison_num <- current_comparison_num + 1
+  print(paste0("--- Analyzing Comparison ", current_comparison_num, " of ", total_comparisons, ": '", comp_name, "' ---"))
+  
+  # --- 4.3.1: Subset the data for the current comparison ---
+  comp_info <- comparisons[[comp_name]]
+  sub_meta <- full_meta
+  
+  if (!is.null(comp_info$time_filter)) {
+    sub_meta <- sub_meta %>% filter(Timepoint %in% comp_info$time_filter)
+  }
+  if (!is.null(comp_info$treatment_filter)) {
+    sub_meta <- sub_meta %>% filter(Treatment %in% comp_info$treatment_filter)
+  }
+  
+  sub_meta <- sub_meta %>% filter(.data[[comp_info$filter_col]] %in% comp_info$groups)
+  sub_meta$Group <- factor(sub_meta[[comp_info$filter_col]])
+ 
+   # Check if the filtered data contains at least two groups to compare.
+  if (length(levels(sub_meta$Group)) < 2) {
+    print(paste("!!! SKIPPING COMPARISON:", comp_name, "!!! Reason: After filtering, data for only one group was found. Cannot perform comparison."))
+    cat("\n")
+    next # Skip to the next iteration of the loop
+  }
+  sample_names <- rownames(sub_meta)
+  sub_dist_matrix <- dist_bc[sample_names, sample_names]
+  
+  # --- 4.3.2: Calculate OBSERVED statistics from the REAL data ---
+  print("Calculating observed statistics from real data...")
+  permanova_res <- adonis2(as.dist(sub_dist_matrix) ~ Group, data = sub_meta, permutations = 999) #permutations should be set at 999, this is for test-run only
+  
+  # Manually calculate Omega-Squared for the observed data
+  ss_model    <- permanova_res$SumOfSqs[1]
+  df_model    <- permanova_res$Df[1]
+  ss_residual <- permanova_res$SumOfSqs[2]
+  df_residual <- permanova_res$Df[2]
+  ms_residual <- ss_residual / df_residual
+  ss_total    <- sum(ss_model, ss_residual)
+  omega_sq_value <- (ss_model - (df_model * ms_residual)) / (ss_total + ms_residual)
+  
+  # --- 4.3.3: Perform bootstrapping to calculate POWER ---
+  print(paste("... running", n_boots, "bootstrap iterations for power calculation ..."))
+  significant_p_count <- 0
+  # Convert rownames to a column to prevent them from being lost during sampling.
+  sub_meta_with_ids <- sub_meta %>% tibble::rownames_to_column("original_sample_id")
+ 
+  # Convert rownames to a column to prevent them from being lost during sampling.
+  sub_meta_with_ids <- sub_meta %>% tibble::rownames_to_column("original_sample_id")
+  
+  for (i in 1:n_boots) {
+    if (i %% 10 == 0 || i == n_boots) {
+      cat("\rProgress: ", i, "/", n_boots)
+    }
+    
+    # Bootstrap the metadata table. This creates the correct data frame for the adonis2 call.
+    boot_meta <- sub_meta_with_ids %>%
+      group_by(Group) %>%
+      slice_sample(prop = 1, replace = TRUE) %>%
+      ungroup()
+    
+    # Pull the protected original sample IDs from the bootstrapped table.
+    # This is the key step to get the correct names for the distance matrix.
+    boot_sample_names <- boot_meta$original_sample_id
+    
+    # Create the bootstrapped distance matrix using the CORRECT names
+    boot_dist <- as.dist(sub_dist_matrix[boot_sample_names, boot_sample_names])
+    
+    # Run PERMANOVA on the bootstrapped data
+    boot_permanova <- adonis2(boot_dist ~ Group, data = boot_meta, permutations = 99)
+    
+    if (boot_permanova$`Pr(>F)`[1] < alpha) {
+      significant_p_count <- significant_p_count + 1
+    }
+  }
+  # --- NEW: Print a new line after the progress bar is finished ---
+  cat("\n") 
+  # Power is the proportion of significant results
+  calculated_power <- significant_p_count / n_boots
+  print(paste("Calculated Power:", calculated_power))
+  
+  # --- 4.3.4: Store all results ---
+  power_results_list[[comp_name]] <- data.frame(
+    Comparison = comp_name,
+    DF = permanova_res$Df[1],
+    pseudo_F = permanova_res$F[1],
+    R2 = permanova_res$R2[1],
+    p_value = permanova_res$`Pr(>F)`[1],
+    omega_sq = omega_sq_value,
+    power = calculated_power
+  )
+
+print("--- Comparison complete ---")
+cat("\n") # Add a space before the next comparison starts
+}
+
+# Step 4.4: Combine results into a final table and save it.
+power_summary_table <- bind_rows(power_results_list)
+
+print("--- PERMANOVA Power Analysis Summary ---")
+print(power_summary_table, row.names = FALSE)
+write.csv(power_summary_table, file.path(table_path, "permanova_power_analysis_summary.csv"), row.names = FALSE)
+
+# --- Explanatory Notes on the Output ---
+cat("
+### How to Interpret the PERMANOVA Power Analysis Table ###
+
+This table provides a retrospective look at the statistical power for the key
+comparisons in our study.
+
+- **Comparison**: The specific groups being compared.
+- **DF**: Degrees of Freedom for the test.
+- **pseudo-F**: The F-statistic from the PERMANOVA test. A larger value indicates
+  a larger difference between groups compared to within groups.
+- **R2**: The effect size. It represents the proportion of variance in the
+  dissimilarity matrix that is explained by the grouping factor.
+- **p_value**: The probability of observing the data if there were no real
+  difference between the groups. A value < 0.05 is typically considered
+  statistically significant.
+- **omega_sq (ω²)**: A less biased measure of effect size than R2. It provides a
+  more conservative estimate of the variance explained by the grouping.
+- **power**: The key result. This is the estimated probability (from 0 to 1)
+  of detecting a true effect if one exists, given our sample size and the
+  observed effect size. A power of 0.8 or higher is generally considered good.
+
+For example, a power of 0.99 for a comparison means that we had a 99% chance of
+detecting a significant difference between the groups, which gives us high
+confidence in the PERMANOVA result for that test.
+\n")
+print("---------------------------------------------------")
+
+
+# --- 5. Genus-Level Data Preparation ---
 
 print("Preparing data for Genus-level analysis...")
 
-# Step 4.1: Agglomerate taxa to the Genus level using tax_glom.
+# Step 5.1: Agglomerate taxa to the Genus level using tax_glom.
 ps_genus <- tax_glom(ps, taxrank = "Genus", NArm = TRUE)
 #QC CHECK - Evaluate the effect of removing unclassified taxa.
 print("--- QC Check: Evaluating abundance loss from tax_glom(NArm=TRUE) ---")
@@ -159,25 +332,25 @@ if (average_retention > 90) {
   print("RECOMMENDATION: Consider re-running with tax_glom(..., NArm = FALSE) to keep these taxa, or revisit the taxonomic classification pipeline to improve assignments.")
 }
 print("--------------------------------------------------------------------")
-# Step 4.2: Extract the Genus-level abundance table(samples x taxa).
+# Step 5.2: Extract the Genus-level abundance table(samples x taxa).
 genus_abun <- as.data.frame(otu_table(transform_sample_counts(ps_genus, function(x) x / sum(x))))
 
-# Step 4.3: Create a mapping to get clean, unique Genus names for column headers.
+# Step 5.3: Create a mapping to get clean, unique Genus names for column headers.
 tax_key <- as.data.frame(tax_table(ps_genus)) %>%
   tibble::rownames_to_column("ASV_ID") %>%
   mutate(Genus_Name = ifelse(is.na(Genus) | Genus == "", paste0("Unassigned_Genus_", ASV_ID), as.character(Genus))) %>%
   mutate(Genus_Name_Unique = make.names(Genus_Name, unique = TRUE))
 
-# Step 4.4: Replace the ASV_ID column names with the clean Genus names.
+# Step 5.4: Replace the ASV_ID column names with the clean Genus names.
 current_colnames <- colnames(genus_abun)
 new_colnames <- tax_key$Genus_Name_Unique[match(current_colnames, tax_key$ASV_ID)]
 colnames(genus_abun) <- new_colnames
 
-# Step 4.5: Move the sample names from rownames to a column for joining.
+# Step 5.5: Move the sample names from rownames to a column for joining.
 genus_abun_wide <- genus_abun %>%
   tibble::rownames_to_column("SampleID")
 
-# Step 4.6: Create the final, clean Genus-level analysis data frame.
+# Step 5.6: Create the final, clean Genus-level analysis data frame.
 analysis_df_genus <- meta %>%
   inner_join(clinical_data, by = "SampleID") %>%
   inner_join(genus_abun_wide, by = "SampleID")
@@ -186,7 +359,7 @@ analysis_df_genus <- meta %>%
 # Check is the rows are samples, columns are genera, content is the relative abundance of genus in a given sample.
 head(analysis_df_genus)
 
-# --- 5. Correlation Analysis (Genus Level) ---
+# --- 6. Correlation Analysis (Genus Level) ---
 
 print("Performing Genus-level correlation analysis with FDR correction...")
 
@@ -233,13 +406,13 @@ if (nrow(significant_correlations_genus) > 0) {
     main = "Significant Pearson Correlations (FDR < 0.05)\nGenus vs. Clinical Parameters",
     filename = file.path(fig_path, "correlation_heatmap_fdr.png")
   )
-  write.csv(significant_correlations, file.path(table_path, "significant_clinical_correlations_fdr.csv"))
+  write.csv(significant_correlations_genus, file.path(table_path, "significant_clinical_correlations_fdr.csv"))
 } else {
   print("No significant correlations found after FDR correction.")
 }
 
 
-# --- 6. Predictive Modeling (Random Forest at Genus Level) ---
+# --- 7. Predictive Modeling (Random Forest at Genus Level) ---
 # Goal: Predict Treatment group (Control vs. Recipient) at T4 based on T4 microbiome
 
 print("Performing Random Forest analysis at Genus level...")
@@ -290,7 +463,7 @@ if (nrow(rf_final_data_genus) > 1 && n_distinct(rf_final_data_genus$Treatment) >
 
 print("Genus-level analysis complete.")
 
-# --- Side-Quest: Reproducing Figure 4 ---
+# --- 8. Side-Quest: Reproducing Figure 4 ---
 # This section reproduces the Principal Response Curve (PRC) plot from the publication.
 ## If you have followed through all the previous analysis, skip S4.1 & S4.2, 
 ## those are already processed in the previous sessions.
