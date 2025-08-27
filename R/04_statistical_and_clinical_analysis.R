@@ -289,3 +289,164 @@ if (nrow(rf_final_data_genus) > 1 && n_distinct(rf_final_data_genus$Treatment) >
 }
 
 print("Genus-level analysis complete.")
+
+# --- Side-Quest: Reproducing Figure 4 ---
+# This section reproduces the Principal Response Curve (PRC) plot from the publication.
+## If you have followed through all the previous analysis, skip S4.1 & S4.2, 
+## those are already processed in the previous sessions.
+
+# --- S4.1. Data Preparation for PRC ---
+print("--- Side-Quest: Reproducing Figure 4 ---")
+print("Preparing data for Principal Response Curve (PRC) analysis...")
+
+ps_prc <- subset_samples(ps, Treatment %in% c("Control", "Recipient"))
+abun_table <- as.data.frame(otu_table(ps_prc))
+abun_log <- decostand(abun_table, method = "log")
+design <- as(sample_data(ps_prc), "data.frame") %>%
+  select(Treatment, Week) %>%
+  mutate(
+    Treatment = factor(Treatment, levels = c("Control", "Recipient")),
+    Week = as.factor(Week)
+  )
+
+# --- S4.2. Run PRC and Prepare Labels for Plotting ---
+prc_model <- prc(response = t(abun_log), treatment = design$Treatment, time = design$Week)
+prc_summary <- summary(prc_model)
+
+tax_table_df <- as.data.frame(tax_table(ps)) %>%
+  tibble::rownames_to_column("ASV")
+
+# Get the top 20 ASVs and create the descriptive labels.
+top_asvs_labeled <- prc_summary$sp %>%
+  as.data.frame() %>%
+  tibble::rownames_to_column("ASV") %>%
+  rename(prc_score = 2) %>%
+  arrange(desc(abs(prc_score))) %>%
+  head(20) %>%
+  left_join(tax_table_df, by = "ASV") %>%
+  # **MODIFICATION**: Implement hierarchical fallback for taxon names.
+  mutate(
+    TaxonName = case_when(
+      !is.na(Genus) & !is.na(Species) ~ paste(Genus, Species),
+      !is.na(Genus)                   ~ paste(Genus, "sp."),
+      !is.na(Family)                  ~ paste(Family, "(Family)"),
+      !is.na(Order)                   ~ paste(Order, "(Order)"),
+      !is.na(Class)                   ~ paste(Class, "(Class)"),
+      !is.na(Phylum)                  ~ paste(Phylum, "(Phylum)"),
+      !is.na(Kingdom)                 ~ Kingdom,
+      TRUE                            ~ ASV # Ultimate fallback
+    ),
+    FinalLabel = paste0(TaxonName, " (", ASV, ")")
+  )
+
+# --- S4.3. Generate the PRC Plot (Figure 4 Reproduction) ---
+print("Generating PRC plot (Figure 4) with dynamic Y-axis and manual labels...")
+
+# Extract the PRC line data
+prc_line_data <- prc_summary$coefficients
+# Manually create the numeric time points
+numeric_time_points <- c(-2, 0, 2, 12)
+
+# Dynamically determine the y-axis range
+range_line <- range(prc_line_data)
+range_species <- range(top_asvs_labeled$prc_score)
+dynamic_ylim <- range(c(range_line, range_species))
+
+# Add a 10% buffer for better visualization so points aren't on the edge
+padding <- (dynamic_ylim[2] - dynamic_ylim[1]) * 0.1
+dynamic_ylim_padded <- dynamic_ylim + c(-padding, padding)
+
+png(file.path(fig_path, "Figure4_reproduction_prc_final.png"), width = 11, height = 8, units = "in", res = 300)
+par(mar = c(5, 5, 4, 17) + 0.1)
+
+# Step 1: Create the empty plot canvas using our new dynamic ylim
+plot(
+  NULL,
+  xlim = c(-2,12),
+  ylim = dynamic_ylim_padded, # Use the calculated, padded range
+  type = "n",
+  xlab = "Timepoint (Weeks)",
+  ylab = "Effect Size (Difference from Control)",
+  main = "Figure 4 Reproduction: Principal Response Curve (PRC)",
+  xaxt = "n",
+  yaxt = "n"
+)
+
+# Step 2: Draw the PRC line, points, and axes
+lines(numeric_time_points, prc_line_data, col = "darkcyan", lty = "solid", lwd = 2)
+points(numeric_time_points, prc_line_data, pch = 16, col = "darkcyan", cex = 1.5)
+axis(side = 1, at = seq(-2, 12, by = 2)) 
+axis(side = 2, las = 1)
+abline(h = 0, lty = "dashed", col = "grey50", lwd = 1.5)
+
+# Step 3: **NEW** - Algorithm to prevent label overlap
+# Sort labels by score to process them from bottom to top
+labels_df <- top_asvs_labeled %>% arrange(prc_score)
+# Calculate minimum separation needed based on text height in plot coordinates
+min_sep <- strheight("A", units = "user", cex = 0.9) * 1.5 
+# Initialize a new column for the adjusted y-positions
+labels_df$new_y <- labels_df$prc_score
+# Loop from the second label upwards
+if (nrow(labels_df) > 1) {
+  for (i in 2:nrow(labels_df)) {
+    # Calculate difference to the label below it
+    diff <- labels_df$new_y[i] - labels_df$new_y[i-1]
+    # If they are too close, nudge the current label up
+    if (diff < min_sep) {
+      labels_df$new_y[i] <- labels_df$new_y[i-1] + min_sep
+    }
+  }
+}
+# Step 4: - Add pointer lines and spaced labels
+# Add the internal ticks on the right-hand axis first.
+rug(labels_df$prc_score, side = 4, col = "darkred", ticksize = 0.02, lwd = 1.5)
+
+# Define x-coordinates for the start and end of the pointer lines
+x_axis_pos <- par("usr")[2] # The right edge of the plot area
+x_label_start <- x_axis_pos + (par("usr")[2] - par("usr")[1]) * 0.02 # Start labels slightly off the axis
+
+# Draw the pointer lines (segments)
+segments(
+  x0 = x_axis_pos, 
+  y0 = labels_df$prc_score, 
+  x1 = x_label_start, 
+  y1 = labels_df$new_y, 
+  col = "darkred",
+  xpd = TRUE
+)
+
+# Draw the text labels at their new, non-overlapping positions
+text(
+  x = x_label_start,
+  y = labels_df$new_y,
+  labels = labels_df$FinalLabel,
+  pos = 4, # Position text to the right of the coordinate
+  xpd = TRUE, # Allow plotting into the margin
+  col = "darkred",
+  cex = 0.9
+)
+
+# Step 5: **MODIFICATION** - Create the complete legend
+legend(
+  "bottomleft",
+  legend = c("OMT (Test Group)", "Control (y=0)"),
+  col = c("darkcyan", "grey50"),
+  lty = c("solid", "dashed"),
+  lwd = c(2, 1.5),
+  bty = "n"
+)
+
+dev.off()
+par(mar = c(5.1, 4.1, 4.1, 2.1)) # Reset margins
+
+# --- S4.4. Create and Save Supporting Data Table ---
+print("Saving supporting data table for Figure 4...")
+
+final_prc_table <- top_asvs_labeled %>%
+  select(ASV, FinalLabel, prc_score, Kingdom, Phylum, Class, Order, Family, Genus, Species)
+
+write.csv(final_prc_table, file.path(table_path, "Figure4_data_prc_top20_asvs_labeled.csv"), row.names = FALSE)
+
+print(paste("Final Figure 4 reproduction saved to:", file.path(fig_path, "Figure4_reproduction_prc_final.png")))
+print(paste("Supporting data table with labels saved to:", file.path(table_path, "Figure4_data_prc_top20_asvs_labeled.csv")))
+print("------------------------------------------")
