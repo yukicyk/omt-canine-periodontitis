@@ -15,7 +15,7 @@
 # --- 1. Load Libraries and Data ---
 
 if (!require("pacman")) install.packages("pacman")
-pacman::p_load(phyloseq, ggplot2, vegan, dplyr, rstatix, ggpubr, devtools)
+pacman::p_load(phyloseq, ggplot2, vegan, dplyr, rstatix, ggpubr, devtools, ranacapa)
 library(devtools)
 devtools::install_github("gauravsk/ranacapa")
 library(ranacapa)
@@ -45,9 +45,12 @@ ggsave(file.path(fig_path, "Rarefaction curves.png"), p.all, width = 10, height 
 print(min(sample_sums(ps)))
 ps.rf <- rarefy_even_depth(ps, sample.size = min(sample_sums(ps)), rngseed = 123, replace = FALSE)
 
+# Define the colors used in the paper
+treatment_colors <- c("Control" = "darkcyan", "Recipient" = "chartreuse2", "Donor" = "coral1")
+
 # Plot alpha diversity (Shannon and Observed ASVs) comparing treatments at each timepoint
 alpha_plot <- plot_richness(ps.rf, x = "Timepoint", measures = c("Shannon")) +
-  geom_boxplot(aes(fill = Treatment), alpha = 0.7, show.legend = FALSE) +
+  geom_boxplot(aes(fill = Treatment), alpha = 0.7, show.legend = TRUE) +
   geom_point(show.legend = FALSE) +
   theme_bw(base_size = 14) +
   theme(axis.text.x = element_text(angle = 45, hjust = 1)) +
@@ -85,7 +88,7 @@ plot_data$Treatment <- factor(plot_data$Treatment,
                               labels = c( "Donor", "Test", "Control"))
 
 # Define the colors used in the paper
-treatment_colors <- c("Control" = "cadetblue1", "Test" = "chartreuse2", "Donor" = "coral1")
+treatment_colors <- c("Control" = "darkcyan", "Test" = "chartreuse2", "Donor" = "coral1")
 
 # --- S1.2. Create the Upper Panel Plot (Between-Group Comparisons) ---
 # This performs pairwise Wilcoxon tests for each timepoint.
@@ -248,7 +251,7 @@ sample_data(ps.ra)$Timepoint <- factor(sample_data(ps.ra)$Timepoint,
 sample_data(ps.ra)$Treatment <- factor(sample_data(ps.ra)$Treatment, 
                                        levels = c("Donor", "Recipient", "Control"), 
                                        labels = c("Donor", "Test", "Control"))
-treatment_colors <- c("Control" = "cadetblue1", "Test" = "chartreuse2", "Donor" = "coral1")
+treatment_colors <- c("Control" = "darkcyan", "Test" = "chartreuse2", "Donor" = "coral1")
 
 # --- S2.2. Beta Diversity Calculation (PCoA) ---
 # Perform PCoA on the Bray-Curtis dissimilarity matrix calculated from relative abundance data.

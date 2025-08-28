@@ -37,10 +37,10 @@ sample_df <- as(sample_data(ps), "data.frame")
 sample_df <- sample_df %>%
   mutate(
     WeekNumeric = case_when(
-      Week == "week -2"  ~ -2,
-      Week == "baseline" ~ 0,
-      Week == "week 2"   ~ 2,
-      Week == "week 12"  ~ 12,
+      Week == 0  ~ -2,
+      Week == 2 ~ 0,
+      Week == 4   ~ 2,
+      Week == 14  ~ 12,
       TRUE               ~ NA_real_ # Fallback for any unexpected values
     )
   )
@@ -100,7 +100,76 @@ animate(
   duration = 15,
   width = 1200,
   height = 700,
-  renderer = magick_renderer(file.path(fig_path, "community_trajectory_animated.gif"))
-)
+  renderer = magick_renderer())
 
 print(paste("Animation saved to:", file.path(fig_path, "community_trajectory_animated.gif")))
+
+### Just one more figure ###
+# Include the donor in the same ordination space and see how the control and test samples move around
+# Create a single data frame with ordination scores and metadata
+# This makes plotting with ggplot2 more explicit and flexible.
+mds_all <- ordinate(ps.ra, "MDS", "bray")
+plot_data <- plot_ordination(ps.ra, mds_all , justDF = TRUE) %>%
+  bind_cols(as(sample_data(ps.ra), "data.frame"))
+
+# Separate data for the animated points (Control/Recipient) and static points (Donor)
+animated_data <- plot_data %>% filter(Treatment...5 %in% c("Control", "Recipient"))
+static_data <- plot_data %>% filter(Treatment...5 == "Donor")
+
+# --- Create Static Plot (Base for Animation) ---
+# Create the base ggplot object without faceting.
+# We will use 'shape' to distinguish between Treatment groups.
+p_unified <- ggplot(animated_data, aes(x = Axis.1, y = Axis.2, color = Dog...3)) +
+  # Add the static Donor points as a fixed background layer.
+  # They are larger and have a different shape to stand out.
+  geom_point(
+    data = static_data,
+    aes(shape = Treatment...5), # Map shape to Treatment
+    size = 8,
+    alpha = 0.8,
+    color = "royalblue4" # Make donors a distinct, constant color
+  ) +
+  # Add the points for Control and Recipient that will be animated.
+  geom_point(aes(shape = Treatment...5), size = 6, alpha = 0.7) +
+  theme_bw(base_size = 16) +
+  labs(
+    x = "MDS Axis 1",
+    y = "MDS Axis 2",
+    title = 'Microbiome Trajectory (Weeks: {frame_along})',
+    subtitle = 'Bray-Curtis Dissimilarity | All Groups in One Space',
+    color = "Dog ID",
+    shape = "Group"
+  ) +
+  # Manually define shapes for clarity
+  scale_shape_manual(values = c("Control" = 16, "Recipient" = 17, "Donor" = 18)) +
+  # Add text labels for each dog
+  geom_text(aes(label = Dog...3), vjust = -1.5, size = 4, show.legend = FALSE)
+
+# --- 5. Add Animation Layers ---
+
+# Add the gganimate layers to the plot
+anim_unified <- p_unified +
+  transition_reveal(WeekNumeric...12) +
+  shadow_wake(wake_length = 0.1, alpha = 0.5) +
+  ease_aes('cubic-in-out')
+
+# --- 6. Render and Save Animation ---
+
+print("Rendering unified animation for all groups...")
+animate(
+  anim_unified,
+  nframes = 150,
+  fps = 10,
+  duration = 15,
+  width = 1200,
+  height = 800, # Increased height slightly for the single plot
+  renderer = magick_renderer(),
+  device = "ragg_png" # Use a high-quality rendering device
+)
+
+# Save the animation
+anim_save(
+  filename = file.path(fig_path, "community_trajectory_unified_animated.gif")
+)
+
+print(paste("Unified animation saved to:", file.path(fig_path, "community_trajectory_unified_animated.gif")))

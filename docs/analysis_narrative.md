@@ -88,6 +88,12 @@ One of my favorite parts of this project was an analysis that never made it into
 
 While purely exploratory, these animations were invaluable. They gave me an intuition for the data that static plots never could. I could *see* the pace of change, watch one dog respond faster than another, and observe a recipient's microbiome drift back towards its original state months later. It was a powerful reminder that behind the numbers and heatmaps, there are dynamic, living systems at play.
 
+As shown in the figure below, the simulation results demonstrate a clear trend over time.
+
+![Animation showing the ordination of the microbiota shifts over the time course of the study (week -2 to week 12)](../results/community_trajectory_unified_animated.gif)
+
+This animation was generated using the techniques described in the previous section.
+
 ## The End of the Trail (For Now)
 This journey—from raw reads to a final, polished story—was anything but linear. It was an iterative process of testing, validating, hitting dead ends, and having "aha!" moments. The final workflow is a product of this careful, and at times frustrating, process. It stands as a testament to the idea that good bioinformatics is not just about writing code; it's about asking the right questions, communicating with collaborators, and having the humility to throw it all out and start again when the data demands it.
 
