@@ -90,7 +90,7 @@ While purely exploratory, these animations were invaluable. They gave me an intu
 
 As shown in the figure below, the simulation results demonstrate a clear trend over time.
 
-![Animation showing the ordination of the microbiota shifts over the time course of the study (week -2 to week 12)](../results/community_trajectory_unified_animated.gif)
+![Animation showing the ordination of the microbiota shifts over the time course of the study (week -2 to week 12)](../results/figures/community_trajectory_unified_animated.gif)
 
 This animation was generated using the techniques described in the previous section.
 
